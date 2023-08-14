@@ -1,0 +1,2518 @@
+<!doctype html><!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en-us" > <![endif]--><!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en-us" >        <![endif]--><!--[if IE 8]>    <html class="no-js lt-ie9" lang="en-us" >               <![endif]--><!--[if gt IE 8]><!--><html class="no-js" lang="en-us"><!--<![endif]--><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="author" content="Sue Chambers">
+    <meta name="description" content="Microfluidic devices demand specific performance, which is based on the materials used to build them. What four are key to consider during design?">
+    <meta name="generator" content="HubSpot">
+    <title>Materials To Build Microfluidic Devices I Strouse</title>
+    <link rel="shortcut icon" href="https://www.strouse.com/hubfs/Logo_S_green-on-blue.png">
+    
+
+    
+    <meta property="og:description" content="Microfluidic devices demand specific performance, which is based on the materials used to build them. What four are key to consider during design?">
+    <meta property="og:title" content="Materials To Build Microfluidic Devices I Strouse">
+    <meta name="twitter:description" content="Microfluidic devices demand specific performance, which is based on the materials used to build them. What four are key to consider during design?">
+    <meta name="twitter:title" content="Materials To Build Microfluidic Devices I Strouse">
+
+    
+
+    
+
+    <style>
+a.cta_button{-moz-box-sizing:content-box !important;-webkit-box-sizing:content-box !important;box-sizing:content-box !important;vertical-align:middle}.hs-breadcrumb-menu{list-style-type:none;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px}.hs-breadcrumb-menu-item{float:left;padding:10px 0px 10px 10px}.hs-breadcrumb-menu-divider:before{content:'›';padding-left:10px}.hs-featured-image-link{border:0}.hs-featured-image{float:right;margin:0 0 20px 20px;max-width:50%}@media (max-width: 568px){.hs-featured-image{float:none;margin:0;width:100%;max-width:100%}}.hs-screen-reader-text{clip:rect(1px, 1px, 1px, 1px);height:1px;overflow:hidden;position:absolute !important;width:1px}
+</style>
+
+
+  <style>
+    .color-fix a {
+        color: #00457c;
+    }
+    .inline {
+      display: inline-block;
+    }
+    .h2 {
+      margin: 10px 0;
+      font-size: 40px;
+      font-weight: 400;
+      color: #00457c;
+      text-transform: none;
+      letter-spacing: 0px;
+      line-height: 1.2em;
+      font-family: 'Karla',sans-serif;
+    }
+    .hhs-row-overlay {
+      pointer-events: none;
+    }
+    nav {
+       display: inline-block;
+    }
+    .logo-sticky {
+      display: none;
+    }
+
+    .header-container-wrapper {
+      position: absolute !important;
+    }
+    .header-container .span12 {
+      padding: 15px;
+    }
+    
+    a.mega-drop {
+      color: #fff;
+      padding: 15px 10px;
+    }
+    
+    .menu-item {
+      display: none;
+      position: absolute;
+      width: 100%;
+      left: 0;
+      right: 0;
+      background-color: #fff;
+      margin-top: 1em;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      top: 66px;
+    }
+    
+    .menu-item .h2 {
+      display: flex;
+      color: #00457c !important;
+    }
+    
+    .sep {
+      margin: 10px 0 10px;
+      border-bottom: 1px solid rgba(222,229,27,1);
+      padding-bottom: 10px;
+    }
+    
+    .active {
+      display: block;
+    }
+    
+    .fullscreen-search {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+
+    .fullscreen-search form {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+    }
+
+    .fullscreen-search input[type="search"] {
+      width: 80%;
+      border-color: #ed353a;
+      border-left-width: 0;
+      margin-bottom: 0;
+      border-width: 0;
+    }
+
+    .fullscreen-search button {
+      width: 20%;
+      padding: 6px;
+      background-color: #d4de3e;
+      border-width: 0;
+      transition-duration: 0.25s;
+    }
+    
+    .fullscreen-search button:hover {
+      transform: scale(1.05);
+      transition-duration: 0.25s;
+      cursor: pointer;
+    }
+
+    .vertical-center {
+      display: flex;
+      height: 100%;
+      align-items: center;
+    }
+
+    .mw-800 {
+      max-width: 800px;
+      margin: 0 auto;
+      float: none;
+    }
+  
+    #search {
+      vertical-align: middle;
+    }
+    #search path {
+      fill: #fff;
+    }
+  
+    .fixed #search path,
+    .opaque-header #search path {
+      fill: #000;
+    }
+    
+    .hamburger {
+      display: none;
+      padding: 20px 12px 15px;
+      cursor: pointer;
+      transition-property: opacity,filter;
+      transition-duration: .15s;
+      transition-timing-function: linear;
+      font: inherit;
+      color: inherit;
+      text-transform: none;
+      background-color: transparent;
+      border: 0;
+      margin: 0;
+      overflow: visible;
+      margin-right: 0px;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+    
+    .hamburger-box {
+      width: 30px;
+      height: 24px;
+      display: inline-block;
+      position: relative
+    }
+
+    .hamburger-inner {
+      display: block;
+      top: 50%;
+      margin-top: -2px
+    }
+
+.hamburger-inner,.hamburger-inner::before,.hamburger-inner::after {
+    width: 30px;
+    height: 3px;
+    border-radius: 4px;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: .15s;
+    transition-timing-function: ease
+}
+
+.hamburger-inner::before,.hamburger-inner::after {
+    content: "";
+    display: block
+}
+
+.hamburger-inner::before {
+    top: -10px
+}
+
+.hamburger-inner::after {
+    bottom: -10px
+}
+
+.hamburger--spring .hamburger-inner {
+    top: 2px;
+    transition: background-color 0s .13s linear
+}
+
+.hamburger--spring .hamburger-inner::before {
+    top: 10px;
+    transition: top .1s .2s cubic-bezier(0.33333,0.66667,0.66667,1),transform .13s cubic-bezier(0.55,0.055,0.675,0.19)
+}
+
+.hamburger--spring .hamburger-inner::after {
+    top: 20px;
+    transition: top .2s .2s cubic-bezier(0.33333,0.66667,0.66667,1),transform .13s cubic-bezier(0.55,0.055,0.675,0.19)
+}
+
+.hamburger--spring.is-active .hamburger-inner {
+    transition-delay: .22s;
+    background-color: transparent !important
+}
+
+.hamburger--spring.is-active .hamburger-inner::before {
+    top: 0;
+    transition: top .1s .15s cubic-bezier(0.33333,0,0.66667,0.33333),transform .13s .22s cubic-bezier(0.215,0.61,0.355,1);
+    transform: translate3d(0,10px,0) rotate(45deg)
+}
+
+.hamburger--spring.is-active .hamburger-inner::after {
+    top: 0;
+    transition: top .2s cubic-bezier(0.33333,0,0.66667,0.33333),transform .13s .22s cubic-bezier(0.215,0.61,0.355,1);
+    transform: translate3d(0,10px,0) rotate(-45deg)
+}
+    .hamburger-inner,.hamburger-inner::before,.hamburger-inner::after,.hamburger.is-active .hamburger-inner,.hamburger.is-active .hamburger-inner::before,.hamburger.is-active .hamburger-inner::after {
+    background-color: rgba(255,255,255,1)
+}
+    .fixed {
+      position: fixed !important;
+      transition-duration: 0.25s;
+    }
+    .fixed,
+    .opaque-header {
+      background-color: #fff;
+    }
+    .opaque-header a,
+    .fixed a.mega-drop,
+    .opaque-header .fixed a.mega-drop{
+      color: #000;
+    }
+    .fixed .logo-standard,
+    .opaque-header .logo-standard,
+    .opaque-header .fixed .logo-standard{
+      display: none;
+    }
+    .fixed .logo-sticky,
+    .opaque-header .logo-sticky,
+    .opaque-header .fixed .logo-sticky{
+      display: block;
+    }
+    .zeroOpacity {
+      opacity: 0;
+      transition-duration: 0.25s;
+    }
+    .header-container-wrapper .hs-menu-wrapper.hs-menu-flow-horizontal>ul li a {
+      text-overflow: unset;
+      max-width: unset;
+      color: #000;
+      padding: unset;
+    }
+    .header-container-wrapper .hs-menu-wrapper.hs-menu-flow-horizontal>ul,
+    .menu-item .ctas{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 1em;
+    }
+    .header-container-wrapper .menu-item:nth-of-type(6) .hs-menu-wrapper.hs-menu-flow-horizontal>ul {
+      grid-template-columns: 1fr;
+    }
+    .ctas {
+      text-align: center;
+      padding-top: 16px;
+    }
+    .header-container-wrapper .hs-menu-wrapper.hs-menu-flow-horizontal>ul:before {
+      display: none;
+    }
+    .pl-10 {
+      padding-left: 10%;
+    }
+    .post-title {
+      color: #000;
+      font-size: 1.75rem;
+      font-weight: 400;
+      padding-bottom: 0.5em;
+    }
+    .supp-menu-wrapper {
+      float: right; 
+      display: inline-block; 
+      font-size: 16px; 
+      margin-top: -20px; 
+      padding-bottom: 5px;
+    }
+    .supp-menu-wrapper a {
+        color: #fff;
+      margin-left: 15px;
+      }
+    body.hs-blog-post .supp-menu-wrapper a {
+       color: #000;
+    }
+    body.hs-blog-post .supp-menu-wrapper a:hover {
+       color: #427aa0;
+    }
+    body.hs-blog-post .hamburger-inner, body.hs-blog-post .hamburger-inner::before, body.hs-blog-post .hamburger-inner::after, body.hs-blog-post .hamburger.is-active .hamburger-inner::before, body.hs-blog-post .hamburger.is-active .hamburger-inner::after  {
+      background-color: #000;
+    }
+    
+    @media (min-width: 1421px) {
+      .hhs-header-logo {
+        padding-top: 10px;
+      }
+      .strouse-nav-wrapper nav .mega-drop:nth-of-type(1n+6) {
+        display: none;
+      }
+    }
+    @media (max-width: 1420px) {
+      
+      .zeroOpacity {
+        opacity: 1;
+      }
+      .hide-mobile {
+        display: none;
+      }
+      .menu-item .h2,
+      .menu-item .ctas, 
+      .menu-item img {
+        display: none;
+      }
+      .menu-item {
+        top: 0;
+        margin: 0;
+      }
+      .menu-item ul li {
+        padding: 2px 0;
+      }
+      .pl-10 {
+        padding-left: 0;
+      }
+      .header-container-wrapper .hs-menu-wrapper.hs-menu-flow-horizontal>ul {
+        grid-template-columns: 1fr;
+      }
+      .fixed {
+        display: none;
+        position: relative;
+      }
+      .hamburger {
+        display: block;
+      }
+      nav {
+        position: absolute;
+        background-color: #fff;
+        top: 3em;
+        left: 1em;
+        right: 1em;
+        color: #000;
+      }
+      nav a.mega-drop {
+        display: none;
+        color: #000;
+        position: relative;
+        padding: 15px;
+      }
+      nav .menu-item {
+        display: none;
+        color: #000;
+        position: relative;
+        padding: 0 25px;
+      }
+      nav a.mega-drop { 
+        border-top: 1px solid rgba(0,0,0,.1);
+      }
+      a.mega-drop:not(.no-arrow):after {
+        content: "+";
+        float: right;
+        transition-duration: 0.25s;
+      }
+      a.mega-drop.open:after {
+        transform: rotate(45deg);
+        transition-duration: 0.25s;
+      }
+      
+      nav .menu-item.active {
+        display: block;
+      }
+      
+      #search {
+        position: absolute;
+        top: 8px;
+        right: 50px;
+      }
+      .hhs-header-logo {
+        width: 75%;
+      }
+      .blog-post {
+        display: none;
+      }
+      
+    }
+  </style>
+
+<link rel="stylesheet" href="https://www.strouse.com/hs-fs/hub/441594/hub_generated/template_assets/46210864964/1619750819812/Marketplace/HubSpot_Hero/CLEAN_6_Premium_Pack/Coded_Files/clean6-item-spacer.min.css">
+
+<style>
+  #hs_cos_wrapper_module_161825218556200 {
+     
+  }
+  
+  #hs_cos_wrapper_module_161825218556200 .hhs-text-mod {
+      padding-top: 100px;
+      padding-bottom:  100px;
+      background-color: #D9DFE280;
+    
+    
+    
+  }
+  
+  /** DIVIDER STYLES **/
+  #hs_cos_wrapper_module_161825218556200 .c1 .hhs-divider{
+    
+    
+    
+      margin: 0 0 50px;
+    
+    
+  }
+  #hs_cos_wrapper_module_161825218556200 .c2 .hhs-divider{
+    
+    
+      margin: 0 auto 50px;
+    
+    
+    
+  }
+  #hs_cos_wrapper_module_161825218556200 .c3 .hhs-divider{
+    
+    
+      margin: 0 auto 50px;
+    
+    
+    
+  }
+  #hs_cos_wrapper_module_161825218556200 .c4 .hhs-divider{
+    
+    
+      margin: 0 auto 50px;
+    
+    
+    
+  }
+  
+  /** TEXT STYLES **/
+  #hs_cos_wrapper_module_161825218556200 .hhs-rich-text.c1, #hs_cos_wrapper_module_161825218556200 .hhs-rich-text.c1 h1, #hs_cos_wrapper_module_161825218556200 .hhs-rich-text.c1 h2,#hs_cos_wrapper_module_161825218556200 .hhs-rich-text.c1 h3, #hs_cos_wrapper_module_161825218556200 .hhs-rich-text.c1 h4, #hs_cos_wrapper_module_161825218556200 .hhs-rich-text.c1 h5, #hs_cos_wrapper_module_161825218556200 .hhs-rich-text.c1 h6, #hs_cos_wrapper_module_161825218556200 .hhs-rich-text.c1 p, #hs_cos_wrapper_module_161825218556200 .hhs-rich-text.c1 span, #hs_cos_wrapper_module_161825218556200 .hhs-rich-text.c1 li, #hs_cos_wrapper_module_161825218556200 .hhs-rich-text.c1 blockquote {
+    
+    text-align: left;
+  }
+  
+  
+  
+   #hs_cos_wrapper_module_161825218556200 .hhs-rich-text.c2,#hs_cos_wrapper_module_161825218556200 .hhs-rich-text.c2 h1, #hs_cos_wrapper_module_161825218556200 .hhs-rich-text.c2 h2,#hs_cos_wrapper_module_161825218556200 .hhs-rich-text.c2 h3, #hs_cos_wrapper_module_161825218556200 .hhs-rich-text.c2 h4, #hs_cos_wrapper_module_161825218556200 .hhs-rich-text.c2 h5, #hs_cos_wrapper_module_161825218556200 .hhs-rich-text.c2 h6, #hs_cos_wrapper_module_161825218556200 .hhs-rich-text.c2 p, #hs_cos_wrapper_module_161825218556200 .hhs-rich-text.c2 span, #hs_cos_wrapper_module_161825218556200 .hhs-rich-text.c2 li, #hs_cos_wrapper_module_161825218556200 .hhs-rich-text.c2 blockquote {
+    
+    text-align: center;
+  }
+  
+  
+  
+   #hs_cos_wrapper_module_161825218556200 .hhs-rich-text.c3 , #hs_cos_wrapper_module_161825218556200 .hhs-rich-text.c3 h1, #hs_cos_wrapper_module_161825218556200 .hhs-rich-text.c3 h2,#hs_cos_wrapper_module_161825218556200 .hhs-rich-text.c3 h3, #hs_cos_wrapper_module_161825218556200 .hhs-rich-text.c3 h4, #hs_cos_wrapper_module_161825218556200 .hhs-rich-text.c3 h5, #hs_cos_wrapper_module_161825218556200 .hhs-rich-text.c3 h6, #hs_cos_wrapper_module_161825218556200 .hhs-rich-text.c3 p, #hs_cos_wrapper_module_161825218556200 .hhs-rich-text.c3 span, #hs_cos_wrapper_module_161825218556200 .hhs-rich-text.c3 li, #hs_cos_wrapper_module_161825218556200 .hhs-rich-text.c3 blockquote {
+    
+    text-align: center;
+  }
+  
+  
+  
+   #hs_cos_wrapper_module_161825218556200 .hhs-rich-text.c4, #hs_cos_wrapper_module_161825218556200 .hhs-rich-text.c4 h1, #hs_cos_wrapper_module_161825218556200 .hhs-rich-text.c4 h2,#hs_cos_wrapper_module_161825218556200 .hhs-rich-text.c4 h3, #hs_cos_wrapper_module_161825218556200 .hhs-rich-text.c4 h4, #hs_cos_wrapper_module_161825218556200 .hhs-rich-text.c4 h5, #hs_cos_wrapper_module_161825218556200 .hhs-rich-text.c4 h6, #hs_cos_wrapper_module_161825218556200 .hhs-rich-text.c4 p, #hs_cos_wrapper_module_161825218556200 .hhs-rich-text.c4 span, #hs_cos_wrapper_module_161825218556200 .hhs-rich-text.c4 li, #hs_cos_wrapper_module_161825218556200 .hhs-rich-text.c4 blockquote {
+    
+    text-align: center;
+  }
+  
+  
+  
+   #hs_cos_wrapper_module_161825218556200 .inner-shadow {
+    -webkit-box-shadow:inset 0 0 20px 1px rgba(0, 0, 0,0.10);
+    box-shadow:inset 0 0 20px 1px rgba(0, 0, 0, 0.10);
+  }
+
+   #hs_cos_wrapper_module_161825218556200 .outer-shadow {
+   -webkit-box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.10);
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.10);   
+    z-index: 1;
+    position: relative;
+  }
+  
+  #hs_cos_wrapper_module_161825218556200 .hhs-form-con.c1 {
+    max-width: 100%;
+    
+      margin-left: 0px;
+    
+  }
+  #hs_cos_wrapper_module_161825218556200 .hhs-form-con.c2 {
+    max-width: 100%;
+    
+  }
+  #hs_cos_wrapper_module_161825218556200 .hhs-form-con.c3 {
+    max-width: 100%;
+    
+  }
+  #hs_cos_wrapper_module_161825218556200 .hhs-form-con.c4 {
+    max-width: 100%;
+    
+  }
+  
+  #hs_cos_wrapper_module_161825218556200 .hhs-form-con.c1 .hs-submit {text-align: left;}
+  #hs_cos_wrapper_module_161825218556200 .hhs-form-con.c2 .hs-submit {text-align: left;}
+  #hs_cos_wrapper_module_161825218556200 .hhs-form-con.c3 .hs-submit {text-align: left;}
+  #hs_cos_wrapper_module_161825218556200 .hhs-form-con.c4 .hs-submit {text-align: left;}
+  
+  /*** HERO OVERLAY COLOR ***/
+  #hs_cos_wrapper_module_161825218556200 .hhs-row-overlay {
+    
+    
+  }
+  
+  /*** PULL UP CONTENT OPTION ***/
+  
+  
+  
+  /** VIDEO STYLE **/
+  
+  
+  
+  
+  
+  /*** MODAL STYLE */
+  #tmp1_module_161825218556200.hhs-modal {
+   text-align: left;
+  }
+  #tmp2_module_161825218556200.hhs-modal {
+   text-align: left;
+  }
+  #tmp3_module_161825218556200.hhs-modal {
+   text-align: left;
+  }
+  #tmp4_module_161825218556200.hhs-modal {
+   text-align: left;
+  }
+  
+  /** TABLET CSS **/
+  @media (max-width: 768px) {
+    #hs_cos_wrapper_module_161825218556200 .hhs-text-mod {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+    
+  }
+  
+  /** MOBILE CSS **/
+  @media (max-width: 575px) {
+    #hs_cos_wrapper_module_161825218556200 .hhs-text-mod {
+      padding-top: 25px;
+      padding-bottom: 25px;
+      text-align: center;
+    }
+    #hs_cos_wrapper_module_161825218556200 .hhs-rich-text.c1 h1, #hs_cos_wrapper_module_161825218556200 .hhs-rich-text.c1 h2,#hs_cos_wrapper_module_161825218556200 .hhs-rich-text.c1 h3, #hs_cos_wrapper_module_161825218556200 .hhs-rich-text.c1 h4, #hs_cos_wrapper_module_161825218556200 .hhs-rich-text.c1 h5, #hs_cos_wrapper_module_161825218556200 .hhs-rich-text.c1 h6, #hs_cos_wrapper_module_161825218556200 .hhs-rich-text.c1 p, #hs_cos_wrapper_module_161825218556200 .hhs-rich-text.c1 span, #hs_cos_wrapper_module_161825218556200 .hhs-rich-text.c1 li {
+      text-align: center;
+    }
+    #hs_cos_wrapper_module_161825218556200 .hhs-rich-text.c2 h1, #hs_cos_wrapper_module_161825218556200 .hhs-rich-text.c2 h2,#hs_cos_wrapper_module_161825218556200 .hhs-rich-text.c2 h3, #hs_cos_wrapper_module_161825218556200 .hhs-rich-text.c2 h4, #hs_cos_wrapper_module_161825218556200 .hhs-rich-text.c2 h5, #hs_cos_wrapper_module_161825218556200 .hhs-rich-text.c2 h6, #hs_cos_wrapper_module_161825218556200 .hhs-rich-text.c2 p, #hs_cos_wrapper_module_161825218556200 .hhs-rich-text.c2 span, #hs_cos_wrapper_module_161825218556200 .hhs-rich-text.c2 li {
+      text-align: center;
+    }
+    #hs_cos_wrapper_module_161825218556200 .hhs-rich-text.c3 h1, #hs_cos_wrapper_module_161825218556200 .hhs-rich-text.c3 h2,#hs_cos_wrapper_module_161825218556200 .hhs-rich-text.c3 h3, #hs_cos_wrapper_module_161825218556200 .hhs-rich-text.c3 h4, #hs_cos_wrapper_module_161825218556200 .hhs-rich-text.c3 h5, #hs_cos_wrapper_module_161825218556200 .hhs-rich-text.c3 h6, #hs_cos_wrapper_module_161825218556200 .hhs-rich-text.c3 p, #hs_cos_wrapper_module_161825218556200 .hhs-rich-text.c3 span, #hs_cos_wrapper_module_161825218556200 .hhs-rich-text.c3 li {
+      text-align: center;
+    }
+    #hs_cos_wrapper_module_161825218556200 .hhs-rich-text.c4 h1, #hs_cos_wrapper_module_161825218556200 .hhs-rich-text.c4 h2,#hs_cos_wrapper_module_161825218556200 .hhs-rich-text.c4 h3, #hs_cos_wrapper_module_161825218556200 .hhs-rich-text.c4 h4, #hs_cos_wrapper_module_161825218556200 .hhs-rich-text.c4 h5, #hs_cos_wrapper_module_161825218556200 .hhs-rich-text.c4 h6, #hs_cos_wrapper_module_161825218556200 .hhs-rich-text.c4 p, #hs_cos_wrapper_module_161825218556200 .hhs-rich-text.c4 span, #hs_cos_wrapper_module_161825218556200 .hhs-rich-text.c4 li {
+      text-align: center;
+    }
+    #hs_cos_wrapper_module_161825218556200 .hhs-divider{
+      
+        margin-right: auto !important;
+        margin-left: auto !important;
+        float: none;
+      
+      
+      
+    }
+    #hs_cos_wrapper_module_161825218556200 .hhs-form-con.c1 {max-width: 100% !important;}
+    #hs_cos_wrapper_module_161825218556200 .hhs-form-con.c2 {max-width: 100% !important;}
+    #hs_cos_wrapper_module_161825218556200 .hhs-form-con.c3 {max-width: 100% !important;}
+    #hs_cos_wrapper_module_161825218556200 .hhs-form-con.c4 {max-width: 100% !important;}
+    
+    
+  }
+</style>
+
+
+<style>
+  #hs_cos_wrapper_module_160013648285501 .hhs-footer-mod {
+    background-color: #00457c;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  /** NAVIGATION COLUMNS STYLE **/
+  .hhs-foot-base-nav .hs-menu-wrapper.hs-menu-flow-horizontal > ul li a,
+  .hhs-foot-nav-col .hs-menu-wrapper.hs-menu-flow-horizontal>ul li.hs-item-has-children ul.hs-menu-children-wrapper li a,
+  .hhs-foot-nav-col .hs-menu-wrapper.hs-menu-flow-horizontal > ul li a {
+    color: #fff !important;
+  }
+  .hhs-foot-base-nav .hs-menu-wrapper.hs-menu-flow-horizontal > ul li a:hover,
+  .hhs-foot-nav-col .hs-menu-wrapper.hs-menu-flow-horizontal>ul li.hs-item-has-children ul.hs-menu-children-wrapper li a:hover,
+  .hhs-foot-nav-col .hs-menu-wrapper.hs-menu-flow-horizontal > ul li a:hover {
+    color: #fff  !important;
+  }
+  .foot-nav-title,
+  .hhs-foot-rss h5,
+  .hhs-foot-nav-col h5 {
+    margin-bottom: 40px;
+    color: #cadfe2;
+  }
+  .hhs-foot-nav-col .hs-menu-wrapper.hs-menu-flow-horizontal > ul li a {
+    font-size: 12px !important;
+  }
+
+  .hhs-foot-rss .hs_cos_wrapper_type_inline_rich_text p,
+  .hhs-foot-rss .hs_cos_wrapper_type_inline_rich_text l1,
+  .hhs-foot-rss .hs_cos_wrapper_type_inline_rich_text span,
+  .hhs-foot-rss .hs_cos_wrapper_type_inline_rich_text *{
+    color: #ffffff;
+  }
+
+  /** BLOG POST STYLE **/
+  .hhs-footer-mod .hhs-post-content a h6  {
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .hhs-footer-mod .hhs-post-summary p  {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .hhs-foot-rss .hs-rss-title:hover {
+    color: #00a4bd;
+  }
+
+  .hhs-foot-rss .hs-rss-item-image-wrapper {
+    height: 120px;
+  }
+  .hhs-foot-rss .hs-rss-item.hs-with-featured-image .hs-rss-item-text  {
+   margin-top: 120px;
+  }
+  .hhs-foot-break-line {
+    border-color:  #427aa0;
+  }
+  .hhs-foot-copyright {
+    color: #FFFFFF;
+  }
+
+  /** SOCIAL ICONS **/
+  
+    #hs_cos_wrapper_module_160013648285501 .hhs-social-con i { color:  #d4de3e;}
+    #hs_cos_wrapper_module_160013648285501 .hhs-social-con i:hover {color:  #d4de3e;}
+  
+  /** TABLET CSS **/
+  @media (max-width: 768px) {
+    #hs_cos_wrapper_module_160013648285501 .hhs-footer-mod {
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
+  }
+
+  /** BACK TO TOP **/
+  #return-to-top {
+   background: rgba(68, 68, 68, 0.7);
+  }
+  #return-to-top:hover {
+   background: rgba(68, 68, 68, 0.9);
+  }
+
+  /** MOBILE CSS **/
+  @media (max-width: 575px) {
+    #hs_cos_wrapper_module_160013648285501 .hhs-footer-mod {
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
+    .hhs-foot-nav-col {
+     border-color: #427aa0;
+    }
+  }
+</style>
+
+<link rel="stylesheet" href="https://www.strouse.com/hs-fs/hub/441594/hub_generated/template_assets/24261166567/1579101632245/Marketplace/HubSpot_Hero/CLEAN_6_Premium_Pack/Attached_assets/animate.min.css">
+<link rel="stylesheet" href="https://www.strouse.com/hs-fs/hub/441594/hub_generated/template_assets/24255149539/1579101632183/Marketplace/HubSpot_Hero/CLEAN_6_Premium_Pack/Attached_assets/jquery-modal.min.css">
+    <script type="application/ld+json">
+{
+  "mainEntityOfPage" : {
+    "@type" : "WebPage",
+    "@id" : "https://www.strouse.com/blog/microfluidic-devices"
+  },
+  "author" : {
+    "name" : "Sue Chambers",
+    "url" : "https://www.strouse.com/blog/author/sue-chambers",
+    "@type" : "Person"
+  },
+  "headline" : "Materials To Build Microfluidic Devices I Strouse",
+  "datePublished" : "2020-09-17T16:09:18.000Z",
+  "dateModified" : "2021-03-02T19:33:16.962Z",
+  "publisher" : {
+    "name" : "Strouse",
+    "logo" : {
+      "url" : "https://cdn2.hubspot.net/hubfs/441594/Strouse%20logo%20with%20tage%20for%20online%202%20(resized).png",
+      "@type" : "ImageObject"
+    },
+    "@type" : "Organization"
+  },
+  "@context" : "https://schema.org",
+  "@type" : "BlogPosting",
+  "image" : [ "https://f.hubspotusercontent40.net/hubfs/441594/iStock-842214296.jpg" ]
+}
+</script>
+
+<script src="https://www.strouse.com/hs-fs/hub/441594/hub_generated/template_assets/53155700788/1629303283410/Coded_files/Custom/system/js/jQuery3.60.min.js"></script>
+
+    
+<!--  Added by GoogleTagManager integration -->
+<script>
+var _hsp = window._hsp = window._hsp || [];
+
+var hsLoadGtm = function loadGtm() {
+    if(window._hsGtmLoadOnce) {
+      return;
+    }
+
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WDQZFGJ');
+
+    window._hsGtmLoadOnce = true;
+};
+
+var useGoogleConsentMode = false;
+
+if (!useGoogleConsentMode){
+    _hsp.push(['addPrivacyConsentListener', function(consent){
+      if(consent.allowed || (consent.categories && consent.categories.analytics)){
+        hsLoadGtm();
+      }
+  }]);
+} else{
+    if(!window._hsGoogleConsentRunOnce){
+      window._hsGoogleConsentRunOnce=true;
+
+      window.dataLayer=window.dataLayer||[];
+      function gtag(){dataLayer.push(arguments);}
+
+      gtag('consent','default',{
+        'ad_storage':'denied',
+        'analytics_storage':'denied'
+      });
+
+      gtag('set','developer_id.dZTQ1Zm',true);
+
+      _hsp.push(['addPrivacyConsentListener',function(consent){
+      var hasAnalyticsConsent=consent&&(consent.allowed||(consent.categories&&consent.categories.analytics));
+      var hasAdsConsent=consent&&(consent.allowed||(consent.categories&&consent.categories.advertisement));
+
+      gtag('consent','update',{
+        'ad_storage':hasAdsConsent?'granted':'denied',
+        'analytics_storage':hasAnalyticsConsent?'granted':'denied'
+      });
+    }]);
+  }
+
+  hsLoadGtm();
+}
+</script>
+
+<!-- /Added by GoogleTagManager integration -->
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preload" href="https://www.strouse.com/hubfs/2020/fonts/karla-variablefont_wght-webfont.woff2" as="font" type="font/woff2" crossorigin>
+
+<link rel="apple-touch-icon" sizes="57x57" href="https://www.strouse.com/hubfs/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://www.strouse.com/hubfs/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://www.strouse.com/hubfs/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://www.strouse.com/hubfs/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://www.strouse.com/hubfs/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://www.strouse.com/hubfs/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://www.strouse.com/hubfs/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://www.strouse.com/hubfs/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://www.strouse.com/hubfs/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="https://www.strouse.com/hubfs/android-icon-192x192.png">
+
+<link rel="amphtml" href="https://www.strouse.com/blog/microfluidic-devices?hs_amp=true">
+
+<meta property="og:image" content="https://www.strouse.com/hubfs/iStock-842214296.jpg#keepProtocol">
+<meta property="og:image:width" content="2190">
+<meta property="og:image:height" content="1460">
+<meta property="og:image:alt" content="Microfluidic-Device-LOC">
+<meta name="twitter:image" content="https://www.strouse.com/hubfs/iStock-842214296.jpg#keepProtocol">
+<meta name="twitter:image:alt" content="Microfluidic-Device-LOC">
+
+<meta property="og:url" content="https://www.strouse.com/blog/microfluidic-devices">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="canonical" href="https://www.strouse.com/blog/microfluidic-devices">
+
+<meta property="og:type" content="article">
+<link rel="alternate" type="application/rss+xml" href="https://www.strouse.com/blog/rss.xml">
+<meta name="twitter:domain" content="www.strouse.com">
+<meta name="twitter:site" content="@StrouseCorp">
+
+<meta http-equiv="content-language" content="en-us">
+
+
+
+
+
+  <style>
+
+    @media(min-width: 480px) {
+    .animated {
+        -webkit-animation-duration:1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both
+    }
+
+    .fadeInDown {
+        -webkit-animation-name: fadeInDown;
+        animation-name: fadeInDown
+    }
+}
+
+img {
+    max-width: 100%;
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+    vertical-align: bottom
+}
+    
+    .hs-menu-wrapper ul {
+    padding: 0
+}
+
+.hs-menu-wrapper.hs-menu-flow-horizontal ul {
+    list-style: none;
+    margin: 0
+}
+
+.hs-menu-wrapper.hs-menu-flow-horizontal>ul {
+    display: inline-block;
+    margin-bottom: 20px
+}
+
+.hs-menu-wrapper.hs-menu-flow-horizontal>ul:before {
+    content: " ";
+    display: table
+}
+
+.hs-menu-wrapper.hs-menu-flow-horizontal>ul:after {
+    content: " ";
+    display: table;
+    clear: both
+}
+
+.hs-menu-wrapper.hs-menu-flow-horizontal>ul li.hs-menu-depth-1 {
+    float: left
+}
+
+.hs-menu-wrapper.hs-menu-flow-horizontal>ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    white-space: nowrap;
+    max-width: 140px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-decoration: none
+}
+    .row-fluid-wrapper:last-child .hs-menu-wrapper.hs-menu-flow-horizontal>ul {
+    margin-bottom: 0
+}
+    .widget-type-space {
+    visibility: hidden
+}
+    .hs_cos_wrapper_type_rich_text,.hs_cos_wrapper_type_text,.hs_cos_wrapper_type_header,.hs_cos_wrapper_type_section_header,.hs_cos_wrapper_type_raw_html,.hs_cos_wrapper_type_raw_jinja,.hs_cos_wrapper_type_page_footer {
+    word-wrap: break-word
+}
+    
+    *,*:before,*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+html {
+    position: relative
+}
+
+html,body {
+    min-height: 100%;
+    margin: 0;
+    padding: 0
+}
+
+body {
+    background-color: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+    .container-fluid .row-fluid .page-center {
+    float: none;
+    max-width: 1140px;
+    margin: 0 auto;
+    min-height: 0
+}
+    strong {
+    font-weight: 800
+}
+    
+    h1,h2,h3,h4,h5,h6 {
+    margin: 10px 0
+}
+
+h1:first-child,h2:first-child,h3:first-child,h4:first-child,h5:first-child,h6:first-child {
+    margin-top: 0px
+}
+    
+    .header-container-wrapper,.body-container-wrapper,.footer-container-wrapper .container-fluid {
+    padding-left: 0 !important;
+    padding-right: 0 !important
+}
+    
+    .container-slim {
+    max-width: 880px !important;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto !important;
+    margin-left: auto !important;
+    display: block!imporatnt;
+    float: none !important
+}
+.header-container-wrapper {
+    width: 100%;
+    z-index: 9999
+}
+
+.header-container {
+    z-index: 9999;
+    position: relative
+}
+    
+    .hhs-clearfix:before,.hhs-clearfix:after,.hhs-container:before,.hhs-container:after,.hhs-container-fluid:before,.hhs-container-fluid:after {
+    content: " ";
+    display: table
+}
+
+.hhs-clearfix:after,.hhs-container:after,.hhs-container-fluid:after {
+    clear: both
+}
+    
+    .hhs-header-menu {
+    float: right !important
+}
+
+.hhs-header-cta {
+    float: right;
+    margin-left: 15px
+}
+
+.hhs-header-cta .cta-primary {
+    padding: 14px 15px !important
+}
+
+.hhs-header-menu .hs-menu-wrapper.hs-menu-flow-horizontal>ul li.hs-menu-item a {
+    padding: 10px 5px
+}
+    
+    .hhs-header-menu .hs-menu-wrapper.hs-menu-flow-horizontal>ul li a span {
+    padding: 30px 15px
+}
+    
+    .custom-menu-primary .hs-menu-wrapper>ul {
+    float: right;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out
+}
+
+.custom-menu-primary .hs-menu-wrapper>ul>li>a {
+    padding: 10px 15px;
+    position: relative;
+    display: block
+}
+    
+    .mega-menu {
+    left: 0;
+    position: fixed;
+    width: 100%;
+    padding: 15px;
+    z-index: 10000;
+    transition-duration: .3s;
+    -webkit-box-shadow: 0 4px 5px 0 rgba(0,0,0,0.1);
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,0.1)
+}
+
+.mega-menu {
+    display: none !important;
+    opacity: 0
+}
+    
+    .hhs-pillar-menu .hs-menu-wrapper>ul li a,.custom-menu-primary .hs-menu-wrapper>ul li a,.hs-menu-wrapper.hs-menu-flow-horizontal>ul li.hs-item-has-children ul.hs-menu-children-wrapper li a {
+    overflow: visible !important;
+    max-width: none !important;
+    width: auto !important;
+    text-decoration: none !important;
+    padding-right: 30px
+}
+
+    .hs-menu-wrapper.hs-menu-flow-horizontal ul {
+    margin-bottom: 0px
+}
+    
+    @media screen and (min-width: 1249px) {
+    .custom-menu-primary .hs-menu-wrapper {
+        display:block !important;
+        background: transparent !important
+    }
+}
+
+    .row-fluid [class*="span"] {
+    min-height: auto !important
+}
+    
+    @media(min-width: 1280px) {
+    .row-fluid [class*="span"] {
+        min-height:0 !important
+    }
+}
+
+.row-fluid {
+    min-height: 0px !important
+}
+    
+    .custom-menu-primary .hs-menu-wrapper>ul li a {
+    padding: 0 10px;
+    color: #111
+}
+    
+    .post-header #hubspot-author_data {
+    color: #666
+}
+
+.post-header p {
+    font-size: 13px
+}
+
+    .hs-featured-image {
+    max-width: 100% !important
+}
+    
+    .topic-list {
+    padding-top: 0px;
+    margin-bottom: 40px;
+    font-size: 12px;
+    margin-top: 75px
+}
+
+a.topic-link {
+    padding: 4px 8px;
+    -webkit-border-radius: 12px 12px 12px 12px;
+    border-radius: 12px 12px 12px 12px;
+    margin-right: 4px;
+    vertical-align: text-bottom;
+    white-space: nowrap;
+    margin-bottom: -5px;
+    display: inline-flex
+}
+
+#hubspot-topic_data span.label {
+    float: left;
+    padding-top: 4px
+}
+
+#hubspot-topic_data span.topics {
+    float: left;
+    width: 370px;
+    margin-left: 5px
+}
+    
+    .reading-minutes {
+    color: #666
+}
+
+.post-jump-con {
+    padding-top: 30px;
+    border-top: 1px solid #eee;
+    margin-top: 40px
+}
+
+.post-jump {
+    max-width: 550px;
+    width: 1px solid red
+}
+
+.post-jump a {
+    color: #000;
+    font-weight: 700
+}
+    
+    .prev-post.post-jump {
+  float: left;
+}
+
+    
+    .hhs-search-modal {
+    position: relative
+}
+
+.hhs-pop {
+    overflow: visible !important
+}
+
+.hhs-pop.hhs-modal.hhs-search-modal {
+    padding: 20px 40px !important
+}
+    
+    .body-container.container-fluid {
+    padding-right: 0 !important;
+    padding-left: 0 !important
+}
+    
+    img {
+    height: auto !important
+}
+    
+    .header-container.container-fluid {
+    padding-right: 0px;
+    padding-left: 0px
+}
+
+.row {
+    margin-right: 0px !important;
+    margin-left: 0px !important
+}
+    .cta-input-inline .hs-submit input {
+  padding-top: 14px !important;
+  padding-bottom: 14px !important;
+  margin-top: 2px !important;
+}
+
+.cta-input-inline form > div:first-child { 
+  padding-right: 145px;
+  margin-bottom: 18px;
+}
+
+.footer-right-col .hhs-social-con a { 
+  color: #fff;
+}
+  </style>
+ 
+  <link rel="stylesheet" href="https://www.strouse.com/hs-fs/hub/441594/hub_generated/template_assets/53148794512/1629306392983/Coded_files/Custom/system/css/layout.min.css" as="style">
+  <link rel="preload" href="https://www.strouse.com/hs-fs/hub/441594/hub_generated/template_assets/53165721193/1632171447421/2020/coded-files/clean-6-style-2020-critical.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://www.strouse.com/hs-fs/hub/441594/hub_generated/template_assets/53165721193/1632171447421/2020/coded-files/clean-6-style-2020-critical.min.css"></noscript>
+  <link rel="stylesheet" href="https://www.strouse.com/hs-fs/hub/441594/hub_generated/template_assets/24262090950/1629306139617/Marketplace/HubSpot_Hero/CLEAN_6_Premium_Pack/Coded_Files/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="https://www.strouse.com/hs-fs/hub/441594/hub_generated/template_assets/46189349997/1638988074953/Marketplace/HubSpot_Hero/CLEAN_6_Premium_Pack/Coded_Files/global-styles-from-module.min.css">
+  
+    
+    
+
+</head>
+<body class="no-hero   hs-content-id-35007561213 hs-blog-post hs-content-path-blog-microfluidic-devices hs-content-name-4-key-materials-when-building-microfluidic-devices hs-blog-name-adhesive-converting-blog hs-blog-id-1685536008 opaque-header" style="">
+<!--  Added by GoogleTagManager integration -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WDQZFGJ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<!-- /Added by GoogleTagManager integration -->
+
+  <div class="header-container-wrapper">
+    <div class="header-container container-fluid">
+      <div class="row-fluid-wrapper row-depth-1 row-number-1 ">
+        <div class="row-fluid ">
+          <div class="span12 widget-span widget-type-global_group " style="" data-widget-type="global_group" data-x="0" data-w="12">
+            <div class="" data-global-widget-path="generated_global_groups/59932646405.html"><div class="row-fluid-wrapper row-depth-1 row-number-1 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-custom_widget " style="background-color: rgba(0,0,0,0);" data-widget-type="custom_widget" data-x="0" data-w="12">
+<div id="hs_cos_wrapper_module_1635355550206117" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+<a href="https://www.strouse.com/" style="float: left;">
+  <div class="hhs-header-logo">
+    <div class="logo-standard">
+      <img src="https://www.strouse.com/hubfs/2020/logo/strouse_logo_white-1.svg" alt="strouse_logo_white-1" width="225" height="41">
+    </div>        
+    <div class="logo-sticky">
+      <img src="https://www.strouse.com/hubfs/2020/logo/strouse_logo_simplified.svg" alt="strouse_logo_simplified" width="225" height="41" loading="lazy">
+    </div>
+  </div>
+</a>
+<div class="supp-menu-wrapper hide-mobile"><a href="https://www.strouse.com/blog">Blog</a> <a href="https://www.strouse.com/about-us">About Us</a></div>
+<div style="clear: right; float: right; display: inline-block; font-size: 18px;" class="strouse-nav-wrapper">
+<nav>
+
+  <a href="javascript:void(0);" class="mega-drop">SOLUTIONS</a>
+  <div class="menu-item">
+    <div class="page-center">
+      <div class="span6">    
+        <span class="h2 sep color-fix" style="color: #00457c !important;"><a href="https://www.strouse.com/solutions">SOLUTIONS</a></span>
+	        <span id="hs_cos_wrapper_module_1635355550206117_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_simple_menu" style="" data-hs-cos-general-type="widget" data-hs-cos-type="simple_menu"><div id="hs_menu_wrapper_module_1635355550206117_" class="hs-menu-wrapper active-branch flyouts hs-menu-flow-horizontal" role="navigation" data-sitemap-name="" data-menu-id="" aria-label="Navigation Menu">
+ <ul role="menu">
+  <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="/solutions/joining-mounting-bonding-adhesive" role="menuitem" target="_self">Joining, Mounting &amp; Bonding</a></li>
+  <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="/solutions/medical-device-attachment" role="menuitem" target="_self">Medical Device Attachment</a></li>
+  <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="/solutions/gaskets-and-seals" role="menuitem" target="_self">Sealing &amp; Gasketing</a></li>
+  <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="/solutions/wound-care-solutions" role="menuitem" target="_self">Wound Care </a></li>
+  <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="/solutions/thermal-management" role="menuitem" target="_self">Thermal Management</a></li>
+  <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="/solutions/surface-protection" role="menuitem" target="_self">Surface Protection</a></li>
+  <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="/solutions/masking" role="menuitem" target="_self">Masking</a></li>
+  <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="/solutions/emi-rfi-shielding" role="menuitem" target="_self">EMI RFI Shielding</a></li>
+  <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="/solutions/vibration-control-sound-dampening" role="menuitem" target="_self">Vibration Control &amp; Sound Dampening</a></li>
+  <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="/solutions/labeling-and-identification" role="menuitem" target="_self">Labeling &amp; Identification</a></li>
+ </ul>
+</div></span>
+          <div class="ctas">
+          
+            
+            <a href="/about-us/3m-preferred-converter" class="cta_button cta-primary">The 3M Advantage</a>
+            
+	        
+            
+            <a href="/contact-us" class="cta_button cta-secondary">Ask An Engineer</a>
+            
+	        
+        </div>
+      </div>
+      <div class="span6">
+	      
+		      <img src="https://www.strouse.com/hs-fs/hubfs/Strouse-Solutions.jpg?width=555&amp;height=298&amp;name=Strouse-Solutions.jpg" alt="Strouse-Solutions" height="298" width="555" loading="lazy" srcset="https://www.strouse.com/hs-fs/hubfs/Strouse-Solutions.jpg?width=278&amp;height=149&amp;name=Strouse-Solutions.jpg 278w, https://www.strouse.com/hs-fs/hubfs/Strouse-Solutions.jpg?width=555&amp;height=298&amp;name=Strouse-Solutions.jpg 555w, https://www.strouse.com/hs-fs/hubfs/Strouse-Solutions.jpg?width=833&amp;height=447&amp;name=Strouse-Solutions.jpg 833w, https://www.strouse.com/hs-fs/hubfs/Strouse-Solutions.jpg?width=1110&amp;height=596&amp;name=Strouse-Solutions.jpg 1110w, https://www.strouse.com/hs-fs/hubfs/Strouse-Solutions.jpg?width=1388&amp;height=745&amp;name=Strouse-Solutions.jpg 1388w, https://www.strouse.com/hs-fs/hubfs/Strouse-Solutions.jpg?width=1665&amp;height=894&amp;name=Strouse-Solutions.jpg 1665w" sizes="(max-width: 555px) 100vw, 555px">
+	      
+        
+      </div>
+    </div>
+  </div>
+
+  <a href="javascript:void(0);" class="mega-drop">CAPABILITIES</a>
+  <div class="menu-item">
+    <div class="page-center">
+      <div class="span6">    
+        <span class="h2 sep color-fix" style="color: #00457c !important;"><a href="https://www.strouse.com/capabilities">CAPABILITIES</a></span>
+	        <span id="hs_cos_wrapper_module_1635355550206117_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_simple_menu" style="" data-hs-cos-general-type="widget" data-hs-cos-type="simple_menu"><div id="hs_menu_wrapper_module_1635355550206117_" class="hs-menu-wrapper active-branch flyouts hs-menu-flow-horizontal" role="navigation" data-sitemap-name="" data-menu-id="" aria-label="Navigation Menu">
+ <ul role="menu">
+  <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="https://www.strouse.com/capabilities/die-cutting" role="menuitem" target="_self">Die Cutting</a></li>
+  <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="https://www.strouse.com/capabilities/automated-assembly" role="menuitem" target="_self">Automated Assembly</a></li>
+  <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="https://www.strouse.com/capabilities/die-cutting#rotary" role="menuitem" target="_self">Rotary Die Cutting</a></li>
+  <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="https://www.strouse.com/capabilities/flexo-printing" role="menuitem" target="_self">Flexo &amp; Digital Printing</a></li>
+  <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="https://www.strouse.com/capabilities/die-cutting#flatbed" role="menuitem" target="_self">Flat Bed Die Cutting</a></li>
+  <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="https://www.strouse.com/capabilities/slitting-services" role="menuitem" target="_self">Slitting</a></li>
+  <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="https://www.strouse.com/capabilities/die-cutting#laser" role="menuitem" target="_self">Laser Die Cutting</a></li>
+  <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="https://www.strouse.com/capabilities/spooling" role="menuitem" target="_self">Spooling</a></li>
+  <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="https://www.strouse.com/capabilities/die-cutting#toolfree" role="menuitem" target="_self">Tool Free Digital Converting</a></li>
+  <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="https://www.strouse.com/capabilities/laminate-materials" role="menuitem" target="_self">Laminating Multiple Materials</a></li>
+  <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="https://www.strouse.com/capabilities/clean-room-manufacturing" role="menuitem" target="_self">Clean Room Manufacturing</a></li>
+ </ul>
+</div></span>
+          <div class="ctas">
+          
+            
+            <a href="/about-us/3m-preferred-converter" class="cta_button cta-primary">THE 3M ADVANTAGE</a>
+            
+	        
+            
+            <a href="/contact-us" class="cta_button cta-secondary">Ask an Engineer</a>
+            
+	        
+        </div>
+      </div>
+      <div class="span6">
+	      
+		      <img src="https://www.strouse.com/hs-fs/hubfs/2020/images/delta_mod_tech_edge.jpg?width=555&amp;height=298&amp;name=delta_mod_tech_edge.jpg" alt="delta_mod_tech_edge" height="298" width="555" loading="lazy" srcset="https://www.strouse.com/hs-fs/hubfs/2020/images/delta_mod_tech_edge.jpg?width=278&amp;height=149&amp;name=delta_mod_tech_edge.jpg 278w, https://www.strouse.com/hs-fs/hubfs/2020/images/delta_mod_tech_edge.jpg?width=555&amp;height=298&amp;name=delta_mod_tech_edge.jpg 555w, https://www.strouse.com/hs-fs/hubfs/2020/images/delta_mod_tech_edge.jpg?width=833&amp;height=447&amp;name=delta_mod_tech_edge.jpg 833w, https://www.strouse.com/hs-fs/hubfs/2020/images/delta_mod_tech_edge.jpg?width=1110&amp;height=596&amp;name=delta_mod_tech_edge.jpg 1110w, https://www.strouse.com/hs-fs/hubfs/2020/images/delta_mod_tech_edge.jpg?width=1388&amp;height=745&amp;name=delta_mod_tech_edge.jpg 1388w, https://www.strouse.com/hs-fs/hubfs/2020/images/delta_mod_tech_edge.jpg?width=1665&amp;height=894&amp;name=delta_mod_tech_edge.jpg 1665w" sizes="(max-width: 555px) 100vw, 555px">
+	      
+        
+      </div>
+    </div>
+  </div>
+
+  <a href="javascript:void(0);" class="mega-drop">MATERIALS</a>
+  <div class="menu-item">
+    <div class="page-center">
+      <div class="span6">    
+        <span class="h2 sep color-fix" style="color: #00457c !important;"><a href="https://www.strouse.com/materials">MATERIALS</a></span>
+	        <span id="hs_cos_wrapper_module_1635355550206117_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_simple_menu" style="" data-hs-cos-general-type="widget" data-hs-cos-type="simple_menu"><div id="hs_menu_wrapper_module_1635355550206117_" class="hs-menu-wrapper active-branch flyouts hs-menu-flow-horizontal" role="navigation" data-sitemap-name="" data-menu-id="" aria-label="Navigation Menu">
+ <ul role="menu">
+  <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="/materials/3m-vhb-tape" role="menuitem" target="_self">3M™ VHB™ Tape</a></li>
+  <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="/materials/adhesive-film-tape" role="menuitem" target="_self">Adhesive Films</a></li>
+  <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="/materials/medical-adhesive-tape" role="menuitem" target="_self">Medical Tape</a></li>
+  <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="/materials/dual-lock-reclosable-fasteners" role="menuitem" target="_self">Fastener Tape</a></li>
+  <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="/materials/optically-clear-adhesive" role="menuitem" target="_self">Optically Clear Adhesive</a></li>
+  <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="/materials/adhesive-foam" role="menuitem" target="_self">Foam Tape</a></li>
+  <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="/materials/paper-adhesive" role="menuitem" target="_self">Paper Adhesive Tape</a></li>
+  <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="/materials/foil-adhesive" role="menuitem" target="_self">Foil Adhesive</a></li>
+  <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="/materials/thermal-interface-material" role="menuitem" target="_self">Thermal Interface Materials</a></li>
+  <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="/materials/industrial-packing-tape" role="menuitem" target="_self">Industrial Packing Tape</a></li>
+  <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="/materials/transfer-adhesive" role="menuitem" target="_self">Transfer Tapes</a></li>
+  <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="/materials/masking-tape" role="menuitem" target="_self">Masking Tape</a></li>
+ </ul>
+</div></span>
+          <div class="ctas">
+          
+            
+            <a href="/about-us/3m-preferred-converter" class="cta_button cta-primary">THE 3M ADVANTAGE</a>
+            
+	        
+            
+            <a href="/contact-us" class="cta_button cta-secondary">Ask an Engineer</a>
+            
+	        
+        </div>
+      </div>
+      <div class="span6">
+	      
+		      <img src="https://www.strouse.com/hs-fs/hubfs/2020/images/materials_heatsink.jpg?width=555&amp;height=298&amp;name=materials_heatsink.jpg" alt="materials_heatsink" height="298" width="555" loading="lazy" srcset="https://www.strouse.com/hs-fs/hubfs/2020/images/materials_heatsink.jpg?width=278&amp;height=149&amp;name=materials_heatsink.jpg 278w, https://www.strouse.com/hs-fs/hubfs/2020/images/materials_heatsink.jpg?width=555&amp;height=298&amp;name=materials_heatsink.jpg 555w, https://www.strouse.com/hs-fs/hubfs/2020/images/materials_heatsink.jpg?width=833&amp;height=447&amp;name=materials_heatsink.jpg 833w, https://www.strouse.com/hs-fs/hubfs/2020/images/materials_heatsink.jpg?width=1110&amp;height=596&amp;name=materials_heatsink.jpg 1110w, https://www.strouse.com/hs-fs/hubfs/2020/images/materials_heatsink.jpg?width=1388&amp;height=745&amp;name=materials_heatsink.jpg 1388w, https://www.strouse.com/hs-fs/hubfs/2020/images/materials_heatsink.jpg?width=1665&amp;height=894&amp;name=materials_heatsink.jpg 1665w" sizes="(max-width: 555px) 100vw, 555px">
+	      
+        
+      </div>
+    </div>
+  </div>
+
+  <a href="javascript:void(0);" class="mega-drop">INDUSTRIES</a>
+  <div class="menu-item">
+    <div class="page-center">
+      <div class="span6">    
+        <span class="h2 sep color-fix" style="color: #00457c !important;"><a href="https://www.strouse.com/industries">INDUSTRIES</a></span>
+	        <span id="hs_cos_wrapper_module_1635355550206117_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_simple_menu" style="" data-hs-cos-general-type="widget" data-hs-cos-type="simple_menu"><div id="hs_menu_wrapper_module_1635355550206117_" class="hs-menu-wrapper active-branch flyouts hs-menu-flow-horizontal" role="navigation" data-sitemap-name="" data-menu-id="" aria-label="Navigation Menu">
+ <ul role="menu">
+  <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="/industries#aerospace" role="menuitem" target="_self">Aerospace</a></li>
+  <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="/industries#industrial" role="menuitem" target="_self">Industrial</a></li>
+  <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="/industries#appliance" role="menuitem" target="_self">Appliance</a></li>
+  <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="/industries#medical" role="menuitem" target="_self">Medical Tape Converting</a></li>
+  <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="/industries#automotive" role="menuitem" target="_self">Automotive</a></li>
+  <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="/industries#military" role="menuitem" target="_self">Military &amp; Defense</a></li>
+  <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="/industries#consumer" role="menuitem" target="_self">Consumer Goods</a></li>
+  <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="/industries#energy" role="menuitem" target="_self">Renewable Energy</a></li>
+  <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="/industries#design" role="menuitem" target="_self">Design &amp; Construction</a></li>
+  <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="/industries#safety" role="menuitem" target="_self">Safety</a></li>
+  <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="/industries#electronics" role="menuitem" target="_self">Electronics</a></li>
+ </ul>
+</div></span>
+          <div class="ctas">
+          
+            
+            <a href="/about-us/3m-preferred-converter" class="cta_button cta-primary">THE 3M ADVANTAGE</a>
+            
+	        
+            
+            <a href="/contact-us" class="cta_button cta-secondary">Ask an Engineer</a>
+            
+	        
+        </div>
+      </div>
+      <div class="span6">
+	      
+		      <img src="https://www.strouse.com/hs-fs/hubfs/2020/images/industries_automotive_protection.jpg?width=555&amp;height=298&amp;name=industries_automotive_protection.jpg" alt="industries_automotive_protection" height="298" width="555" loading="lazy" srcset="https://www.strouse.com/hs-fs/hubfs/2020/images/industries_automotive_protection.jpg?width=278&amp;height=149&amp;name=industries_automotive_protection.jpg 278w, https://www.strouse.com/hs-fs/hubfs/2020/images/industries_automotive_protection.jpg?width=555&amp;height=298&amp;name=industries_automotive_protection.jpg 555w, https://www.strouse.com/hs-fs/hubfs/2020/images/industries_automotive_protection.jpg?width=833&amp;height=447&amp;name=industries_automotive_protection.jpg 833w, https://www.strouse.com/hs-fs/hubfs/2020/images/industries_automotive_protection.jpg?width=1110&amp;height=596&amp;name=industries_automotive_protection.jpg 1110w, https://www.strouse.com/hs-fs/hubfs/2020/images/industries_automotive_protection.jpg?width=1388&amp;height=745&amp;name=industries_automotive_protection.jpg 1388w, https://www.strouse.com/hs-fs/hubfs/2020/images/industries_automotive_protection.jpg?width=1665&amp;height=894&amp;name=industries_automotive_protection.jpg 1665w" sizes="(max-width: 555px) 100vw, 555px">
+	      
+        
+      </div>
+    </div>
+  </div>
+
+  <a class="mega-drop no-arrow" href="https://www.strouse.com/learning-center">LEARNING CENTER</a>
+  <a class="mega-drop no-arrow" href="https://www.strouse.com/blog">BLOG</a>
+</nav>
+<a href="javascript:void(0);" id="search"><span class="fss-open-btn"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512" style="height: 48px; width: 48px; margin-bottom: 0; padding: 12px; vertical-align: middle;"><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg></span></a>
+  <div class="hide-mobile inline">
+    <a class="cta-secondary" href="https://www.strouse.com/sample-express" style="padding: 15px 10px !important;">Get a Sample</a> <a class="cta-secondary" href="https://www.strouse.com/evaluate-my-part" style="padding: 15px 10px !important;">Evaluate My Part</a> <a class="cta-primary" href="https://www.strouse.com/request-a-quote" style="padding: 15px 10px !important;">Get a Quote</a>
+  </div>
+  <button class="hamburger hamburger--spring" type="button" id="mobile-trigger">
+    <div class="hamburger-box">
+      <span class="hamburger-inner"></span>
+    </div>
+  </button>
+</div>
+<div class="fullscreen-search" style="display: none; z-index: 10;">
+  <div class="vertical-center mw-800">
+    <form action="/hs-search-results" class="search-form">
+      <input type="search" class="hs-input" name="term" autocomplete="off" placeholder="Search Strouse's Website">
+      <button type="submit"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512" style="height: 48px; width: 48px; margin-bottom: 0; padding: 12px; vertical-align: middle;"><path fill="#fff" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg></button>
+    </form>
+  </div>
+</div></div>
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+</div>
+          </div><!--end widget-span -->
+        </div><!--end row-->
+      </div><!--end row-wrapper -->
+
+
+    </div><!--end header -->
+  </div><!--end header wrapper -->
+
+<div class="body-container-wrapper">
+    <div class="body-container container-fluid">
+
+<div class="row-fluid-wrapper row-depth-1 row-number-1 ">
+<div class="row-fluid ">
+
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+<div class="row-fluid-wrapper row-depth-1 row-number-2 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-custom_widget " style="" data-widget-type="custom_widget" data-x="0" data-w="12">
+<div id="hs_cos_wrapper_module_160017689066200" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><style>
+  
+  #hs_cos_wrapper_module_160017689066200 .hhs-spacer-mod {
+   background-color: rgba(255, 255, 255, 0.0);
+  }
+  
+  #hs_cos_wrapper_module_160017689066200 .hhs-horz-spacer {
+    height:50px;
+  }
+  
+  #hs_cos_wrapper_module_160017689066200 .hhs-horz-spacer.divider-line {
+    margin:50px 0 50px; 
+    border-bottom: 1px solid rgba(221, 221, 221, 1);
+  }
+  
+   /** TABLET CSS **/
+  @media (max-width: 768px) {
+    #hs_cos_wrapper_module_160017689066200 .hhs-horz-spacer {
+    height:50px;
+    }
+    #hs_cos_wrapper_module_160017689066200 .hhs-horz-spacer.divider-line {
+      margin:50px 0 50px; 
+    }
+  }
+  
+  /** MOBILE CSS **/
+  @media (max-width: 575px) {
+    #hs_cos_wrapper_module_160017689066200 .hhs-horz-spacer {
+    height:50px;
+    }
+    #hs_cos_wrapper_module_160017689066200 .hhs-horz-spacer.divider-line {
+      margin:50px 0 50px; 
+    }
+  }
+</style>
+
+<div class="container hhs-spacer-mod" style="">
+  <div class="row">
+    <div class="col">
+      
+        <div class="hhs-horz-spacer"></div>
+      
+    </div>
+  </div>
+</div></div>
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+<div class="row-fluid-wrapper row-depth-1 row-number-3 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-custom_widget " style="" data-widget-type="custom_widget" data-x="0" data-w="12">
+<div id="hs_cos_wrapper_module_1600176973723143" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><style>
+  
+  #hs_cos_wrapper_module_1600176973723143 .hhs-spacer-mod {
+   background-color: rgba(255, 255, 255, 0.0);
+  }
+  
+  #hs_cos_wrapper_module_1600176973723143 .hhs-horz-spacer {
+    height:50px;
+  }
+  
+  #hs_cos_wrapper_module_1600176973723143 .hhs-horz-spacer.divider-line {
+    margin:50px 0 50px; 
+    border-bottom: 1px solid rgba(221, 221, 221, 1);
+  }
+  
+   /** TABLET CSS **/
+  @media (max-width: 768px) {
+    #hs_cos_wrapper_module_1600176973723143 .hhs-horz-spacer {
+    height:50px;
+    }
+    #hs_cos_wrapper_module_1600176973723143 .hhs-horz-spacer.divider-line {
+      margin:50px 0 50px; 
+    }
+  }
+  
+  /** MOBILE CSS **/
+  @media (max-width: 575px) {
+    #hs_cos_wrapper_module_1600176973723143 .hhs-horz-spacer {
+    height:50px;
+    }
+    #hs_cos_wrapper_module_1600176973723143 .hhs-horz-spacer.divider-line {
+      margin:50px 0 50px; 
+    }
+  }
+</style>
+
+<div class="container hhs-spacer-mod" style="">
+  <div class="row">
+    <div class="col">
+      
+        <div class="hhs-horz-spacer"></div>
+      
+    </div>
+  </div>
+</div></div>
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+<div class="row-fluid-wrapper row-depth-1 row-number-4 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-cell " style="" data-widget-type="cell" data-x="0" data-w="12">
+
+<div class="row-fluid-wrapper row-depth-1 row-number-5 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-cell blog-content" style="" data-widget-type="cell" data-x="0" data-w="12">
+
+<div class="row-fluid-wrapper row-depth-1 row-number-6 ">
+<div class="row-fluid ">
+
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+<div class="row-fluid-wrapper row-depth-1 row-number-7 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-cell page-center" style="" data-widget-type="cell" data-x="0" data-w="12">
+
+<div class="row-fluid-wrapper row-depth-1 row-number-8 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-blog_content " style="" data-widget-type="blog_content" data-x="0" data-w="12">
+<div style="margin-top: 60px;" class="blog-section">
+    <div class="blog-post-wrapper cell-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h6 class="reading-minutes">
+              
+              
+              
+              
+              
+              5 min read
+              
+            </h6>
+            <div class="section post-header clearfix">
+              <h1>
+                <a href="https://www.strouse.com/blog/microfluidic-devices" id="hubspot-name" class="link hubspot-editable" data-hubspot-form-id="name" data-hubspot-name="Blog Title"><span id="hs_cos_wrapper_name" class="hs_cos_wrapper hs_cos_wrapper_meta_field hs_cos_wrapper_type_text" style="" data-hs-cos-general-type="meta_field" data-hs-cos-type="text">4 Key Materials When Building Microfluidic Devices</span></a>
+              </h1>
+              <p id="hubspot-author_data" class="hubspot-editable" data-hubspot-form-id="author_data" data-hubspot-name="Blog Author">
+                By <a class="author-link" href="https://www.strouse.com/blog/author/sue-chambers">Sue Chambers</a> on Sep 17, 2020 12:09:18 PM
+              </p>
+              
+                <div class="topic-list">
+                  <h6 id="hubspot-topic_data" class="clearfix"> <span class="label">Topics:</span>
+                    <span class="topics">
+                    
+                    <a class="topic-link" href="https://www.strouse.com/blog/topic/microfluidics">Microfluidics</a>
+                    
+                    </span>
+                  </h6>
+                </div>
+              
+            </div>
+          </div>
+          <div class="col-md-6">
+            
+              <img class="hs-featured-image wow fadeIn" src="https://www.strouse.com/hs-fs/hubfs/iStock-842214296.jpg?width=617&amp;height=617&amp;name=iStock-842214296.jpg" alt="Microfluidic-Device-LOC" width="617" height="617" srcset="https://www.strouse.com/hs-fs/hubfs/iStock-842214296.jpg?width=309&amp;height=309&amp;name=iStock-842214296.jpg 309w, https://www.strouse.com/hs-fs/hubfs/iStock-842214296.jpg?width=617&amp;height=617&amp;name=iStock-842214296.jpg 617w, https://www.strouse.com/hs-fs/hubfs/iStock-842214296.jpg?width=926&amp;height=926&amp;name=iStock-842214296.jpg 926w, https://www.strouse.com/hs-fs/hubfs/iStock-842214296.jpg?width=1234&amp;height=1234&amp;name=iStock-842214296.jpg 1234w, https://www.strouse.com/hs-fs/hubfs/iStock-842214296.jpg?width=1543&amp;height=1543&amp;name=iStock-842214296.jpg 1543w, https://www.strouse.com/hs-fs/hubfs/iStock-842214296.jpg?width=1851&amp;height=1851&amp;name=iStock-842214296.jpg 1851w" sizes="(max-width: 617px) 100vw, 617px">
+            
+          </div>
+        </div>
+      </div>
+      <div class="container-slim">
+        <div class="row">
+          <div class="col">
+            <div class="section post-body">
+              <span id="hs_cos_wrapper_post_body" class="hs_cos_wrapper hs_cos_wrapper_meta_field hs_cos_wrapper_type_rich_text" style="" data-hs-cos-general-type="meta_field" data-hs-cos-type="rich_text"><p>Although small in size, microfluidic devices carry an enormous burden. Patients and caregivers rely on them for <strong>accurate</strong> test results and <strong>crucial</strong> information at the point-of-care. They screen for cancer, monitor blood glucose, detect pathogens. As they transport and protect samples of blood or other fluids, <strong>consistent and reliable</strong> performance is imperative. What could be more important?</p>
+<!--more-->
+<p>Since their invention in the 1950s, <strong>microfluidic devices</strong> have come a long way, evolving to meet modern healthcare industry needs with accuracy, portability, and modularity. As they’ve evolved, so have the <strong>materials</strong> used to create them. In this article, we’ll explore the key materials needed when manufacturing microfluidic device components.</p>
+<p>Here are what we’ve identified as the 4 key materials when it comes to building microfluidic devices:<br>1. Silicon and Glass<br>2. Paper<br>3. Polymers<br>4. Hydrogels</p>
+<p>Please remember, as important as it is to use trusted materials, it’s equally important to <a href="/blog/converting-adhesive-materials-microfluidics-strouse" rel="noopener">partner with people who have converting expertise</a> in medical and healthcare manufacturing.</p>
+<h2>1. Silicon and Glass for Microfluidics</h2>
+<p>Silicon and glass are grouped together because they were the original materials used for microfluidic applications. For the most part, time has left these two behind, with <strong>technological advancements</strong> taking over, including new materials such as polymer substrates, composites, and paper.</p>
+<p><strong>Silicon</strong> is highly resistant to organic solvents, has high thermo-conductivity, and has stable electroosmotic mobility. However, its hardness makes it difficult to handle, so converting can be challenging. Plus, dangerous chemicals are used during fabrication, and it’s expensive.</p>
+<p>Unlike silicon, <strong>glass</strong> is optically transparent, yet it does have high thermo-conductivity and has stable electroosmotic mobility. An electrically insulating material, glass has similar drawbacks as silicon (hardness and high fabrication cost). Typical applications: on-chip reactions, droplet formation/specimen testing, and solvent extraction.</p>
+<p>Another inorganic material that deserves mention here is <strong>ceramic</strong>. Low-temperature cofired ceramic (LTCC), an aluminum oxide-based material, comes in laminate sheets, allowing for the integration of multiple circuits (sensors, heaters, electronics) in one module.</p>
+<h2>2. Paper-Based Chips in Microfluidics</h2>
+<p>One of the most recent materials used in microfluidics, flexible, biocompatible, cellulose-based <strong>paper</strong> is an intriguing microfluidic substrate for several reasons:</p>
+<ul>
+<li><strong>Cost</strong> — A cheap substrate, paper can easily be chemically modified through changes in composition/formulation or by using surface chemistry</li>
+<li><strong>Availability</strong> — Paper is easily found around the world</li>
+<li><strong>Disposability</strong> — Disposing of paper is as easy as burning or by natural degradation</li>
+<li><strong>Porousness</strong> — Paper’s structure allows for a combination of flow, filtering, and separation; its capillary action pulls solutions through a device</li>
+<li><strong>Visibility</strong> — Paper’s white background provides contrast for color-based detection</li>
+</ul>
+<p>Paper’s downside? It can only be used for a <strong>limited</strong> number of applications because of its weak mechanical properties. Plus, it’s difficult to get <strong>intricate detail</strong> onto a chip.</p>
+<h2>3. Polymers for Microfluidics</h2>
+<p>Not long after silicon/glass chips, <strong>polymer-based</strong> chips were introduced, providing tremendous <strong>flexibility</strong> in choosing the right material with specific properties. Because of their accessibility and low cost (compared to inorganic materials), polymers are the <strong>most-commonly used</strong> microchip material today.</p>
+<p>There are three common classifications of polymers: elastomers, thermosets, and thermoplastics.</p>
+<h3 style="font-weight: bold;">Elastomers</h3>
+<p>PDMS (polydimethylsiloxane) is the <strong>most popular material</strong> for microfabrication because it’s easy to fabricate, it bonds strongly to glass (and other substrates), it’s optically transparent, it naturally repels aqueous solutions, and it has a reasonable cost.</p>
+<p>This rubber-like, medical-grade silicone is also known for its <strong>flow properties</strong> and its <strong>flexibility</strong> to work with new applications. In general, PDMS is inert, non-toxic, and non-flammable.</p>
+<h3 style="font-weight: bold;">Thermosets</h3>
+<p>This polymer’s chains are irreversibly bound together when cross-linked, creating high mechanical and <strong>physical strength</strong>. Thermosets are easy to craft quickly, they’re optically transparent, and they don’t melt or swell with certain solvents. Because of their <strong>high cost</strong>, thermosets’ applications in microfluidics are limited.</p>
+<p>However, as far as thermosets used in microfluidics, <strong>thermoset polyester</strong> (TPE) is one of the most widely used. A <strong>hydrophobic</strong> material, TPE requires surface modification via the use of buffer additives or chemical reactions. This allows water to flow through microfluidic channels easily.</p>
+<h3 style="font-weight: bold;">Thermoplastics</h3>
+<p>Thermoplastics (PMMA, polycarbonate, polystyrene) are likely the <strong>second-most</strong> used materials in microfabrication. Similar to thermosets, thermoplastics are highly cross-linked polymers, so they retain their shape well after cooling (soft when heated, hard when cooled). Able to be remolded <strong>multiple times</strong>, optically clear thermoplastics are resistant to permeation of small molecules, plus they’re stiffer than elastomers.</p>
+<p>Excellent for commercial production (high rate, low cost), thermoplastics’ production process uses thermomolding (templates in metal or silicon at high temperatures). Unlike PDMS, thermoplastics cannot create conformal contact with another surface. Depending on the application, the surface may be modified by coating or surface grafting.</p>
+<p><strong>Biaxially oriented polypropylene (BOPP)</strong>: offers good clarity, low autofluorescence with<br>considerable strength and is easy to process in terms of coating, printing, and slitting. Special consideration should be given to avoid surface scratching during processing.</p>
+<p><strong>Polyethylene terephthalate (PET)</strong>: naturally clear with good strength. Low moisture transmission. Easy to add surface treatment. Very easy to process, coat, slit etc. Good rigidity with lower susceptibility to plastic deformation compared to BOPP</p>
+<h3 style="font-weight: bold;">4. Hydrogel for Microfluidics</h3>
+<p>More and more, microfluidics are involved in <strong>biological research</strong> and biomimicking. <strong>Hydrogels</strong> are used to study micro-cultures and serve as cell support for various applications because they resemble the extracellular matrix. Unlike PDMS devices that study tissue-level cell culture, hydrogel devices are mostly <strong>cell related</strong>.</p>
+<p><strong>Microchannels</strong> are able to be built into hydrogels, which deliver solutions, cells, etc. Hydrogels are highly porous, and the pore sizes can be <strong>controlled</strong> to allow small molecules to diffuse through. Non-toxic to cells, hydrogel easily allows for feature <strong>designs</strong> and <strong>sizes</strong> to be molded onto it. However, because of their low strength, hydrogel microfabrication can only support <strong>micrometer</strong> scale compared to other polymers in the <strong>nanometer</strong> scale.</p>
+<p>Advantages of hydrogel include its <strong>cost</strong> and commercial accessibility. Also, hydrogels can be <strong>molded</strong> from masters that consist of almost any material that’s insoluble in water, however, <strong>bonding</strong> is challenging because hydrogels usually don’t stick with contact alone.</p>
+<h2>The Right Partnership Complements the Right Materials</h2>
+<p>Material selection should be based on an <strong>analysis</strong> of the device’s intended use, the <strong>durability</strong> of the material and, of course, its <strong>cost</strong>. You need to use trusted materials in the construction of your microfluidics devices. Yet, to achieve consistent and reliable performance, lot after lot, it’s important to have a reliable <strong>partnership</strong> on which to lean. The top of your “must have” list should be converting expertise in medical and healthcare manufacturing.</p>
+<p>As a <strong>3M Preferred Converter</strong> of 3M Medical Materials and Technologies, Strouse passes these <strong>benefits</strong> along to our customers: competitive pricing, custom quantities, rapid turnaround, and access to 3M specialists, support, and technology.</p>
+<p>Strouse works with advanced materials for microfluidic devices including:</p>
+<ul>
+<li><strong>Bioassay compatible tapes</strong> (PCR, qPCR, and ELISA) to minimize the potential for chemical and optical interference</li>
+<li><strong>Hydrophilic films</strong> for fluid transport, including specialty coatings and materials that enable efficient flow of fluids through capillary channels</li>
+<li><strong>Films and specialty materials</strong> for solutions such as membranes, polyester films, coatings, engineered fluids, and more</li>
+<li><strong>Spacer tapes</strong> with low build-up of residue to ensure the thickness of the material meets the specifications and requirements of your device</li>
+<li><strong>Porous membranes used for filtration</strong></li>
+<li><strong>And more!</strong></li>
+</ul>
+<p>Ready to discuss how 3M microfluidic tapes and Strouse expertise can elevate your microfluidic device? <a href="/contact-us" rel="noopener" target="_blank">Ask an engineer</a> about adhesive solutions today!</p></span>
+            </div>
+            <div>
+            <!-- Social Buttons to hover on the left at desktop and on the bottom on mobile -->
+              <a id="fb" href="#" onclick="javascript:window.open('http://www.facebook.com/sharer.php?u=https://www.strouse.com/blog/microfluidic-devices','popup','width=657,height=400');">
+                  <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" class="svg-inline--fa fa-facebook-f fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 320 512"><path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg>
+                Facebook</a>
+              <a id="lin" href="#" onclick="javascript:window.open('http://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.strouse.com/blog/microfluidic-devices','popup','width=600,height=600');">
+                <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin-in" class="svg-inline--fa fa-linkedin-in fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512"><path fill="currentColor" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg>
+                LinkedIn</a>
+              <a id="twr" href="https://twitter.com/intent/tweet?url=https://www.strouse.com/blog/microfluidic-devices">
+                <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" class="svg-inline--fa fa-twitter fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>
+                Twitter</a>
+            </div>
+            <div class="about-author-sec row-fluid">
+              <div class="span2">
+                <img alt="Sue Chambers" src="https://www.strouse.com/hubfs/0%20(1).jpeg">
+              </div>
+              <div class="span10">
+                <h4>Written by <a class="author-link" href="https://www.strouse.com/blog/author/sue-chambers">Sue Chambers</a></h4>
+                <p class="author-bio-short">As the CEO and President of Strouse Corporation, Sue Chambers is responsible for leading all facets of the business. Sue has a proven executive management track record and over 20 years of experience driving sales growth and operational innovation in the adhesive conversion industry. Sue possesses strong leadership, strategic vision, and savvy marketing skills. Sue has an MBA from Loyola University in Maryland. Since 1997 Sue Chambers joined Strouse and led the transformation into an enterprise-focused company while growing the company into a world leader in the innovative production of pressure-sensitive adhesive with revenue of over 20 million and growing. In the last three years, Strouse revenue has grown 62%; the number of employees has grown and continues to achieve and maintain ISO 9001 and ISO 13485 certification. Strouse built a new production plant going from 40,000 to 62,500 square feet, increasing the production space by 50%. The building also can expand to 82,500 sq. Feet. Sue is active in the community serving on the Industrial Development Board presently and earning several business awards over the years. Most recently, 3M has recognized Strouse as a supplier of the year. She is also on the Dale Chambers Foundation board that raises money for local charities in the community.</p>
+                
+              
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <div class="post-jump-con clearfix">
+        
+        <div class="prev-post post-jump">
+            <h6 class="post-jump-label">
+              <a href="/blog/thermal-interface-material-guide">
+                <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="arrow-left" class="svg-inline--fa fa-arrow-left fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512"><path fill="currentColor" d="M229.9 473.899l19.799-19.799c4.686-4.686 4.686-12.284 0-16.971L94.569 282H436c6.627 0 12-5.373 12-12v-28c0-6.627-5.373-12-12-12H94.569l155.13-155.13c4.686-4.686 4.686-12.284 0-16.971L229.9 38.101c-4.686-4.686-12.284-4.686-16.971 0L3.515 247.515c-4.686 4.686-4.686 12.284 0 16.971L212.929 473.9c4.686 4.686 12.284 4.686 16.971-.001z"></path></svg>Previous Post</a>
+          </h6>
+            <div class="featured-img-con">
+              <a href="/blog/thermal-interface-material-guide">
+                
+                  <img src="https://www.strouse.com/hubfs/blog-files/thermal-interface-material.jpg" alt="Thermal Interface Material">
+                
+              </a>
+            </div>
+            <h6><a href="/blog/thermal-interface-material-guide">Your Guide to Thermal Interface Material</a></h6>
+        </div>
+        
+        
+        <div class="next-post post-jump">
+            <h6 class="post-jump-label">
+              <a href="/blog/release-liners">Next Post  
+                <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="arrow-right" class="svg-inline--fa fa-arrow-right fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512"><path fill="currentColor" d="M218.101 38.101L198.302 57.9c-4.686 4.686-4.686 12.284 0 16.971L353.432 230H12c-6.627 0-12 5.373-12 12v28c0 6.627 5.373 12 12 12h341.432l-155.13 155.13c-4.686 4.686-4.686 12.284 0 16.971l19.799 19.799c4.686 4.686 12.284 4.686 16.971 0l209.414-209.414c4.686-4.686 4.686-12.284 0-16.971L235.071 38.101c-4.686-4.687-12.284-4.687-16.97 0z"></path></svg>
+              </a></h6>
+            <div class="featured-img-con">
+              <a href="/blog/release-liners">
+                
+                  <img loading="lazy" src="https://www.strouse.com/hubfs/blog-files/multiple-tape-rolls.jpg" alt="Release Liners">
+                
+              </a>
+            </div>
+            <h6><a href="/blog/release-liners">What Are Release Liners? How Do You Select One?</a></h6>
+        </div>
+        
+        </div>
+    </div>
+</div>
+</div>
+
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+<div class="row-fluid-wrapper row-depth-1 row-number-9 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-custom_widget " style="" data-widget-type="custom_widget" data-x="0" data-w="12">
+<div id="hs_cos_wrapper_module_15688282919021335" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><style>
+  
+  #hs_cos_wrapper_module_15688282919021335 .hhs-spacer-mod {
+   background-color: rgba(255, 255, 255, 0.0);
+  }
+  
+  #hs_cos_wrapper_module_15688282919021335 .hhs-horz-spacer {
+    height:50px;
+  }
+  
+  #hs_cos_wrapper_module_15688282919021335 .hhs-horz-spacer.divider-line {
+    margin:50px 0 50px; 
+    border-bottom: 1px solid rgba(221, 221, 221, 1);
+  }
+  
+   /** TABLET CSS **/
+  @media (max-width: 768px) {
+    #hs_cos_wrapper_module_15688282919021335 .hhs-horz-spacer {
+    height:50px;
+    }
+    #hs_cos_wrapper_module_15688282919021335 .hhs-horz-spacer.divider-line {
+      margin:50px 0 50px; 
+    }
+  }
+  
+  /** MOBILE CSS **/
+  @media (max-width: 575px) {
+    #hs_cos_wrapper_module_15688282919021335 .hhs-horz-spacer {
+    height:50px;
+    }
+    #hs_cos_wrapper_module_15688282919021335 .hhs-horz-spacer.divider-line {
+      margin:50px 0 50px; 
+    }
+  }
+</style>
+
+<div class="container hhs-spacer-mod" style="">
+  <div class="row">
+    <div class="col">
+      
+        <div class="hhs-horz-spacer"></div>
+      
+    </div>
+  </div>
+</div></div>
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+<div class="row-fluid-wrapper row-depth-1 row-number-10 ">
+<div class="row-fluid ">
+
+
+<div class="span12 widget-span widget-type-custom_widget " style="" data-widget-type="custom_widget" data-x="0" data-w="12">
+<div id="hs_cos_wrapper_module_161825218556200" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+
+
+
+	
+
+
+
+
+
+
+
+  
+    
+    
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+<style>
+</style>
+
+  
+<div id="" class="hhs-text-mod lazy-background visible show-mobile show-tablet show-desktop    ">  
+  <div class="custom " style=" max-width: 800px; margin: auto;">
+    <div class="row">
+      <div data-wow-delay="none" class="wow none col-sm-6 c1">
+        
+        <div class="hhs-rich-text-in">
+          <div class="hhs-rich-text c1">
+            <h2>Stay Current on Converting News and Insights</h2>
+<p>Subscribe to our Blog now!</p>
+            
+          </div>
+        </div>
+        
+      </div>
+
+      
+        <div data-wow-delay="none" class="wow none col-sm-6 c2">
+          
+          <div class="hhs-rich-text-in">
+            <div class="hhs-rich-text c2" style="color:  #222222!important;} ">
+              
+              
+            </div>
+          </div>
+          
+            <div class="hhs-form-con c2  cta-input-inline">
+              <span id="hs_cos_wrapper_module_161825218556200_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_form" style="" data-hs-cos-general-type="widget" data-hs-cos-type="form"><h3 id="hs_cos_wrapper_form_867259587_title" class="hs_cos_wrapper form-title" data-hs-cos-general-type="widget_field" data-hs-cos-type="text"></h3>
+
+<div id="hs_form_target_form_867259587"></div>
+
+
+
+
+
+
+
+
+
+</span>
+            </div>
+          
+        </div>
+      
+      
+      
+      
+        
+    </div>
+  </div>
+  <span class="hhs-row-overlay"></span>
+  
+</div>
+
+
+<!-- MODAL POP UP FOR COL 1 ---->
+
+
+<!-- MODAL POP UP FOR COL 2 ---->
+
+
+<!-- MODAL POP UP FOR COL 3 ---->
+
+
+<!-- MODAL POP UP FOR COL 4 ---->
+
+
+
+
+<script src="https://www.strouse.com/hs-fs/hub/441594/hub_generated/template_assets/24262089606/1579101634138/Marketplace/HubSpot_Hero/CLEAN_6_Premium_Pack/Attached_assets/wow.min.js" async></script>
+<script src="https://www.strouse.com/hs-fs/hub/441594/hub_generated/template_assets/24261753776/1585316265045/Marketplace/HubSpot_Hero/CLEAN_6_Premium_Pack/Attached_assets/wow-init.min.js" async></script>
+<script src="https://www.strouse.com/hs-fs/hub/441594/hub_generated/template_assets/24260707658/1579101633159/Marketplace/HubSpot_Hero/CLEAN_6_Premium_Pack/Attached_assets/jquery-modal-min.min.js" async></script>
+<link rel="stylesheet" href="https://www.strouse.com/hs-fs/hub/441594/hub_generated/template_assets/24255149539/1579101632183/Marketplace/HubSpot_Hero/CLEAN_6_Premium_Pack/Attached_assets/jquery-modal.min.css" as="style">
+<link rel="stylesheet" href="https://www.strouse.com/hs-fs/hub/441594/hub_generated/template_assets/24262107030/1579101632127/Marketplace/HubSpot_Hero/CLEAN_6_Premium_Pack/Attached_assets/clean-modal.min.css" as="style"></div>
+
+</div><!--end widget-span -->
+    
+
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+    </div><!--end body -->
+</div><!--end body wrapper -->
+
+<div class="footer-container-wrapper">
+    <div class="footer-container container-fluid">
+
+<div class="row-fluid-wrapper row-depth-1 row-number-1 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-cell " style="" data-widget-type="cell" data-x="0" data-w="12">
+
+<div class="row-fluid-wrapper row-depth-1 row-number-2 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-custom_widget " style="" data-widget-type="custom_widget" data-x="0" data-w="12">
+<div id="hs_cos_wrapper_module_160013648285501" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+
+
+
+
+
+
+
+
+
+<div id="" class="hhs-footer-mod ">
+  <div class="container">
+    
+    <div class="row hhs-foot-nav-base" style="margin-top: 25px;">
+
+  <div class="hs-footer-menu-item hs-menu-depth-1 col-sm-2"><a href="/solutions" role="menuitem">Solutions</a></div>
+  <div class="hs-footer-menu-item hs-menu-depth-1 col-sm-2"><a href="/capabilities" role="menuitem">Capabilities</a></div>
+  <div class="hs-footer-menu-item hs-menu-depth-1 col-sm-2"><a href="/materials" role="menuitem">Materials</a></div>
+  <div class="hs-footer-menu-item hs-menu-depth-1 col-sm-2"><a href="/industries" role="menuitem">Industries</a></div>
+  <div class="hs-footer-menu-item hs-menu-depth-1 col-sm-2"><a href="/about-us" role="menuitem">About&nbsp;Us</a></div>
+  <div class="hs-footer-menu-item hs-menu-depth-1 col-sm-2"><a href="/resources" role="menuitem">Resources</a></div>
+
+      <div class="w-100 hhs-foot-break-line"></div>
+      
+      <div class="col-md-6">
+        <div class="row hhs-foot-nav-cols">
+        <div class="col-md-6">
+        <div class="hhs-foot-logo">
+          <img src="https://www.strouse.com/hubfs/2020/logo/strouse_logo_simplified_green.svg" alt="strouse_logo_simplified_green" width="400" height="400" loading="lazy">
+        </div>
+</div>
+<div class="col-md-6 footer-addy">
+        1211 Independence Way <br>Westminster, MD 21157 <br> 443-605-1332
+        </div>
+      </div>
+      </div>
+      <div class="col-md-6 footer-right-col">
+        
+                    
+<div class="hhs-social-con">
+            
+        <div class="hhs-social-con">
+            <a href="#" onclick="javascript:window.open('https://www.facebook.com/StrouseAdhesives');">
+              <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" class="svg-inline--fa fa-facebook-f fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 320 512"><path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg>
+              Facebook</a>
+            <a href="#" onclick="javascript:window.open('https://www.linkedin.com/company/the-strouse-corporation/');"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin-in" class="svg-inline--fa fa-linkedin-in fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512"><path fill="currentColor" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg>LinkedIn</a>
+        </div>
+          </div>
+      
+        <p class="hhs-foot-copyright">Copyright © 2023 The Strouse Corporation</p>
+        <div class="hhs-foot-base-nav">
+          
+            <span id="hs_cos_wrapper_module_160013648285501_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_simple_menu" style="" data-hs-cos-general-type="widget" data-hs-cos-type="simple_menu"><div id="hs_menu_wrapper_module_160013648285501_" class="hs-menu-wrapper active-branch flyouts hs-menu-flow-horizontal" role="navigation" data-sitemap-name="" data-menu-id="" aria-label="Navigation Menu">
+ <ul role="menu">
+  <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="/privacy-policy" role="menuitem" target="_self">Privacy Policy</a></li>
+ </ul>
+</div></span>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<a href="javascript:" id="return-to-top">
+  <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="chevron-up" class="svg-inline--fa fa-chevron-up fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" style="    color: #fff; height: 2rem; margin: 10px;"><path fill="currentColor" d="M6.101 359.293L25.9 379.092c4.686 4.686 12.284 4.686 16.971 0L224 198.393l181.13 180.698c4.686 4.686 12.284 4.686 16.971 0l19.799-19.799c4.686-4.686 4.686-12.284 0-16.971L232.485 132.908c-4.686-4.686-12.284-4.686-16.971 0L6.101 342.322c-4.687 4.687-4.687 12.285 0 16.971z"></path></svg>
+</a>
+
+<style>
+/*** 
+ * NAVIGATION COLUMNS STYLE ***/
+.hhs-footer-mod {
+  padding-top: 40px !important;
+  padding-bottom: 40px !important;
+}
+.hs-footer-menu-item a {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
+}
+.hs-footer-menu-item a:hover {
+  color: #d4de3e;
+}
+.hhs-foot-nav-col .hs-menu-wrapper.hs-menu-flow-horizontal > ul li a {
+ padding: 0px;
+  white-space: pre-wrap;
+  max-width: none;
+}
+.hhs-foot-nav-col .hs-menu-wrapper.hs-menu-flow-horizontal > ul li.hs-item-has-children ul.hs-menu-children-wrapper li a {
+ font-size: 1.0em !important; 
+  font-weight: 100 !important;
+}
+.hhs-foot-nav-col .hs-menu-wrapper.hs-menu-flow-horizontal > ul li.hs-menu-depth-1 {
+  float: none;
+  margin-bottom: 11px;
+}
+.hhs-foot-nav-col .hs-menu-wrapper.hs-menu-flow-horizontal > ul li.hs-item-has-children ul.hs-menu-children-wrapper {
+ visibility: visible;
+  opacity: 1;
+  position: static;
+  margin: -5px 0 10px 0;
+}
+.hhs-foot-nav-col .hs-menu-wrapper.hs-menu-flow-horizontal > ul li.hs-item-has-children ul.hs-menu-children-wrapper li a {
+  font-weight: normal;
+}
+.hhs-foot-nav-col .hs-menu-wrapper.hs-menu-flow-horizontal>ul li.hs-item-has-children > a:after {
+  display: none; 
+}
+
+.foot-nav-title {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 0px !important;
+  padding-left: 0px !important;
+  padding-bottom: 20px;
+  position: relative;
+  width: 100%;
+  background: none;
+  outline: none;
+  border: none;
+  padding-right: 0px;
+}
+
+.foot-nav-title:after {
+  content: "\f107";
+  display: inline;
+  font-family: "Font Awesome 5 Free" !important;
+  font-style: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  padding-left: 10px;
+}
+
+/*** 
+ * RSS FEED STYLE ***/
+
+.hhs-foot-rss .hs-rss-title {
+ font-weight: bold;
+ font-size: 14px;
+}
+
+.hs-rss-description p {
+ font-size: 14px; 
+}
+
+.hhs-foot-rss .hs-rss-item.hs-with-featured-image .hs-rss-item-text {
+ width: 100%;
+ float: none;
+ padding-right: 0px; 
+}
+
+.hhs-foot-rss .hs-rss-item.hs-with-featured-image {
+ position: relative; 
+}
+
+.hhs-foot-rss .hs-rss-item.hs-with-featured-image .hs-rss-item-text {
+  padding-top: 15px
+}
+
+.hhs-foot-rss .hs-rss-item-image-wrapper {
+ position: absolute;
+ top: 0;
+ overflow: hidden;
+  width: 100% !important;
+}
+
+.hhs-foot-rss .hs-rss-item-image-wrapper img {
+ width: 100%; 
+}
+
+.hhs-foot-break-line {
+ border-bottom: 1px solid;
+ padding: 25px 0 0;
+  margin-bottom: 25px;
+ display: block;
+  width: 100%;
+}
+
+.hhs-foot-logo {
+ margin-bottom: 10px; 
+}
+.footer-addy {
+  font-size: 14px;
+  color: #fff;
+  line-height: 21px;
+}
+.hhs-foot-copyright {
+ font-size: 14px; 
+  text-align: right;
+  margin-bottom:0;
+  margin-top: 10px;
+}
+
+.hhs-foot-base-nav {
+ text-align: right;
+ font-size: 14px !important;
+}
+
+.hhs-foot-base-nav .hs-menu-wrapper.hs-menu-flow-horizontal > ul li a {
+ padding: 0; 
+  font-size: 14px;
+}
+
+.hhs-social-con {
+ text-align: right; 
+ display: block !important;
+ visibility: visible;
+ opacity: inherit; 
+}
+
+.hhs-social-con a {
+ padding: 5px 5px 0px 5px;
+  margin: 0 5px;
+}
+
+.hhs-social-con svg {
+ font-size: 18px; 
+  height: 30px;
+  color: #d4de3e;
+}
+.hhs-social-con svg:hover {
+ -webkit-transition: color 300ms ease-in-out;
+-moz-transition: color 300ms ease-in-out;
+-ms-transition: color 300ms ease-in-out;
+-o-transition: color 300ms ease-in-out;
+transition: color 300ms ease-in-out; 
+}
+
+.hhs-footer-mod .hhs-post-feat-img {
+ background-size: cover;
+  background-position: center;
+  min-height: 100px;
+  margin-bottom: 10px;
+}
+.hhs-footer-mod .hhs-post-content a h6 {
+ margin-bottom: 5px; 
+}
+
+.hhs-footer-mod .hhs-post-summary p {
+ font-size: 0.95em; 
+}
+
+/*** BACK TO TOP ***/
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#return-to-top:hover i {
+    color: #fff;
+    top: 10px;
+}
+.hs-footer-menu-item {
+  text-align: center;
+}
+@media (max-width: 768px){
+  .hs-footer-menu-item {
+    text-align: left;
+  }
+  .hhs-foot-rss,
+  .hhs-foot-nav-col {
+   margin-bottom: 50px; 
+  }
+  .footer-right-col .hhs-social-con {
+    padding-top: 10px;
+    padding-left: 5px;
+    text-align: left !important;
+  }
+  .footer-right-col .hhs-foot-copyright {
+    padding-left: 15px;
+    text-align: left !important;
+  }
+  .hhs-foot-base-nav {
+    text-align: left !important;
+    padding-left: 15px;
+  }
+  .hs-image-widget {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 575px){
+  
+ .hhs-foot-logo {
+   text-align: center;
+  }
+ .hhs-foot-base-nav .hs-menu-wrapper li {
+   width: auto;
+   display: inline-block;
+
+   
+  }
+  .hhs-foot-logo {
+   margin-top: 20px; 
+  }
+  .hhs-foot-nav-col {
+   border-bottom: 1px solid; 
+   margin-bottom: 20px;
+  }
+  .hhs-foot-nav-col .hs-menu-wrapper {
+    display: none; 
+  }
+  .hhs-foot-nav-col .hs-menu-wrapper.open-menu {
+    display: block;
+    text-align: center;
+  }
+  .hhs-foot-nav-col .hs-menu-wrapper.hs-menu-flow-horizontal>ul li a {
+   padding: 10px 0; 
+  }
+  .hhs-foot-nav-col .hs-menu-wrapper.hs-menu-flow-horizontal>ul li.hs-item-has-children ul.hs-menu-children-wrapper li a {
+    text-align: center; 
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .hhs-foot-rss{
+    margin-top: 25px;
+  }
+  .hhs-foot-rss h6 {
+   text-align: center;
+  }
+}
+.strouse-chat-Button{
+    position: fixed;
+    bottom: 36px;
+    right: 36px;
+}
+.strouse-chat-Btn{
+  height: 56px;
+  line-height: 56px;  
+  width: 56px;  
+  font-size: 2em;
+  font-weight: bold;
+  border-radius: .3125rem;
+  background-color: rgb(0, 95, 163);
+  color: white;
+  text-align: center;
+  cursor: pointer;
+}
+.strouse-chat-Btn:hover {
+  background-color: rgb(0, 61, 105);
+}
+</style>
+
+<script> 
+  // ===== Scroll to Top ==== 
+$(window).scroll(function() {
+    if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+        $('#return-to-top').fadeIn(200);    // Fade in the arrow
+    } else {
+        $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+    }
+});
+$('#return-to-top').click(function() {      // When arrow is clicked
+    $('body,html').animate({
+        scrollTop : 0                       // Scroll to top of body
+    }, 500);
+});
+</script></div>
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+<div id="hs_cos_wrapper_module_160013648285502" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"></div>
+
+<div class="row-fluid-wrapper row-depth-1 row-number-4 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-global_group " style="" data-widget-type="global_group" data-x="0" data-w="12">
+<div class="" data-global-widget-path="generated_global_groups/24262107050.html"><div class="row-fluid-wrapper row-depth-1 row-number-1 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-custom_widget " style="" data-widget-type="custom_widget" data-x="0" data-w="12">
+<div id="hs_cos_wrapper_module_1542133680045554" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-space" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><span class="hs-horizontal-spacer"></span></div>
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+</div>
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+    </div><!--end footer -->
+</div><!--end footer wrapper -->
+
+    
+<!-- HubSpot performance collection script -->
+<script defer src="https://static.hsappstatic.net/content-cwv-embed/static-1.240/embed.js"></script>
+<script>
+var hsVars = hsVars || {}; hsVars['language'] = 'en-us';
+</script>
+
+<script src="/hs/hsstatic/cos-i18n/static-1.53/bundles/project.js"></script>
+<script src="https://www.strouse.com/hs-fs/hub/441594/hub_generated/module_assets/58491051914/1677727733390/module_58491051914_Mega_Menu.min.js"></script>
+
+    <!--[if lte IE 8]>
+    <script charset="utf-8" src="https://js.hsforms.net/forms/v2-legacy.js"></script>
+    <![endif]-->
+
+<script data-hs-allowed="true" src="/_hcms/forms/v2.js"></script>
+
+    <script data-hs-allowed="true">
+        var options = {
+            portalId: '441594',
+            formId: '3d7d4053-578d-41b0-8370-e395c929a890',
+            formInstanceId: '738',
+            pageId: '35007561213',
+            region: 'na1',
+            
+            
+            
+            
+            pageName: "Materials To Build Microfluidic Devices I Strouse",
+            
+            
+            
+            inlineMessage: "Thanks for submitting the form.",
+            
+            
+            rawInlineMessage: "Thanks for submitting the form.",
+            
+            
+            hsFormKey: "e8ac6f5547b0ce455588973e7687e697",
+            
+            
+            css: '',
+            target: '#hs_form_target_form_867259587',
+            
+            
+            
+            
+            
+            contentType: "blog-post",
+            
+            
+            
+            formsBaseUrl: '/_hcms/forms/',
+            
+            
+            
+            formData: {
+                cssClass: 'hs-form stacked hs-custom-form'
+            }
+        };
+
+        options.getExtraMetaDataBeforeSubmit = function() {
+            var metadata = {};
+            
+
+            if (hbspt.targetedContentMetadata) {
+                var count = hbspt.targetedContentMetadata.length;
+                var targetedContentData = [];
+                for (var i = 0; i < count; i++) {
+                    var tc = hbspt.targetedContentMetadata[i];
+                     if ( tc.length !== 3) {
+                        continue;
+                     }
+                     targetedContentData.push({
+                        definitionId: tc[0],
+                        criterionId: tc[1],
+                        smartTypeId: tc[2]
+                     });
+                }
+                metadata["targetedContentMetadata"] = JSON.stringify(targetedContentData);
+            }
+
+            return metadata;
+        };
+
+        hbspt.forms.create(options);
+    </script>
+
+
+<script>
+
+
+
+</script>
+
+
+<script>
+var txt = "";
+txt += "<p>Browser CodeName: " + navigator.appCodeName + "</p>";
+txt += "<p>Browser Name: " + navigator.appName + "</p>";
+txt += "<p>Browser Version: " + navigator.appVersion + "</p>";
+txt += "<p>Cookies Enabled: " + navigator.cookieEnabled + "</p>";
+txt += "<p>Browser Language: " + navigator.language + "</p>";
+txt += "<p>Browser Online: " + navigator.onLine + "</p>";
+txt += "<p>Platform: " + navigator.platform + "</p>";
+txt += "<p>User-agent header: " + navigator.userAgent + "</p>";
+</script>
+
+<script src="https://www.strouse.com/hs-fs/hub/441594/hub_generated/template_assets/24262109856/1579101632754/Marketplace/HubSpot_Hero/CLEAN_6_Premium_Pack/Attached_assets/clean-6-theme.min.js"></script>
+<script src="https://www.strouse.com/hs-fs/hub/441594/hub_generated/template_assets/24260707658/1579101633159/Marketplace/HubSpot_Hero/CLEAN_6_Premium_Pack/Attached_assets/jquery-modal-min.min.js"></script>
+
+
+<!-- Start of HubSpot Analytics Code -->
+<script type="text/javascript">
+var _hsq = _hsq || [];
+_hsq.push(["setContentType", "blog-post"]);
+_hsq.push(["setCanonicalUrl", "https:\/\/www.strouse.com\/blog\/microfluidic-devices"]);
+_hsq.push(["setPageId", "35007561213"]);
+_hsq.push(["setContentMetadata", {
+    "contentPageId": 35007561213,
+    "legacyPageId": "35007561213",
+    "contentFolderId": null,
+    "contentGroupId": 1685536008,
+    "abTestId": null,
+    "languageVariantId": 35007561213,
+    "languageCode": "en-us",
+    
+}]);
+</script>
+
+<script type="text/javascript" id="hs-script-loader" async defer src="/hs/scriptloader/441594.js"></script>
+<!-- End of HubSpot Analytics Code -->
+
+
+<script type="text/javascript">
+var hsVars = {
+    render_id: "16044ae8-f1ea-4e0f-b648-f98dfb1fe344",
+    ticks: 1687997204144,
+    page_id: 35007561213,
+    
+    content_group_id: 1685536008,
+    portal_id: 441594,
+    app_hs_base_url: "https://app.hubspot.com",
+    cp_hs_base_url: "https://cp.hubspot.com",
+    language: "en-us",
+    analytics_page_type: "blog-post",
+    analytics_page_id: "35007561213",
+    category_id: 3,
+    folder_id: 0,
+    is_hubspot_user: false
+}
+</script>
+
+
+<script defer src="/hs/hsstatic/HubspotToolsMenu/static-1.191/js/index.js"></script>
+
+<link rel="stylesheet" type="text/css" href="https://www.strouse.com/hs-fs/hub/441594/hub_generated/template_assets/43352037666/1661386787788/2020/coded-files/all.min.css">
+
+  
+
+  
+
+
+
+
+<style>
+  body.hs-blog-post .blog-post-wrapper .post-body a:not(.cta_button) {
+    color: #427aa0;
+    text-decoration: underline;
+}
+    body.hs-blog-post .blog-post-wrapper .post-body a:not(.cta_button):hover {
+    color: #d4df3e;
+}
+</style>
+
+
+
+    <style>
+  .hhs-header-mod.hhs-alt-nav .hhs-header-menu .hs-menu-wrapper.hs-menu-flow-horizontal>ul li a.cta-secondary {
+    color: #fff !important;
+  }
+</style>
+    <!-- Generated by the HubSpot Template Builder - template version 1.03 -->
+
+</body></html>
