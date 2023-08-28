@@ -9,7 +9,9 @@ const Sponsors = () => (
   <section className={`${styles.flexCenter} my-4`}>
     {/* Div element acting as a flex container aligning its contents centrally along both the main and cross axes. If contents are too big to fit on a single
     line, they should be wrapped onto the multiple lines and the div element should fill 100% width of its parent container. */}
-    <div className={`flex  justify-between flex-wrap w-full`}>
+    <div
+      className={`flex  md:justify-between md:flex-row flex-col justify-center flex-wrap w-full`}
+    >
       {/* Calling the map method on the sponsors array to iterate over each element/object/dictionary. We have a callback function inside the map function
       that takess a sponsor/current object as an argument */}
 
@@ -18,7 +20,7 @@ const Sponsors = () => (
     and on the small devices and above, the content should be positioned horizontally at the center along the main axis */}
       <div
         key={"1"}
-        className={`flex-1 flex-wrap ${styles.flexCenter} max-w-[30%] bg-teal-500 rounded-lg `}
+        className={`flex-1 flex-wrap ${styles.flexCenter} md:max-w-[30%] w-full bg-teal-500 rounded-lg my-4 `}
       >
         {/* Render an image component with the stated dimensions on a small device or larger and ensure that the image is scaled according to the object
           while maintaining its aspect ratio. className="w-[80%] block select-none mx-auto": The className attribute is used to apply CSS classes to the <img> element. Let's break down the classes:
@@ -40,7 +42,7 @@ mx-auto: This class applies margin on the left and right side of the image, auto
 
       <div
         key={"2"}
-        className={`flex-1 flex-wrap ${styles.flexCenter} max-w-[30%] `}
+        className={`flex-1 flex-wrap ${styles.flexCenter} md:max-w-[30%] w-full my-4 `}
       >
         {/* Render an image component with the stated dimensions on a small device or larger and ensure that the image is scaled according to the object
           while maintaining its aspect ratio  */}
@@ -68,14 +70,14 @@ p-2: This class applies padding to the element. The value 2 represents the amoun
 rounded-lg: This class applies a border-radius to the element, giving it rounded corners. */}
       <div
         key={"3"}
-        className={`flex-1 flex-wrap ${styles.flexCenter} max-w-[30%] bg-teal-500 p-2 rounded-lg `}
+        className={`flex-1 flex-wrap ${styles.flexCenter} md:max-w-[30%] w-full my-4 bg-teal-500 p-2 rounded-lg `}
       >
         {/* Render an image component with the stated dimensions on a small device or larger and ensure that the image is scaled according to the object
           while maintaining its aspect ratio  */}
         <img
           src={HKUmed}
           alt="sponsor"
-          className="  w-[100%] block select-none mx-auto  "
+          className="  w-[100%] block select-none md:mx-auto  "
         />{" "}
       </div>
     </div>

@@ -190,7 +190,7 @@ null: The new value that is set to the selected state variable.*/
         id="elemotion_sensor_setup"
         className={`${styles.paddingX} my-12 py-4 flex flex-col`}
       >
-        <h4 className={` ${styles.heading2}`}>Elemotion Sensor Setup</h4>
+        <h4 className={` ${styles.heading2}`}>EleMotion Sensor Setup</h4>
         <div className={`flex mt-5 flex-col`}>
           {questions
             .filter((item) => item.classification === "elemotion_sensor_setup")

@@ -4,10 +4,10 @@ import { useState } from "react";
 import React from "react";
 
 //Import logo, close and menu buttons from resources
-import { close, menu, elemotion } from "../resources";
+import { close, menu, newelemotionlogo } from "../resources";
 
 //Import navLinks defined in the constants module
-import { navLinks } from "../Constants";
+import { mobilenavLinks, navLinks } from "../Constants";
 
 /*import NavLink which is used to create navigation links within a router context enabling features like active link stying, route matching and 
 navigation handling*/
@@ -43,19 +43,25 @@ const Navbar = () => {
     /*Create a flexbox nav element that 100% fills the width of its container with a bottom and top padding of 6 units.
     Distributes the child elements within the navigation bar along the horizontal axis placing equal space betweem them and aligns elements vertically at the
     center of the navigation bar. Navbar is an additional class for styling/identification purposes*/
-    <nav className="w-full flex py-6 justify-between  items-center  navbar">
+    <nav className="w-full flex justify-between items-center navbar">
       {/* Logo of stated width and height. The image is made black by the filter brightness-0 and inverted to change the colour from black to white*/}
-      <img
-        src={elemotion}
-        alt="Bio"
-        className="w-[290px] h-[72px] object-cover filter brightness-0 invert"
-      />
+
+      <div className="pt-3">
+        <img
+          src={newelemotionlogo}
+          // src={elemotion}
+          loading="lazy"
+          alt="Bio"
+          // className="w-[290px] h-[72px] object-cover filter brightness-0 invert "
+          className=" max-w-[310px] max-h-[150px] object-cover"
+        />
+      </div>
 
       {/* Create an unordered list and removes bullet points from the list items. Flex layout enabled for the ul element when on sm and otherwise hidden on other
     screens. List items are aligned at the end of the container along the horizontal axis, pushed to the right hand side in this case. The elements are also 
     aligned verticallly to the center of the flex container along the cross axis. The ul element is allowed to grow and shrink without consideration of 
     inital size */}
-      <ul className="list-none sm:flex hidden  justify-end items-center flex-1">
+      <ul className="list-none md:flex hidden  justify-end items-center flex-1">
         {/* Use of outer curly brackets to indicate that we are embedding JavaScript code within JSX. We call the map method on NavLinks array to iterate over
         every element and execute a callback function for each element - navLinks.map(). (nav, index) => () is an arrow function that serves as the callback function
         for the map method. It takes two parameters: nav (representing the current element/dictionary) and index (representing the index of the current element). 
@@ -132,7 +138,7 @@ const Navbar = () => {
       </ul>
 
       {/* This is for the mobile version. The div element is hidden on small devices.  */}
-      <div className="sm:hidden flex flex-1 justify-end z-50 items-center">
+      <div className="md:hidden flex flex-1 justify-end z-50 items-center">
         {/* Conditional operator to conditionally render either the close or menu image based on the value of the toggle variable 
         Overall, this onClick event handler allows the toggle state to be flipped or toggled between true and false when the associated element is clicked, 
         potentially triggering changes or updates in the UI based on the new state value.*/}
@@ -148,21 +154,42 @@ const Navbar = () => {
         <div
           className={`${
             toggle ? "flex" : "hidden"
-          } p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}
+          } p-6 bg-gray-800 absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}
         >
           {/* Here we remove bullet points and we use flex-col to align the items vertically at the right end of the main axis and center of vertical axis */}
-          <ul className="list-none flex flex-col justify-end items-center flex-1">
-            {navLinks.map((nav, index) => (
+          <ul className="list-none flex flex-col justify-start items-start flex-1">
+            {mobilenavLinks.map((nav, index) => (
               // Pretty similar to the pc version
               <li
                 key={nav.id}
                 className={`font-poppins font-normal cursor-pointer text-[16px] ${
-                  active === nav.title ? "text-white" : "text-dimWhite"
+                  active === nav.title
+                    ? "text-white font-semibold"
+                    : "text-dimWhite"
                 } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
                 onMouseEnter={() => handleHover(nav.title)}
                 onMouseLeave={() => handleHover("Home")}
               >
-                <NavLink to={`/${nav.id}`}>{nav.title}</NavLink>
+                <NavLink
+                  to={`/${nav.id}`}
+                  className={({ isActive, isPending }) =>
+                    `font-poppins font-normal cursor-pointer relative text-[16px]
+            ${isActive ? "text-white font-semibold" : "text-dimWhite"} 
+            ${
+              isActive || isPending
+                ? "active border-b-[2px]  border-secondary "
+                : ""
+            } 
+            ${
+              active === nav.title
+                ? "text-white font-semibold"
+                : "text-dimWhite"
+            }`
+                  }
+                >
+                  {/* This is the text that will be written and displayed while the /${nav.id} is the link behind the text */}
+                  {nav.title}
+                </NavLink>
               </li>
             ))}
           </ul>

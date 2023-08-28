@@ -1,8 +1,8 @@
 //import the required images.
 import styles, { layout } from "../style";
 import { media, skyscrappers } from "../resources";
-import ButtonConnect from "./ButtonConnect";
-import ButtonExplore from "./ButtonExplore";
+// import ButtonConnect from "./ButtonConnect";
+// import ButtonExplore from "./ButtonExplore";
 import { socialMedia } from "../Constants";
 import { Link } from "react-router-dom";
 import React from "react";
@@ -32,21 +32,29 @@ const News = () => (
       <div className="absolute top-0 left-0 w-full h-full hover:bg-opacity-40 bg-primary bg-opacity-60"></div>
 
       {/* Div that houses the heading and positions itself in the parent div container at the absolutely top left corner. Z index of 5 for stacking order. */}
-      <div className="absolute top-0 left-5 z-[5]">
+      <div className="absolute z-[5]">
         {/* Heading 2 */}
-        <h2 className={styles.heading2}>News and Events</h2>
-      </div>
-
-      {/* Element that is absolutely positioned on the bottom left corner of the parent div with a z index of 5 and houses the button explore */}
-      <div className="absolute bottom-3 left-5 z-[5]">
-        {/*Button with a styles prop specified below  */}
         <Link
           to="/news"
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           className="link-style"
         >
-          <ButtonExplore styles="mt-10" />
+          <h2 className={`${styles.heading2} text-center hover:text-secondary`}>
+            News and Events
+          </h2>
         </Link>
+      </div>
+
+      {/* Element that is absolutely positioned on the bottom left corner of the parent div with a z index of 5 and houses the button explore */}
+      <div className="absolute bottom-3 left-5 z-[5]">
+        {/*Button with a styles prop specified below  */}
+        {/* <Link
+          to="/news"
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          className="link-style"
+        >
+          <ButtonExplore styles="mt-10" />
+        </Link> */}
       </div>
     </div>
 
@@ -67,29 +75,38 @@ const News = () => (
 
       {/* Same as above */}
       <div className="absolute top-0 left-0 w-full h-full hover:bg-opacity-40 bg-primary bg-opacity-60"></div>
-      <div className="absolute top-0 left-5 z-[5]">
-        <h2 className={styles.heading2}>Social Media</h2>
-      </div>
-
-      {/* Same as above */}
-      <div className="absolute bottom-3 left-5 z-[5]">
+      <div className="absolute z-[5]">
+        {/* Heading 2 */}
         <Link
           to="/contact us"
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           className="link-style"
         >
-          <ButtonConnect styles="mt-10" />
+          <h2 className={`${styles.heading2} hover:text-secondary`}>
+            Social Media{" "}
+          </h2>
         </Link>
       </div>
+
+      {/* Same as above */}
+      {/* <div className="absolute bottom-3 left-5 z-[5]">
+        {/* <Link
+          to="/contact us"
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          className="link-style"
+        >
+          <ButtonConnect styles="mt-10" />
+        </Link> */}
+      {/* </div> */}
 
       {/* This is a div within the picture div and is a sibling div to the buttonconnect div in the social media picture.
       Spans the full width of the parent container, space evenly between the elements and aligns them centrally on the vertical axis and the direction of flex
       is row on md going up, otherwise its col. Padding off the top of 6. Adds a horizontal border line fo 1px at the top that seperates it from the content above.
       Also sets a colour of this border and in this case, it is a shade of gray. */}
-      <div className="w-full flex-1 flex justify-between items-center md:flex-row flex-col pt-6 border-t-[1px] border-t-[#3F3E45]">
+      <div className="w-full flex-1 flex justify-center items-center md:flex-row flex-col pt-6 border-t-[1px] border-t-[#3F3E45]">
         {/* Positions this div element absolutely at the bottom right with a specific z index. Flex container with elements arranged in a row with a margin
       top of 0 on md and above, otherwise margin top of 10. */}
-        <div className="absolute bottom-5 right-10 z-[5] flex flex-1 flex-row md:mt-0 mt-6">
+        <div className="absolute bottom-5 left-[40%] justify-center items-center z-[5] flex flex-1 flex-row md:mt-0 mt-6">
           {/* Calls the map method on social media array and passes a callback function with the social(current object) and index */}
           {socialMedia.map((social, index) => (
             /*Callback function renders an image element for every object iteration in the social media array calls the key of each object as a method on the object

@@ -1,6 +1,7 @@
 //The syntax for importing layout is used when you want to import specific named exports from a module.
 import styles, { layout } from "../style";
 import React from "react";
+import { Link } from "react-router-dom";
 
 //Import pictures
 import { img3 } from "../resources";
@@ -29,7 +30,7 @@ const Hero = () => (
       {/* font-poppins font-semibold xs:text-[48px] text-[40px] - xs and up will have 48 otherwise 40
        text-white xs:leading-[66.8px] leading-[56.8px] w-full - sets the width of the element to 100% of its container. Span full width of parent container */}
       <h1
-        className={`font-poppins font-bold xs:text-[80px] text-[40px] text-white xs:leading-[56.8px] leading-[46.8px] w-full mt-4 mb-4`}
+        className={`font-poppins font-bold xs:text-[80px] text-[40px] text-white xs:leading-[88.8px] leading-[46.8px] w-full mt-4 mb-4`}
       >
         EleMotion Tech
       </h1>
@@ -48,7 +49,13 @@ const Hero = () => (
       uses them. Props are passed as attributes to the child component when it is rendered. In the child component, props can be accessed and used as
       variables or values. When this props is passed into the Button discover, in the Button discover component is accessed using props.styles and the prop
       value is then used as the classname attribute of the button element*/}
-      <ButtonDiscover styles="mt-10" />
+      <Link
+        to="/products"
+        className="link-style"
+        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+      >
+        <ButtonDiscover styles="mt-10" />
+      </Link>
     </div>
 
     {/* flex-1 flex ${styles.flexCenter} md:ml-10 ml-0 md:mt-0 mt-10 relative md:ml-10: This class applies a left margin of 10 units 

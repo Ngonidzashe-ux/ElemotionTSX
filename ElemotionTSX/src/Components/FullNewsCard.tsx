@@ -9,10 +9,12 @@ const FullNewsCard = ({
   content,
   title,
   icon,
+  id,
 }: {
   content: any;
   title: any;
   icon: any;
+  id: any;
 }) => {
   /*const: This keyword is used to declare a constant variable in JavaScript. In this case, it's used to define the constant currentIndex that will store the current index value.
 [currentIndex, setCurrentIndex]: This is array destructuring syntax. It assigns the first element of the array (the current value of currentIndex) to the variable currentIndex, and the second element (the setCurrentIndex function) to the variable setCurrentIndex.
@@ -89,14 +91,23 @@ In summary, this code sets up a state variable called currentIndex with an initi
         {/* Flex div that has specific height and width. Has automatic margins on all sides with relative positioning allowing the absolute positioning of children. Has group class
         which allows this div and its children to be treated as group/block. Has specific positioning of the image  */}
         <div
-          className=" h-[700px] w-full  m-auto  relative group"
-          style={{ backgroundPosition: "center 80%" }}
+          className=" md:h-[700px] h-[300px] w-full  md:m-auto  md:relative md:group"
+          // style={{ backgroundPosition: "center 80%" }}
         >
           {/* Use the css style to define the positioning of background img. Background image: defined below */}
           <div
             style={{
               backgroundImage: `url(${icon[currentIndex].img})`,
-              backgroundPosition: "center 35%",
+              backgroundPosition:
+                id === "news-2"
+                  ? "center 70%"
+                  : id === "news-4"
+                  ? "center 30%"
+                  : id === "news-5"
+                  ? "center 30%"
+                  : id === "news-6"
+                  ? "center 30%"
+                  : "center 70%",
             }}
             /*w-full: Sets the width of the element to 100% of its parent's width.
 h-full: Sets the height of the element to 100% of its parent's height.
@@ -105,8 +116,8 @@ transition-transform duration-10000 ease-in-out: Configures a transition effect 
 bg-center: Positions the background image at the center of the element.
 bg-cover: Ensures that the background image covers the entire element's content area.
 relative: Sets the element as a positioned element within its parent. */
-            className='w-full h-full flex transition-transform duration-10000 ease-in-out"
-        bg-center bg-cover relative'
+            className='w-full h-full flex md:transition-transform md:duration-10000 md:ease-in-out"
+        md:bg-center md:bg-cover bg-no-repeat bg-cover relative'
           >
             {/* Start Here: Left Arrow:
               hidden: This class hides the element by default, making it invisible.
@@ -178,7 +189,7 @@ cursor-pointer: This changes the cursor to a pointer when hovering over the elem
         {content.map((paragraph: any, index: any) => (
           <p
             key={index}
-            className="font-poppins font-normal text-dimWhite text-[20px] leading-[32.8px] pt-10"
+            className="font-poppins font-normal md:text-left text-center text-dimWhite text-[20px] leading-[32.8px] pt-10"
           >
             {paragraph}
           </p>

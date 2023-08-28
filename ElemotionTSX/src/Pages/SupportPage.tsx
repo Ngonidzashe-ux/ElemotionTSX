@@ -29,7 +29,7 @@ const SupportPage = () => {
 
         {/* Flex container. Elements can be wrapped in multiple lines. On sm, children are positioned at the start of the horizontal axis otherwise at the center. 
     Aligned at the start of the vertical axis, spans full width and has margin */}
-        <div className="flex flex-wrap items-start sm:justify-start md:justify-center  w-full  mt-8">
+        <div className="flex flex-wrap md:items-start items-center md:justify-start justify-center  w-full  mt-8">
           {/* Within this div, we intend to render content related to support. To achieve this, we utilize the map function on our 'support' array.
      We enclose this operation in curly brackets because it involves JavaScript code. We provide a callback function to the map function, which is executed for each object
      in the array during iteration. The callback function takes a parameter representing the current iterated object. Within the callback,

@@ -1,10 +1,10 @@
 // Import necessities
 import { Link } from "react-router-dom";
 import ButtonLearn from "./ButtonLearn";
-import ButtonPurchase from "./ButtonPurchase";
 import ButtonQuote from "./ButtonQuote";
 
 import React from "react";
+import ButtonExplore from "./ButtonExplore";
 
 /*Define a device card component that extracts the following props from the object passed as an argument. The objects should have the specified props as their keys */
 const DeviceCard = ({
@@ -21,7 +21,7 @@ const DeviceCard = ({
   return (
     /*Flex container that can grow or shrink to fill the available space. 
       Has max width and max height for md and sm devices. Allows rounded corners of the div element and has a bg colour of gray*/
-    <div className="flex flex-1 flex-col md:max-w-[48%] sm:max-w-[450px] sm:max-h-[700px] rounded-[10px] bg-gray-900 ">
+    <div className="flex flex-1 flex-col md:max-w-[48%] sm:max-w-[450px] sm:max-h-[700px] rounded-[10px] md:mb-0 mb-10 bg-gray-900 ">
       {/* Have a div element which acts as a flexible container and has rounded corners with a border radius of 10px. Use css styling to set height
          and width values. Div houses image element */}
       <div
@@ -39,14 +39,14 @@ const DeviceCard = ({
 
       {/* Div housing heading and paragraph, spans full width, can grow and shrink, is a flex container with column direction. Child elements aligned along the 
         start of the horizontal axis and the cross axis. Have paddings on both y and x axis */}
-      <div className="w-full flex-1 flex flex-col justify-start items-start  px-3 py-10">
+      <div className="w-full flex-1 flex  flex-col md:justify-start justify-center md:items-start items-center px-3 py-10">
         {/* Heading */}
-        <h4 className="font-poppins font-semibold text-[35px] leading-[36px] text-white">
+        <h4 className="font-poppins md:h-[60px] md:text-left text-center font-semibold text-[35px] leading-[36px] text-white">
           {name}
         </h4>
 
         {/* Heading */}
-        <p className="font-poppins font-normal mt-10 mb-5 text-[22px] leading-[24px] text-dimWhite">
+        <p className="font-poppins md:h-[90px] md:text-left text-center font-normal mt-10 mb-5 text-[22px] leading-[24px] text-dimWhite">
           {content}
         </p>
 
@@ -66,20 +66,24 @@ thy you should put them in parenthesis so that you can ensure that each branch c
 condition ? (expression1) : (expression2). Equal sign in JS is === */}
             {id === "1" ? (
               <Link
-                to="/products/emg-sensor"
+                to="/products/eMyoFlex-Prime"
+                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+                className="link-style"
+              >
+                <ButtonLearn styles={`mt-16 `} />
+              </Link>
+            ) : id === "3" ? (
+              <Link
+                to="/products/MuscleMatrix-32X"
                 onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
                 className="link-style"
               >
                 <ButtonLearn styles={`mt-16 `} />
               </Link>
             ) : (
-              <Link
-                to="/products/32-channel-emg-detection-system "
-                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-                className="link-style"
-              >
-                <ButtonLearn styles={`mt-16 `} />
-              </Link>
+              <div>
+                <ButtonExplore styles={`mt-16 md:mx-10`} />
+              </div>
             )}
           </div>
 
@@ -109,21 +113,25 @@ window.scrollTo(...): This is a method that belongs to the global window object 
 { top: 0, behavior: 'smooth' }: This is an object literal passed as an argument to the window.scrollTo() method. It sets the top property of the scroll position to 0 pixels from the top of the page and specifies the scroll behavior as 'smooth'.
 
 When the component (button or link) with this onClick prop is clicked, the arrow function will be executed. The function, in turn, calls the window.scrollTo() method with the provided options, which smoothly scrolls the window to the top of the page.*/}
-          <Link
-            to="/products/getquote"
-            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            className="link-style"
-          >
-            {/* Styles prop of mt-16 is passed and is evaluated into string form. */}
-            <ButtonQuote styles={`mt-16 `} />
-          </Link>
-          <Link
+          <div key={id}>
+            {id === "1" || id === "3" ? (
+              <Link
+                to="/products/getquote"
+                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+                className="link-style"
+              >
+                {/* Styles prop of mt-16 is passed and is evaluated into string form. */}
+                <ButtonQuote styles={`md:mt-16 mt-8 `} />
+              </Link>
+            ) : null}
+          </div>
+          {/* <Link
             to="/products/purchase"
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             className="link-style"
           >
             <ButtonPurchase styles={`mt-16 `} />
-          </Link>
+          </Link> */}
         </div>
       </div>
     </div>

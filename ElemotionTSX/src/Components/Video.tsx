@@ -15,7 +15,7 @@ const Video = () => {
         autoPlay
         loop
         muted
-        className="w-full h-[750px] object-cover"
+        className="w-full md:h-[750px] h-[300px] object-cover"
       />
 
       {/* Render a div element with absolute positioning which means it does not follow the normal flow of the document, instead of stacking vertically below the video, it
@@ -30,7 +30,7 @@ is going to be on top of the video start from the top left corner and spanning t
       <div className={`${styles.flexCenter}  absolute`}>
         {/* Heading is going to be centrally positioned because of the flex center class of its parent container. The parent container absolute positioning does
           not have an impact on the child elements */}
-        <h4 className="font-poppins font-bold xs:text-[80px] text-[50px] text-center text-white xs:leading-[76.8px] leading-[46.8px] w-full px-2 ">
+        <h4 className="font-poppins font-bold md:text-[80px] text-[40px] text-center text-white md:leading-[76.8px] leading-[46.8px] w-full px-2 ">
           Health Care | Sports | Virtual Reality
         </h4>
       </div>

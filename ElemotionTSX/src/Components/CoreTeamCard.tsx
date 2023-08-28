@@ -1,7 +1,9 @@
 // import the necessary layouts
+import { linkedin } from "../assets";
 import { layout } from "../style";
 import styles from "../style";
 import React from "react";
+import { Link } from "react-router-dom";
 
 /*Define a CoreTeam card component which can take in the below props. This means you can extract these props from the objects that are passed into this card. 
 Remember, an object is a dictionary here. */
@@ -15,6 +17,7 @@ const CoreTeamCard = ({
   bullet4,
   content1,
   content2,
+  linked_in,
 }: {
   name: any;
   img: any;
@@ -25,16 +28,17 @@ const CoreTeamCard = ({
   bullet4: any;
   content1: any;
   content2: any;
+  linked_in: any;
 }) => {
   return (
     /*Div element that is a flex container and has a flex-row direction for md and above screen sizes otherwise flex-col direction. Has margin top and margin bottom */
-    <div className={`flex md:flex-row flex-col mt-10 mb-28`}>
+    <div className={`flex md:flex-row flex-col md:mt-10 mt-0 mb-28`}>
       {/* Div element housing the img element, is a flex container and can arrange child elements in a flexible and dynamic way. Itself can grow and shrink depending 
       on the available space and its contents. Aligns child elements along the center of both the horizontal and vertical axis. Margin top 0f 0 on md and above device
       sizes otherwise margin top of 10. This dev has a relative positioning allowing the child elements to have absolute positioning. Use relative to
        position an element according to the normal flow of the document.*/}
       <div
-        className={`flex-1 flex ${styles.flexCenter} md:mt-0 mt-10 relative`}
+        className={`flex-1 flex  ${styles.flexCenter} md:mt-0 mt-5 relative`}
       >
         {/* img element with object-fit of cover allowing the img to be resized to cover the container. Have a max height and spans the full width of container.
           Object positioning: objectPosition: 'center 75%': This sets the horizontal and vertical position of the element's contents within its container. 
@@ -44,8 +48,9 @@ const CoreTeamCard = ({
           src={img}
           loading="lazy"
           alt={name}
-          className="object-cover w-full max-h-[730px]"
-          style={{ objectPosition: "center 75%" }}
+          // className="object-scale-down h-96 w-96 md:object-[75%] object-[45%]"
+          className="object-contain md:w-[550px] w-full md:h-[700px] h-full"
+          // style={{ objectPosition: "center 75%" }}
         />
       </div>
 
@@ -53,9 +58,9 @@ const CoreTeamCard = ({
         flex-1: allow the growth and shrinking of this element to fit available space.
         flex-start: aligns contents along the center of the main axis and at the start of the cross axis(top)
         flex-col: direction of flex container is vertical has padding left valuess */}
-      <div className={`${layout.sectionInfo} sm:pl-16 pl-6`}>
+      <div className={`${layout.sectionInfo} md:pl-16 pl-0`}>
         {/* Specifies the size of the border and its position which is top of the h4 element. Colour of the border is secondary */}
-        <div className="border-t-[5px] border-secondary">
+        <div className="border-t-[5px] md:mt-0 mt-10 border-secondary">
           {/* Heading */}
           <h4
             className={`font-poppins font-semibold xs:text-[48px] text-[40px] mt-4 text-white xs:leading-[46.8px] leading-[36.8px] w-full my-3`}
@@ -94,6 +99,16 @@ const CoreTeamCard = ({
         <p className="font-poppins font-normal text-dimWhite text-[18px] my-2 leading-[30.8px]">
           {content2}
         </p>
+
+        {linked_in.length !== 0 ? (
+          <Link to={linked_in} target="_blank">
+            <img
+              src={linkedin}
+              alt={name}
+              className="w-[30px] h-[30px] object-contain"
+            />
+          </Link>
+        ) : null}
       </div>
     </div>
   );

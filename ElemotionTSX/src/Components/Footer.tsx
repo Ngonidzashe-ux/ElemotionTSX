@@ -1,6 +1,6 @@
 // Import required items
 import styles from "../style";
-import { elemotion } from "../resources";
+import { newelemotionlogo } from "../resources";
 import { footerLinks, socialMedia } from "../Constants";
 import { Link } from "react-router-dom";
 import React from "react";
@@ -10,23 +10,31 @@ const Footer = () => (
   <section className={`${styles.flexCenter} ${styles.paddingY} flex-col`}>
     {/*Placed centrally on the horizontal axis, and on the top of the vertical axis. Flex direction is row on md and above but otherwise col. Margin
       bottom of 8 and it spans the full width of the parent container. */}
-    <div className={`${styles.flexStart} md:flex-row flex-col mb-10 w-full`}>
+    <div className={`${styles.flexStart} md:flex-row  flex-col mb-10 w-full`}>
       {/* Div that allows the dynamic growth and shrinking of the element within its parent element. A flex container with a col flex direction and
         aligned at the start of the horizontal axis. Margin right of 10. */}
-      <div className="flex-1 flex flex-col justify-start mr-10">
+      <div className="flex-1 flex flex-col justify-start items-start mr-10">
         {/* Render image component to the specified dimensions and should be contained in the space provided. Has a negative left margin of 60 */}
-        <img
-          src={elemotion}
-          loading="lazy"
-          alt="Bio"
-          className="w-[290px] h-[72px] object-cover filter brightness-0 invert "
-        />
+        <div className=" ">
+          <img
+            src={newelemotionlogo}
+            // src={elemotion}
+            loading="lazy"
+            alt="Bio"
+            // className="w-[290px] h-[72px] object-cover filter brightness-0 invert "
+            className=" max-w-[310px] max-h-[150px] object-cover"
+          />
+        </div>
 
         {/* P text with a maximum width and margin top */}
-        <p className={`${styles.paragraph} mt-4 max-w-[310px]`}>
-          Miniature powerhouses enabling breakthroughs in medical research and
-          diagnostics.
-        </p>
+        <div className="flex flex-col">
+          <p className={`${styles.paragraph} mt-2 max-w-[320px]`}>
+            Unit 517 5/F, Building 19W, No.19 Science Park West Avenue,
+          </p>
+          <p className={`${styles.paragraph} max-w-[320px]`}>
+            Hong Kong Science Park
+          </p>
+        </div>
       </div>
 
       {/* Overall, this <div> element will act as a flex container with its child elements arranged in a row, with space between them and the 

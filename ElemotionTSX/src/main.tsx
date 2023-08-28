@@ -23,8 +23,8 @@ import {
   TechnicalDocuments,
   UserManuals,
   Team,
-  EMG_Sensor,
-  EMG_32_Channel,
+  MuscleMatrix_2X,
+  EMyoFlex_Prime,
 } from "./Pages";
 import { news } from "./Constants/index.js";
 import TrainingForm from "./Components/TrainingForm";
@@ -111,12 +111,12 @@ const router = createBrowserRouter([
     element: <PurchaseForm />,
   },
   {
-    path: "/products/emg-sensor/",
-    element: <EMG_Sensor />,
+    path: "/products/eMyoFlex-Prime/",
+    element: <EMyoFlex_Prime />,
   },
   {
-    path: "/products/32-channel-emg-detection-system/",
-    element: <EMG_32_Channel />,
+    path: "/products/MuscleMatrix-32X/",
+    element: <MuscleMatrix_2X />,
   },
 
   {
@@ -124,7 +124,7 @@ const router = createBrowserRouter([
     element: <SupportPage />,
   },
   {
-    path: "/support/FAQs/",
+    path: "/support/Frequently Asked Questions/",
     element: <FAQs />,
   },
   {

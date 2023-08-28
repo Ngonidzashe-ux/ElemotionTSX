@@ -1,6 +1,6 @@
 import styles from "../style";
-import { interns, coreteam } from "../Constants";
-import { Navbar, Footer } from "../Components";
+import { interns, coreteam, advisors } from "../Constants";
+import { Navbar, Footer, AdvisorCard } from "../Components";
 import { InternCard } from "../Components";
 import { CoreTeamCard } from "../Components";
 import { img7 } from "../resources";
@@ -25,7 +25,7 @@ Has margin */}
           src={img7}
           loading="lazy"
           alt="industry"
-          className="object-contain relative object-cover w-full  h-[680px]"
+          className=" relative object-cover w-full  md:h-[680px] h-[300px]"
         />
 
         {/* Render a div element with absolute positioning which means it does not follow the normal flow of the document, instead of stacking vertically below the video, it
@@ -41,13 +41,13 @@ is going to be on top of the video start from the top left corner and spanning t
           className={`${styles.flexCenter} ${styles.paddingX} flex-col absolute`}
         >
           {/* Heading */}
-          <h4 className="font-poppins font-bold xs:text-[100px] text-[50px] text-white text-center xs:leading-[56.8px] leading-[46.8px]  pb-4 border-b-[10px] border-secondary">
+          <h4 className="font-poppins font-bold md:text-[100px] text-[50px] text-white text-center xs:leading-[56.8px] leading-[46.8px]  pb-4 border-b-[10px] border-secondary">
             About Our Team
           </h4>
 
           {/* Paragraph */}
           <p
-            className={` font-semibold xs:text-[35px] text-[40px] text-dimWhite xs:leading-[56.8px] leading-[46.8px] w-full text-center mt-5`}
+            className={` font-semibold md:text-[35px] text-[20px] text-dimWhite md:leading-[56.8px] leading-[26.8px] w-full text-center mt-5`}
           >
             Meet the<span className="text-secondary"> brilliant</span> minds
             behind our organization's
@@ -57,7 +57,7 @@ is going to be on top of the video start from the top left corner and spanning t
       </div>
 
       {/* div with margin and padding */}
-      <div className=" mt-40 sm:px-16 px-6">
+      <div className=" md:mt-40 mt-20 sm:px-16 px-6">
         {/* div without classname */}
         <div>
           {/* Heading */}
@@ -76,10 +76,27 @@ is going to be on top of the video start from the top left corner and spanning t
             <CoreTeamCard key={card.id} {...card} />
           ))}
         </div>
+        <div className="md:mt-36 mt-0">
+          {/* Heading */}
+          <h4 className="font-semibold  xs:text-[80px] text-[40px] text-white xs:leading-[64.8px] leading-[46.8px] leading-[36.8px] w-full">
+            Our Senior <span className="text-secondary">Advisors</span>
+          </h4>
+        </div>
+
+        {/* div that is housing core team. A flex container that vertically stacks up child elements */}
+        <div className="flex flex-col    ">
+          {/* Within this div, we intend to render content related to core team. To achieve this, we utilize the map function on our 'coreteam' array.
+     We enclose this operation in curly brackets because it involves JavaScript code. We provide a callback function to the map function, which is executed for each object
+     in the array during iteration. The callback function takes a parameter representing the current iterated object. Within the callback,
+     we render the 'CoreTeamCard' component, assigning the card's id as a key attribute and employing the spread operator to pass the card's properties as distinct props. */}
+          {advisors.map((card) => (
+            <AdvisorCard key={card.id} {...card} />
+          ))}
+        </div>
       </div>
 
       {/* div with margin and padding */}
-      <div className=" mt-20 sm:px-16 px-6">
+      <div className=" md:mt-20 sm:px-16 px-6">
         {/* div with no classe */}
         <div>
           {/* heading */}
@@ -97,6 +114,33 @@ is going to be on top of the video start from the top left corner and spanning t
           {interns.map((card) => (
             <InternCard key={card.id} {...card} />
           ))}
+        </div>
+      </div>
+
+      <div className=" mt-20 sm:px-16 px-6">
+        {/* div with no classe */}
+        <div>
+          {/* heading */}
+          <h4 className="font-poppins font-semibold xs:text-[80px] text-[40px] text-white xs:leading-[56.8px] leading-[46.8px] w-full">
+            Our <span className="text-secondary">Collaboration</span>
+          </h4>
+        </div>
+        <div className="flex flex-col">
+          <li className=" text-dimWhite md:text-[30px] text-[24px] md:leading-[36px] leading-[26px]  font-semibold pt-8">
+            Nanofabrication & Nanoelectronics Lab at HKU
+          </li>
+          <li className=" text-dimWhite md:text-[30px] text-[24px] md:leading-[36px] leading-[26px]  font-semibold pt-4">
+            Neural Eng. & Clinical Electrophysiology Lab at HKU
+          </li>
+          <li className=" text-dimWhite md:text-[30px] text-[24px] md:leading-[36px] leading-[26px]  font-semibold pt-4">
+            InterLitho Technology Limited
+          </li>
+          <li className=" text-dimWhite md:text-[30px] text-[24px] md:leading-[36px] leading-[26px]  font-semibold pt-4">
+            PokField Technology Limited
+          </li>
+          <li className=" text-dimWhite md:text-[30px] text-[24px] md:leading-[36px] leading-[26px] font-semibold pt-4">
+            Yixing Technology Limited{" "}
+          </li>
         </div>
       </div>
 

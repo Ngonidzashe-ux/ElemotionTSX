@@ -25,7 +25,7 @@ Has margin */}
         src={team}
         loading="lazy"
         alt="industry"
-        className=" object-cover w-full  h-[680px]"
+        className=" md:object-cover w-full  md:h-[680px] h-[300px] "
       />
 
       {/* Render a div element with absolute positioning which means it does not follow the normal flow of the document, instead of stacking vertically below the video, it
@@ -41,7 +41,7 @@ is going to be on top of the video start from the top left corner and spanning t
       <div className={`${styles.flexCenter}  absolute`}>
         {/* Heading */}
         <h4 className="font-poppins font-bold xs:text-[100px] text-[50px] text-white xs:leading-[56.8px] leading-[46.8px] w-full pb-4 border-b-[10px] border-secondary">
-          About Our Company
+          Our Company
         </h4>
       </div>
     </div>
@@ -59,11 +59,13 @@ ${styles.paddingY} - padding.  */}
 
         {/* Paragraph */}
         <p className={`${styles.paragraph} mt-10`}>
-          EleMotion is a technology startup originating from HKU and incubated
-          by HKSTP, specializes in the development of wearable EMG sensors for
-          accurate and continuous monitoring of muscle-generated electrical
-          signals. Our team excels in areas such as micro/nanofabrication,
-          physiological detection, and big data analysis.{" "}
+          Originating from Hong Kong University (HKU) and incubated by the Hong
+          Kong Science and Technology Parks (HKSTP), EleMotion specializes in
+          developing wearable EMG sensors for precise muscle monitoring.
+          Combining expertise in micro/nanofabrication, physiological detection,
+          and big data analysis, our primary focus is the rehabilitation sector,
+          where we aim to revolutionize muscle condition evaluation and enhance
+          patient care.{" "}
         </p>
 
         {/* Paragraph */}
@@ -78,18 +80,13 @@ ${styles.paddingY} - padding.  */}
 
         {/* Paragraph */}
         <p className={`${styles.paragraph} mt-5`}>
-          Moreover, EleMotion integrates IMU sensors to capture motion
-          trajectories, offering consumers tailored, scientifically-based
-          exercise training programs. In the long term, we aim to expand our
-          product's capabilities by incorporating online coaching, injury
-          alerts, and consulting services.{" "}
-        </p>
-
-        {/* Paragraph */}
-        <p className={`${styles.paragraph} mt-5`}>
-          Concurrently, we plan to broaden our market presence by providing a
-          diverse range of products for sedentary behavior detection, metaverse
-          tools, and elderly health monitoring.
+          Our primary target market is the rehabilitation sector, where the need
+          for accurate muscle condition assessment is both critical and
+          ever-present. We aim to empower rehabilitation specialists and
+          patients alike, offering them precise insights into muscle conditions.
+          By harnessing the power of our innovative technology, professionals
+          can now make more informed decisions, tailored treatments, and ensure
+          optimal recovery pathways for their patients.
         </p>
 
         {/* Paragraph */}

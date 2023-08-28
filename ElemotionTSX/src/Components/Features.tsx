@@ -18,7 +18,7 @@ const FeatureCard = ({
   class. In the index.css file, there is a class defined called .feature-card:hover {background: var(--black-gradient) which is basically a class to determine 
     what happens when the div container is hovered upon and in this case, a hover changes the background from transparent to a black gradient.} 
     Even spacing for contents and arranged vertically*/
-  <div className="flex justify-between flex-col px-12 py-12 rounded-[20px] max-w-[46%] md:mr-12 sm:mr-5 mr-0 my-5 bg-gray-800">
+  <div className="flex md:justify-between justify-center md:items-start items-center flex-col px-12 py-12 rounded-[20px] md:max-w-[46%] w-full md:mr-12 sm:mr-5 mr-0 my-5 bg-gray-800">
     {/* Render imagae component to fit the specified dimensions but should be circular */}
     <img
       src={icon}
@@ -33,14 +33,14 @@ const FeatureCard = ({
       {/*n Flex div with the flex-direction of column and margin top of 5.   */}
       <div className="flex flex-col mt-5">
         {/* Render H4 elemented title */}
-        <h4 className="font-poppins font-semibold text-[30px] leading-[32px] text-white">
+        <h4 className="font-poppins md:text-left text-center font-semibold text-[30px] leading-[32px] text-white">
           {title}
         </h4>
       </div>
     </div>
 
     {/* Text with a margin on top and bottom of 5 */}
-    <p className="font-poppins font-normal text-[18px] leading-[32.4px] text-dimWhite my-5">
+    <p className="font-poppins font-normal md:text-left text-center text-[18px] leading-[32.4px] text-dimWhite my-5">
       {content}
     </p>
   </div>
@@ -52,11 +52,11 @@ const Features = () => (
   and provides absolute positioning of the child elements. */
   <section
     id="clients"
-    className={`${styles.paddingY} ${styles.flexCenter} flex-col relative `}
+    className={`${styles.paddingY} ${styles.flexCenter} flex-col  `}
   >
     {/* Div that spans entire width of parent container with even space between contents. Contents aligned at the center of the vertical axis. Flow of content 
     is row on md and above devices and flex col otherwise. Facilitates absolute positioning of child elements and has a z index onf 1 */}
-    <div className="w-full flex justify-between items-center md:flex-row flex-col relative z-[1]">
+    <div className="w-full flex justify-between items-center md:flex-row flex-col ">
       {/* Render heading below */}
       <h2 className={styles.heading2}>Features of EleMotion Technology</h2>
     </div>
@@ -64,7 +64,7 @@ const Features = () => (
     {/*Create a div element that acts as a flex container and allows the contents to be wrapped on multiple lines. On small devices and above, contents are aligned
     at the start of the horizontal axis(left) but otherwise on the center and end. Element should span the full width of parent and facilitates absolute positioning
     of child elements. Uses the feedback container to set the margin right of the last child to 0px.*/}
-    <div className="flex flex-wrap justify-between  w-full feedback-container relative z-[1]">
+    <div className="flex flex-wrap md:justify-between justify-start w-full feedback-container  ">
       {/*Call the map method on the features array and have a callback function that takes two parameters  */}
       {features.map((feature) => (
         /* With each iterated object, the callback function renders a featurecard, passing the key prop to be able to track each card and update it accordingly.
