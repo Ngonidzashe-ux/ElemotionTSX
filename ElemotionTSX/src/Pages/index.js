@@ -17,8 +17,8 @@ import TechnicalDocuments from "./TechnicalDocuments";
 import FirmwareDownloads from "./FirmwareDownloads";
 import ResearchPapers from "./ResearchPapers";
 import Team from "./Team";
-import EMG_Sensor from "./EMG_Sensor";
-import EMG_32_Channel from "./EMG_32_Channel";
+import EMyoFlex_Prime from "./EMyoFlex_Prime";
+import MuscleMatrix_2X from "./MuscleMatrix_2X";
 
 export {
   AboutPage,
@@ -40,6 +40,6 @@ export {
   TechnicalDocuments,
   ResearchPapers,
   Team,
-  EMG_Sensor,
-  EMG_32_Channel,
+  EMyoFlex_Prime,
+  MuscleMatrix_2X,
 };

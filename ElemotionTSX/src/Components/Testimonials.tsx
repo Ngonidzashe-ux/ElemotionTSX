@@ -22,7 +22,7 @@ const Testimonials = () => (
     a new positioning context for its child elements.
     z-[1]: This class sets the z-index property to 1, specifying the stacking order of the element. Elements with a higher z-index value will appear in 
     front of elements with a lower value. In this case, the element will have a higher stacking order than other elements with a lower z-index value.*/}
-    <div className="w-full flex justify-between items-center md:flex-row flex-col relative z-[1]">
+    <div className="w-full md:mt-0 mt-20 flex justify-between items-center md:flex-row flex-col relative z-[1]">
       {/*I have removed the following utility class: sm:mb-16 mb-6*/}
 
       {/* Heading 2 */}

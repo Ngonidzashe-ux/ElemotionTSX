@@ -91,10 +91,10 @@ The isFormSubmitted variable will hold the current state value, which starts as 
     if (former.current) {
       emailjs
         .sendForm(
-          "service_m0enwkq",
-          "template_5pp59ya",
+          "service_53j0kox",
+          "template_1d0s5po",
           former.current,
-          "em-KIG-sCxqUFFgij"
+          "ObXEiryJN6suqSN8p"
         )
         .then((response) => {
           console.log("SUCCESS!", response.status, response.text);
@@ -150,11 +150,13 @@ true: Sets the isFormSubmitted state to true, indicating that the form has been 
         /*Second expression if the condition is not met.  */
         <div>
           {/* Div. Aligns children to the center of the axes, vertically stacks elements and has relative positioning */}
-          <div className={`${styles.flexCenter} flex-col relative mb-12`}>
+          <div
+            className={`${styles.flexCenter} flex-col relative md:mb-12 mb-4`}
+          >
             <img
               src={telephone}
               alt="industry"
-              className="object-contain relative object-cover w-full h-[680px]"
+              className=" md:object-cover w-full md:h-[680px] h-[300px]"
               style={{ objectPosition: "center 55%" }}
             />
             {/* remove h-auto if you wanna use any height you want, object cover and also specific dimensions. Object positioning to change the section of image that is being shown*/}
@@ -183,7 +185,7 @@ className="mt-4 md:w-full": This sets the CSS class for styling the form, applyi
               ref={former}
               onSubmit={handleSubmit}
               action="/submit"
-              className="mt-4 md:w-full"
+              className="md:mt-4 md:w-full"
             >
               {/* <div className="flex w-full flex-col">: This is a container for grouping form elements in a flex layout with a full width.
                 <label htmlFor="name" className="text-white text-[22px] font-semibold mb-1">: This is a label element associated with the input field below. It displays the text "Name" and an asterisk indicating it's a required field.
@@ -244,7 +246,7 @@ className="mt-4 md:w-full": This sets the CSS class for styling the form, applyi
               </div>
 
               <div className="flex md:flex-row flex-col mt-8 w-full justify-between">
-                <div className="flex flex-col md:mt-0 mt-8  w-[30%]">
+                <div className="flex flex-col md:mt-0 mt-8  md:w-[30%] w-full">
                   <label
                     htmlFor="org"
                     className="text-white text-[22px] font-semibold mb-1"
@@ -263,7 +265,7 @@ className="mt-4 md:w-full": This sets the CSS class for styling the form, applyi
                   />
                 </div>
 
-                <div className="flex flex-col md:mt-0 mt-8 w-[30%]">
+                <div className="flex flex-col md:mt-0 mt-8 md:w-[30%] w-full">
                   <label
                     htmlFor="department"
                     className="text-white text-[22px] font-semibold mb-1"
@@ -288,7 +290,7 @@ className="mt-4 md:w-full": This sets the CSS class for styling the form, applyi
                 value={formData.country}: Binds the selected value to the country property of the formData state.
                 onChange={handleChange}: Specifies the event handler function to be called when the selected value changes.
                 className="py-2 px-3 h-[50px] rounded text-[18px] font-semibold text-black bg-white contact-card": Sets the CSS classes for styling the select element, including padding, height, text size, font weight, and background color. */}
-                <div className="flex flex-col w-[30%] md:mt-0 mt-8">
+                <div className="flex flex-col md:w-[30%] w-full md:mt-0 mt-8">
                   <label
                     htmlFor="country"
                     className="text-white text-[22px] font-semibold mb-1"
@@ -528,7 +530,7 @@ className="mt-4 md:w-full": This sets the CSS class for styling the form, applyi
                 </div>
               </div>
 
-              <div className="flex flex-col w-[50%] mt-8">
+              <div className="flex flex-col md:w-[50%] w-full mt-8">
                 <label
                   htmlFor="category"
                   className="text-white text-[22px] font-semibold mb-1"

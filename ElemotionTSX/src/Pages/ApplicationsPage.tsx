@@ -86,13 +86,15 @@ In summary, this code sets up a state variable called currentIndex with an initi
       </div>
       {/* Flex container with central positioning of child elements. Stacks children vertically and has relative positioning allowing for children's absolute positioning.
        */}
-      <div className={`${styles.flexCenter} flex-col relative mb-12`}>
+      <div
+        className={`${styles.flexCenter} flex-col relative md:mb-12 mb-4 md:mt-0 mt-4`}
+      >
         {/* remove h-auto if you wanna use any height you want, object cover and also specific dimensions. Object positioning to change the section of image that is being shown*/}
         <img
           src={img4}
           loading="lazy"
           alt="industry"
-          className="object-contain relative object-cover w-full h-[680px]"
+          className="object-contain relative object-cover w-full md:h-[680px] h-[300px]"
           style={{ objectPosition: "center 55%" }}
         />
 
@@ -122,31 +124,31 @@ md:flex-row flex-col - children are horizontally arranged in a row
        flex-col - elements arranged vertically in a column
        has some margin, height dimension and relativity*/}
         <div
-          className={`${layout.sectionInfo} my-10  h-[600px] relative md:ml-10 ml-0  `}
+          className={`flex-1 flex justify-center items-start items-cente flex-col my-10  h-[600px] relative md:ml-10 ml-8 md:mr-0 mr-8 `}
         >
           {/* heading */}
-          <h4 className={`${styles.heading2} mb-5`}>
+          <h4 className={`md:text-left text-center ${styles.heading2} mb-5`}>
             EleMotion in <span className="text-secondary">Health Care </span>{" "}
           </h4>
 
           {/* List elements with classnames */}
 
-          <li className="font-normal font-semibold text-dimWhite text-[35px] leading-[30.8px] mb-5">
+          <li className="font-normal text-left  font-semibold text-dimWhite md:text-[35px] text-[28px] leading-[30.8px] mb-5">
             Assessment of Muscle Function
           </li>
-          <li className="font-normal font-semibold text-dimWhite text-[35px] leading-[30.8px] mb-5">
+          <li className="font-normal text-left  font-semibold text-dimWhite md:text-[35px] text-[28px] leading-[30.8px] mb-5">
             Biofeedback Therapy
           </li>
-          <li className="font-normal font-semibold text-dimWhite text-[35px] leading-[30.8px] mb-5">
+          <li className="font-normal text-left  font-semibold text-dimWhite md:text-[35px] text-[28px] leading-[30.8px] mb-5">
             Neurological Rehabilitation
           </li>
-          <li className="font-normal font-semibold text-dimWhite text-[35px] leading-[30.8px] mb-5">
+          <li className="font-normal text-left  font-semibold text-dimWhite md:text-[35px] text-[28px] leading-[30.8px] mb-5">
             Prosthetic Control
           </li>
-          <li className="font-normal font-semibold text-dimWhite text-[35px] leading-[30.8px] mb-5">
+          <li className="font-normal text-left  font-semibold text-dimWhite md:text-[35px] text-[28px] leading-[30.8px] mb-5">
             Motor Learning & Skill Acquisition
           </li>
-          <li className="font-normal font-semibold text-dimWhite text-[35px] leading-[30.8px] mb-5">
+          <li className="font-normal text-left  font-semibold text-dimWhite md:text-[35px] text-[28px] leading-[30.8px] mb-5">
             Muscle Strengthening & Conditioning
           </li>
         </div>
@@ -156,7 +158,7 @@ md:flex-row flex-col - children are horizontally arranged in a row
        ${styles.flexCenter} - div is a flex container, with children elements aligned at the center of the cross axis and at the center of the horizontal axis.
        flex - flex container
        has some padding*/}
-        <div className={`${layout.sectionImg} sm:pr-16 pr-6`}>
+        <div className={`${layout.sectionImg} md:pr-16 px-2`}>
           {/* max-w-[1400]px: This class sets the maximum width of the element to 1400 pixels. The max-w- prefix is used to apply responsive width values.
           h-[600px]: This class sets the height of the element to 600 pixels. Similar to max-w-, the h- prefix is used to apply responsive height values.
           w-full: This class sets the width of the element to 100% of its parent container.
@@ -251,29 +253,8 @@ cursor-pointer: This changes the cursor to a pointer when hovering over the elem
       </div>
 
       {/* See above */}
-      <div className={`${layout.section}`}>
-        <div
-          className={`${layout.sectionInfo} h-[600px] my-10 relative md:ml-10 ml-0  `}
-        >
-          <h4 className={`${styles.heading2} mb-5`}>
-            EleMotion in{" "}
-            <span className="text-secondary">Sports & Fitness </span>{" "}
-          </h4>
-
-          <li className="font-normal font-semibold text-dimWhite text-[35px] leading-[30.8px] mb-5">
-            Training Optimization
-          </li>
-          <li className="font-normal font-semibold text-dimWhite text-[35px] leading-[30.8px] mb-5">
-            Technique Refinement
-          </li>
-          <li className="font-normal font-semibold text-dimWhite text-[35px] leading-[30.8px] mb-5">
-            Injury Prevention & Rehabilitation
-          </li>
-          <li className="font-normal font-semibold text-dimWhite text-[35px] leading-[30.8px] mb-5">
-            Muscle Recovery
-          </li>
-        </div>
-        <div className={`${layout.sectionImg} sm:pr-16 pr-6 pb-10`}>
+      <div className={`flex md:flex-row flex-col-reverse ${styles.paddingY}`}>
+        <div className={`${layout.sectionImg} md:pr-16 px-2`}>
           <div className="max-w-[1400px] h-[600px] w-full  m-auto relative group">
             <div
               style={{ backgroundImage: `url(${sports[currentIndex].icon})` }}
@@ -309,29 +290,53 @@ cursor-pointer: This changes the cursor to a pointer when hovering over the elem
             </div>
           </div>{" "}
         </div>
+
+        <div
+          className={`flex-1 flex justify-center items-start items-cente flex-col my-10  h-[600px] relative md:ml-10 ml-8 md:mr-0 mr-8 `}
+        >
+          <h4
+            className={`md:text-left text-center ${styles.heading2} md:mb-5 mt-10`}
+          >
+            EleMotion in{" "}
+            <span className="text-secondary">Sports & Fitness </span>{" "}
+          </h4>
+
+          <li className="font-normal text-left  font-semibold text-dimWhite md:text-[35px] text-[28px] leading-[30.8px] mb-5">
+            Training Optimization
+          </li>
+          <li className="font-normal text-left font-semibold text-dimWhite md:text-[35px] text-[28px] leading-[30.8px] mb-5">
+            Technique Refinement
+          </li>
+          <li className="font-normal text-left font-semibold text-dimWhite md:text-[35px] text-[28px] leading-[30.8px] mb-5">
+            Injury Prevention & Rehabilitation
+          </li>
+          <li className="font-normal text-left font-semibold text-dimWhite md:text-[35px] text-[28px] leading-[30.8px] mb-5">
+            Muscle Recovery
+          </li>
+        </div>
       </div>
 
       {/* see above */}
       <div className={`${layout.section}`}>
         <div
-          className={`${layout.sectionInfo}  h-[600px] my-10 relative md:ml-10 ml-0  `}
+          className={`flex-1 flex justify-center items-start items-cente flex-col my-10  h-[600px] relative md:ml-10 ml-8 md:mr-0 mr-8 `}
         >
-          <h4 className={`${styles.heading2} mb-5`}>
+          <h4 className={`md:text-left text-center ${styles.heading2} mb-5`}>
             EleMotion in <span className="text-secondary">VR/AR </span>{" "}
           </h4>
 
-          <li className="font-normal font-semibold text-dimWhite text-[35px] leading-[30.8px] mb-5">
+          <li className="font-normal  font-semibold text-dimWhite md:text-[35px] text-[28px] leading-[30.8px] mb-5">
             Gesture Recognition
           </li>
-          <li className="font-normal font-semibold text-dimWhite text-[35px] leading-[30.8px] mb-5">
+          <li className="font-normal text-left  font-semibold text-dimWhite md:text-[35px] text-[28px] leading-[30.8px] mb-5">
             Gaming and Entertainment
           </li>
-          <li className="font-normal font-semibold text-dimWhite text-[35px] leading-[30.8px] mb-5">
+          <li className="font-normal text-left  font-semibold text-dimWhite md:text-[35px] text-[28px] leading-[30.8px] mb-5">
             Human-Computer Interaction
           </li>
         </div>
-        <div className={`${layout.sectionImg} sm:pr-16 pr-6`}>
-          <div className="max-w-[1400px] h-[600px] w-full  m-auto  px-4 relative group">
+        <div className={`${layout.sectionImg} md:pr-16 px-2 md:mb-0 mb-10`}>
+          <div className="max-w-[1400px] h-[600px] w-full  m-auto  relative group">
             <div
               style={{ backgroundImage: `url(${vr[currentIndex].icon})` }}
               className="w-full h-full  rounded-2xl bg-center bg-cover duration-500 relative"

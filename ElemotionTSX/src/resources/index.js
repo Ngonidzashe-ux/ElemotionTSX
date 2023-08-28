@@ -137,6 +137,26 @@ import vr5 from "./vr5.jpg";
 import vr4 from "./vr4.jpg";
 import vr3 from "./vr3.jpg";
 import qu from "./qu.jpg";
+import yu from "./Yu.jpg";
+import xiaoojun from "./xiaoojun.jpg";
+import newelemotionlogo from "./newelemotionlogo.png";
+import wendy from "./wendy.jpg";
+import yong from "./yong.jpg";
+import img9 from "./Elemotion_Img_9.jpg";
+import microneedle from "./microneedle.jpg";
+import elemotionfavicon from "./elemotionfavicon.png";
+import liang from "./liang.jpg";
+import wang from "./Xiaojun.jpg";
+import physiological from "./MultiPhy.png";
+import channel32 from "./channel.jpg";
+import safety from "./safety.svg";
+import wireless from "./wifi.svg";
+import userfriendly from "./user-friendly.svg";
+import highsignal from "./highsignal.svg";
+import comingsoon from "./comingsoon.jpg";
+import matrix from "./matrix.png";
+import bigdata from "./Big-data model driven.png";
+import big from "./Big.png";
 
 export {
   person1,
@@ -278,4 +298,24 @@ export {
   vr4,
   vr3,
   qu,
+  yu,
+  xiaoojun,
+  newelemotionlogo,
+  wendy,
+  yong,
+  img9,
+  microneedle,
+  elemotionfavicon,
+  liang,
+  wang,
+  channel32,
+  physiological,
+  safety,
+  wireless,
+  userfriendly,
+  highsignal,
+  comingsoon,
+  matrix,
+  bigdata,
+  big,
 };

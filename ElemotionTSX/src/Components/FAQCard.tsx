@@ -19,7 +19,7 @@ The usage of a URL fragment with the hash symbol (#) allows you to create intern
 highlights the div when hovered, the corners of the div are rounded and the radius of the corners is 20px. Has specific width and has margins depending on the device
 type. Has cursor pointer class which converts cursor to pointer when on this div. Support card sets a transparent background and when hovered, turns the heading/text from
 white to secondary */}
-      <div className="flex justify-between flex-col px-10 py-12 feature-card rounded-[20px] w-[370px] md:mr-10 sm:mr-5 mr-0 my-3 cursor-pointer support-card">
+      <div className="flex justify-between flex-col px-5 py-12 feature-card rounded-[20px] w-[370px] md:mr-10 sm:mr-5 mr-0 my-3 cursor-pointer support-card">
         {/* Flex container that has child elements aligned along the start of the horizontal axis and center of the cross axis. Flex direction is row and has same support card */}
         <div className="flex justify-start items-center flex-row support-card">
           {/* render image element with specific dimensions and the img has object-contain to resize an element’s content to stay contained within its container using  */}
@@ -31,7 +31,7 @@ white to secondary */}
           />
 
           {/* Heading */}
-          <h4 className="font-poppins font-semibold text-[30px] leading-[32px] text-white ml-4">
+          <h4 className="font-poppins font-semibold text-[30px] leading-[32px] text-white ml-2 ">
             {title}
           </h4>
         </div>

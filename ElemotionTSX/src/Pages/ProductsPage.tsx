@@ -1,7 +1,7 @@
 import { Navbar, Footer, AspectCard } from "../Components";
 import styles from "../style";
 import { DeviceCard } from "../Components";
-import { aspects, devices1, devices2 } from "../Constants";
+import { aspects, aspects2, devices1, devices2 } from "../Constants";
 import { img1 } from "../resources";
 import React from "react";
 
@@ -17,13 +17,15 @@ const ProductsPage = () => {
 
       {/* Flex container with central positioning of child elements. Stacks children vertically and has relative positioning allowing for children's absolute positioning.
 Has margin */}
-      <div className={`${styles.flexCenter} flex-col relative mb-2`}>
+      <div
+        className={`${styles.flexCenter} flex-col relative md:mt-0 mt-10 mb-2`}
+      >
         {/* remove h-auto if you wanna use any height you want, object cover and also specific dimensions. */}
         <img
           src={img1}
           loading="lazy"
           alt="industry"
-          className="object-contain relative object-cover w-full  h-[680px]"
+          className="object-contain relative object-cover w-full  md:h-[680px] h-[300px]"
           style={{ objectPosition: "center 5%" }}
         />
 
@@ -46,11 +48,10 @@ is going to be on top of the video start from the top left corner and spanning t
 
           {/* Paragraph */}
           <p className="font-poppins font-semibold text-center xs:text-[24px] text-[25px] text-dimWhite xs:leading-[30px] leading-[30px] w-full ">
-            Elemotion provides wireless{" "}
-            <span className="text-secondary"> EMG </span>solutions, transforming{" "}
-            <span className="text-secondary"> muscle analysis </span> in sports,
-            augmented reality (AR), and elderly care, enabling better
-            performance, immersive experiences, and enhanced care outcomes.
+            EleMotion offers a pioneering{" "}
+            <span className="text-secondary"> EMG </span>solution tailored to
+            elevate <span className="text-secondary"> healthcare</span> and
+            rehabilitation standards.
           </p>
         </div>
       </div>
@@ -60,18 +61,18 @@ is going to be on top of the video start from the top left corner and spanning t
         className={`${styles.paddingX} flex justify-start items-start flex-col ${styles.paddingY} `}
       >
         {/* flex div */}
-        <div className="flex ">
+        <div className="flex  md:flex-row flex-col ">
           {/* Maximum width is 35% of its parent container. Its a flex container with col as its direction. Margins and paddings. Elements positioned at the start
         of both axes. Rounded corners and bg has a gradient from top left corner to bottom right corner. Gradient is made up of the specified colours. */}
-          <div className=" max-w-[35%] mr-10 flex  flex-col justify-start items-start  py-3 rounded px-3 bg-gradient-to-br from-teal-900 to-teal-800">
+          <div className=" md:max-w-[35%] w-full mr-10 flex md:mb-0 mb-10 flex-col justify-start items-start  py-3 rounded px-3 bg-gradient-to-br from-teal-900 to-teal-800">
             {/* Heading */}
-            <h4 className="font-poppins pt-8 mb-36 font-semibold xs:text-[50px] text-[40px] text-white xs:leading-[46.8px] leading-[36.8px] w-full">
+            <h4 className="font-poppins pt-8 md:mb-36 mb-16 font-semibold xs:text-[50px] md:text-left text-center text-[40px] text-white xs:leading-[46.8px] leading-[36.8px] w-full">
               EMG <span className="text-secondary"> Sensors</span>{" "}
             </h4>
 
             {/* flex container. Row direction for md and above. Otherwise col. Wrap onto multiple lines if no space.*/}
 
-            <div className="flex flex-1 md:flex-row flex-col flex-wrap sm:justify-between w-full feedback-container relative z-[1]">
+            <div className="flex flex-1 flex-row flex-wrap justify-between w-full feedback-container relative z-[1] ">
               {/* Within this div, we intend to render content related to aspects. To achieve this, we utilize the map function on our 'aspect' array.
      We enclose this operation in curly brackets because it involves JavaScript code. We provide a callback function to the map function, which is executed for each object
      in the array during iteration. The callback function takes a parameter representing the current iterated object. Within the callback,
@@ -83,7 +84,7 @@ is going to be on top of the video start from the top left corner and spanning t
           </div>
 
           {/* flex container. Row direction for md and above. Otherwise col. Wrap onto multiple lines if no space. Ensure even spacing between the cards and round the corners of the cards*/}
-          <div className="flex flex-1 md:flex-row flex-col flex-wrap sm:justify-between w-full rounded-[10px]   relative z-[1]">
+          <div className="flex flex-1 md:flex-row  flex-wrap justify-between w-full rounded-[10px]   relative z-[1]">
             {/* Within this div, we intend to render content related to devices1. To achieve this, we utilize the map function on our 'devices1' array.
      We enclose this operation in curly brackets because it involves JavaScript code. We provide a callback function to the map function, which is executed for each object
      in the array during iteration. The callback function takes a parameter representing the current iterated object. Within the callback,
@@ -95,14 +96,14 @@ is going to be on top of the video start from the top left corner and spanning t
         </div>
 
         {/* See from line 52 */}
-        <div className="flex flex-row justify-between my-16 ">
-          <div className="max-w-[35%] sm:max-h-[700px] mr-10 flex  flex-col justify-start items-start  py-3 rounded px-3 bg-gradient-to-br from-teal-900 to-teal-800 bg-cover bg-no-repeat rounded-lg ">
-            <h4 className="font-poppins pt-8 mb-36 font-semibold xs:text-[50px] text-[33px] text-white xs:leading-[46.8px] leading-[36.8px] w-full">
+        <div className="flex md:flex-row flex-col justify-between my-16 md:pt-0 pt-10">
+          <div className=" md:max-w-[35%] w-full mr-10 flex md:mb-0 mb-10 flex-col justify-start items-start  py-3 rounded px-3 bg-gradient-to-br from-teal-900 to-teal-800">
+            <h4 className="font-poppins pt-8 md:mb-36 mb-16 font-semibold xs:text-[50px] md:text-left text-center text-[40px] text-white xs:leading-[46.8px] leading-[36.8px] w-full">
               Detection <span className="text-secondary"> Systems</span>{" "}
             </h4>
 
-            <div className="flex flex-1 md:flex-row flex-col flex-wrap sm:justify-between w-full feedback-container relative z-[1]">
-              {aspects.map((card) => (
+            <div className="flex flex-1 flex-row  flex-wrap sm:justify-between w-full feedback-container relative z-[1]">
+              {aspects2.map((card) => (
                 <AspectCard key={card.id} {...card} />
               ))}
             </div>

@@ -108,6 +108,20 @@ import {
   vr4,
   vr3,
   qu,
+  yu,
+  xiaoojun,
+  yong,
+  wendy,
+  img9,
+  liang,
+  wang,
+  channel32,
+  userfriendly,
+  highsignal,
+  safety,
+  wireless,
+  comingsoon,
+  matrix,
 } from "../resources";
 import {
   people01,
@@ -136,33 +150,33 @@ export const navLinks = [
     id: "products",
     title: "Products",
     subpage: [
-      { name: "PRODUCTS PAGE", link: "/products" },
-      { name: "Portable EMG Sensor", link: "/products/emg-sensor" },
+      { name: "Products Page", link: "/products" },
+      { name: "eMyoFlex Prime", link: "/products/eMyoFlex-Prime" },
       {
-        name: "32-Channel EMG Detection System",
-        link: "/products/32-channel-emg-detection-system",
+        name: "MuscleMatrix 32X",
+        link: "/products/MuscleMatrix-32X",
       },
     ],
   },
-  {
-    id: "support",
-    title: "Support",
-    subpage: [
-      { name: "SUPPORT PAGE", link: "/support" },
-      { name: "Get In Touch", link: "/about" },
-      { name: "FAQs", link: "/support/FAQs" },
-      { name: "User Manuals", link: "/support/User Manuals" },
-      { name: "Technical Documents", link: "/support/Technical Documents" },
-      { name: "Send Us A Message", link: "/about" },
-      { name: "Firmware Downloads", link: "/support/Firmware Downloads" },
-      {
-        name: "EleMotion Patents and Publications",
-        link: "/support/EleMotion Patents and Publications",
-      },
-      { name: "Research Papers", link: "/support/Research Papers" },
-      { name: "Video Tutorials", link: "/about" },
-    ],
-  },
+  // {
+  //   id: "support",
+  //   title: "Support",
+  //   subpage: [
+  //     { name: "SUPPORT PAGE", link: "/support" },
+  //     { name: "Get In Touch", link: "/about" },
+  //     { name: "FAQs", link: "/support/FAQs" },
+  //     // { name: "User Manuals", link: "/support/User Manuals" },
+  //     // { name: "Technical Documents", link: "/support/Technical Documents" },
+  //     { name: "Send Us A Message", link: "/about" },
+  //     // { name: "Firmware Downloads", link: "/support/Firmware Downloads" },
+  //     // {
+  //     //   name: "EleMotion Patents and Publications",
+  //     //   link: "/support/EleMotion Patents and Publications",
+  //     // },
+  //     { name: "Research Papers", link: "/support/Research Papers" },
+  //     // { name: "Video Tutorials", link: "/about" },
+  //   ],
+  // },
   {
     id: "technology",
     title: "Technology",
@@ -199,9 +213,67 @@ export const navLinks = [
     ],
   },
   {
+    id: "support",
+    title: "Support",
+    subpage: [
+      { name: "Support Page", link: "/support" },
+      { name: "Get In Touch", link: "/about" },
+      { name: "FAQs", link: "/support/Frequently Asked Questions" },
+      // { name: "User Manuals", link: "/support/User Manuals" },
+      // { name: "Technical Documents", link: "/support/Technical Documents" },
+      { name: "Send Us A Message", link: "/about" },
+      // { name: "Firmware Downloads", link: "/support/Firmware Downloads" },
+      // {
+      //   name: "EleMotion Patents and Publications",
+      //   link: "/support/EleMotion Patents and Publications",
+      // },
+      { name: "Research Papers", link: "/support/Research Papers" },
+      // { name: "Video Tutorials", link: "/about" },
+    ],
+  },
+  {
     id: "contact us",
     title: "Contact Us",
     subpage: [],
+  },
+];
+export const mobilenavLinks = [
+  {
+    id: "",
+    title: "Home",
+  },
+  {
+    id: "products",
+    title: "Products",
+  },
+  {
+    id: "technology",
+    title: "Technology",
+  },
+  {
+    id: "applications",
+    title: "Applications",
+  },
+  {
+    id: "news",
+    title: "News",
+  },
+  {
+    id: "about",
+    title: "Our Company",
+  },
+
+  {
+    id: "about/ourteam",
+    title: "Our Team",
+  },
+  {
+    id: "support",
+    title: "Support",
+  },
+  {
+    id: "contact us",
+    title: "Contact Us",
   },
 ];
 
@@ -215,10 +287,10 @@ export const features = [
   },
   {
     id: "feature-2",
-    icon: feedbackicon,
-    title: "Effective Personalized Feedback",
+    icon: signal,
+    title: "Superior Signal-to-Noise Ratio",
     content:
-      "Experience instantaneous feedback through on-sensor processing and the EleMotion visualization app.",
+      "Capture and analyze muscle signals with high sampling rates and exceptional resolution.",
   },
   {
     id: "feature-3",
@@ -227,13 +299,12 @@ export const features = [
     content:
       "Monitor multiple muscles or muscle groups simultaneously with independent channel amplification",
   },
-
   {
-    id: "feature-4",
-    icon: signal,
-    title: "Superior Signal-to-Noise Ratio",
+    id: "feature-2",
+    icon: feedbackicon,
+    title: "Effective Personalized Feedback",
     content:
-      "Capture and analyze muscle signals with high sampling rates and exceptional resolution.",
+      "Experience instantaneous feedback through on-sensor processing and the EleMotion visualization app.",
   },
 ];
 
@@ -248,17 +319,17 @@ export const feedback = [
   {
     id: "feedback-2",
     content: "EMG technology empowers lives. Our passion fuels its growth.",
-    name: "Xiaojun ",
+    name: "Wang Xiaojun ",
     title: "Chief Technology Officer",
-    img: xiaojun,
+    img: xiaoojun,
   },
   {
     id: "feedback-3",
     content:
       "Biotech breakthroughs redefine possibilities. EMG chips pioneer the way.",
-    name: "Xu Xuning",
+    name: "Yu Zhige",
     title: "Chief Financial Officer",
-    img: people03,
+    img: yu,
   },
 ];
 
@@ -328,7 +399,8 @@ export const footerLinks = [
       {
         name: "Terms & Services",
         //link: "https://www.hoobank.com/terms-and-services/",     <Link to={`/news/${id}`} className="link-style">
-        link: "terms-and-conditions",
+        // link: "terms-and-conditions",
+        link: "contact us",
       },
     ],
   },
@@ -373,25 +445,25 @@ export const footerLinks = [
 ];
 
 export const socialMedia = [
-  {
-    id: "social-media-1",
-    icon: instagram,
-    link: "https://www.instagram.com/",
-  },
+  // {
+  //   id: "social-media-1",
+  //   icon: instagram,
+  //   link: "https://www.instagram.com/",
+  // },
   {
     id: "social-media-2",
     icon: facebook,
-    link: "https://www.facebook.com/",
+    link: "https://www.facebook.com/elemotionhk",
   },
-  {
-    id: "social-media-3",
-    icon: twitter,
-    link: "https://www.twitter.com/",
-  },
+  // {
+  //   id: "social-media-3",
+  //   icon: twitter,
+  //   link: "https://www.twitter.com/",
+  // },
   {
     id: "social-media-4",
     icon: linkedin,
-    link: "https://www.linkedin.com/",
+    link: "https://www.linkedin.com/company/elemotion/",
   },
 ];
 
@@ -431,19 +503,20 @@ export const sponsors = [
 export const products = [
   {
     id: "product-1",
-    img: img8,
-    title: "EleMotion Portable EMG Sensor",
+    img: img9,
+    title: "eMyoFlex Prime",
     content:
-      " Compact EMG sensor with personalized app for accurate detection.",
-    link: "/products/emg-sensor",
+      "Use Portable Electromyography(EMG) sensor for muscle activity detection.",
+    link: "/products/eMyoFlex-Prime",
     main: "/products",
   },
   {
     id: "product-2",
-    img: arm,
-    title: "32 Channel EMG Detection System",
-    content: "Empowering Elderly Care with Smart EMG Solutions",
-    link: "/products/32-channel-emg-detection-system",
+    img: matrix,
+    title: "MuscleMatrix 32X",
+    content:
+      "A comprehensive 32-channel EMG detection system that is able to detect high-density EMG signal for clinical neuromuscular condition assessment.",
+    link: "/products/MuscleMatrix-32X",
     main: "/products",
   },
 ];
@@ -477,47 +550,47 @@ export const support = [
     id: "support-1",
     icon: call,
     title: "Get In Touch",
-    content: "+852 1234 5678",
+    content: "+852 6998 2403",
   },
 
   {
     id: "support-2",
     icon: question,
-    title: "FAQs",
+    title: "Frequently Asked Questions",
     content: "Quick answers to common questions and concerns.",
   },
-  {
-    id: "support-3",
-    icon: guide,
-    title: "User Manuals",
-    content:
-      "Comprehensive guides for easy navigation and optimal use of our products.",
-  },
-  {
-    id: "support-4",
-    icon: document,
-    title: "Technical Documents",
-    content:
-      "In-depth technical resources for a deeper understanding of our products and technologies.",
-  },
+  // {
+  //   id: "support-3",
+  //   icon: guide,
+  //   title: "User Manuals",
+  //   content:
+  //     "Comprehensive guides for easy navigation and optimal use of our products.",
+  // },
+  // {
+  //   id: "support-4",
+  //   icon: document,
+  //   title: "Technical Documents",
+  //   content:
+  //     "In-depth technical resources for a deeper understanding of our products and technologies.",
+  // },
   {
     id: "support-5",
     icon: email,
     title: "Send Us A Message",
     content: "Connect with us for inquiries, support, or collaboration.",
   },
-  {
-    id: "support-6",
-    icon: download,
-    title: "Firmware Downloads",
-    content: "Access the latest firmware updates for Elemotion Products",
-  },
-  {
-    id: "support-7",
-    icon: book,
-    title: "EleMotion Patents and Publications",
-    content: "Patents issued out to Elemotion Technology Limited",
-  },
+  // {
+  //   id: "support-6",
+  //   icon: download,
+  //   title: "Firmware Downloads",
+  //   content: "Access the latest firmware updates for Elemotion Products",
+  // },
+  // {
+  //   id: "support-7",
+  //   icon: book,
+  //   title: "EleMotion Patents and Publications",
+  //   content: "Patents issued out to Elemotion Technology Limited",
+  // },
   {
     id: "support-8",
     icon: research,
@@ -525,13 +598,13 @@ export const support = [
     content:
       "Explore informative research papers for valuable insights and industry knowledge. ",
   },
-  {
-    id: "support-9",
-    icon: play,
-    title: "Video Tutorials",
-    content:
-      "Learn and master with our comprehensive video tutorials for easy understanding.",
-  },
+  // {
+  //   id: "support-9",
+  //   icon: play,
+  //   title: "Video Tutorials",
+  //   content:
+  //     "Learn and master with our comprehensive video tutorials for easy understanding.",
+  // },
 ];
 
 export const news = [
@@ -557,32 +630,36 @@ export const news = [
   },
   {
     id: "news-3",
-    icon: [{ img: merit3 }, { img: merit1 }, { img: merit2 }, { img: merit5 }],
-    title:
-      "The Merit Prize in the 9th Hong Kong University Student Innovation and Entrepreneurship Competition 2023",
-    content: [
-      "We are thrilled to share that EleMotion Technology Limited has once again demonstrated its innovative prowess by securing the Merit Prize in the 9th Hong Kong University Student Innovation and Entrepreneurship Competition.",
-    ],
-  },
-  {
-    id: "news-4",
-    icon: [{ img: event1 }, { img: event2 }],
-    title:
-      "Exploring the Intricacies of Circuit Boards: An In-Depth Look at the Backbone of Modern Electronics",
-    content: [
-      "Circuit boards are an essential component of modern electronics, serving as the backbone of devices that power our daily lives. While often taken for granted, these intricate pieces of technology are critical to the functioning of everything from smartphones to cars and even space shuttles. In this essay, we will delve into the intricacies of circuit boards and explore the key players driving innovation in this field.",
-      "The field of circuit board design and manufacturing is a highly specialized one, with experts working tirelessly to push the boundaries of what is possible. One of the key players in this field is Andrew Grove, a pioneer in the semiconductor industry who co-founded Intel Corporation and played a crucial role in the development of the microprocessor. Another notable figure is Steve Wozniak, who co-founded Apple Computer and was instrumental in the design of the company's first products, including the Apple I and II.",
-      "Today, circuit board design and manufacturing continue to evolve at a rapid pace, with new materials, techniques, and technologies making it possible to create smaller, faster, and more powerful devices than ever before. From medical implants to self-driving cars, the potential applications of circuit board technology are virtually limitless. As we continue to explore the intricacies of these essential components, we can look forward to even more exciting innovations that will shape our world for generations to come.",
-    ],
-  },
-  {
-    id: "news-5",
+    // icon: [{ img: merit3 }, { img: merit1 }, { img: merit2 }, { img: merit5 }],
+    // icon: [{ img: merit1 }, { img: merit5 }],
     icon: [
       { img: thirdprize1 },
       { img: thirdprize2 },
       { img: thirdprize4 },
       { img: thirdprize3 },
     ],
+    title:
+      "The 3rd Prize in the 8th Hong Kong University Student Innovation and Entrepreneurship Competition ",
+    content: [
+      "EleMotion Technology Limited is proud to announce that we have been awarded the 3rd Prize in the 8th Hong Kong University Student Innovation and Entrepreneurship Competition. This recognition not only honors our innovative technological solutions but also underscores the strength of our team's work and our commitment to pioneering advancements in our field.",
+      "The Hong Kong University Student Innovation and Entrepreneurship Competition is a prestigious platform that brings together the brightest minds from universities across the region. It aims to foster a culture of innovation and entrepreneurship among students and to highlight their outstanding contributions in these areas. Being acknowledged with the 3rd Prize amidst a pool of remarkable competitors is a testament to our team's hard work, creativity, and unwavering dedication.",
+    ],
+  },
+  // {
+  //   id: "news-4",
+  //   icon: [{ img: event1 }, { img: event2 }],
+  //   title:
+  //     "Exploring the Intricacies of Circuit Boards: An In-Depth Look at the Backbone of Modern Electronics",
+  //   content: [
+  //     "Circuit boards are an essential component of modern electronics, serving as the backbone of devices that power our daily lives. While often taken for granted, these intricate pieces of technology are critical to the functioning of everything from smartphones to cars and even space shuttles. In this essay, we will delve into the intricacies of circuit boards and explore the key players driving innovation in this field.",
+  //     "The field of circuit board design and manufacturing is a highly specialized one, with experts working tirelessly to push the boundaries of what is possible. One of the key players in this field is Andrew Grove, a pioneer in the semiconductor industry who co-founded Intel Corporation and played a crucial role in the development of the microprocessor. Another notable figure is Steve Wozniak, who co-founded Apple Computer and was instrumental in the design of the company's first products, including the Apple I and II.",
+  //     "Today, circuit board design and manufacturing continue to evolve at a rapid pace, with new materials, techniques, and technologies making it possible to create smaller, faster, and more powerful devices than ever before. From medical implants to self-driving cars, the potential applications of circuit board technology are virtually limitless. As we continue to explore the intricacies of these essential components, we can look forward to even more exciting innovations that will shape our world for generations to come.",
+  //   ],
+  // },
+  {
+    id: "news-4",
+    icon: [{ img: event1 }, { img: event2 }],
+
     title: "iDM2 Micro-Electronics Node (MEN) talent matching event ",
     content: [
       "We are delighted to report that EleMotion Technology Limited recently attended the inaugural iDM2 Micro-Electronics Node (MEN) talent matching event on 13th February 2023, at the Hong Kong Science and Technology Parks (HKSTP). This unique event brought together a plethora of high-calibre engineering talents from Dongguan, who have earned their Bachelor's, Master's, or Ph.D. degrees from top universities across Mainland China.",
@@ -592,19 +669,19 @@ export const news = [
       "We are thrilled with the outcome of the event, which provided a platform to connect with potential future collaborators and further reinforce our commitment to technological advancement. Our participation underscored our dedication to fostering connections within the industry and our efforts to remain at the cutting edge of technology.",
     ],
   },
-  {
-    id: "news-6",
-    icon: [{ img: artificial }, { img: scientist }, { img: scientist }],
-    title:
-      "Harnessing the Power of Artificial Intelligence for Innovation and Progress",
-    content: [
-      "Artificial intelligence (AI) has emerged as a powerful tool for driving innovation and progress across a wide range of fields and industries. By leveraging advanced algorithms and machine learning techniques, researchers and developers are able to analyze vast amounts of data and gain insights that were previously impossible to attain. ",
+  // {
+  //   id: "news-6",
+  //   icon: [{ img: artificial }, { img: scientist }, { img: scientist }],
+  //   title:
+  //     "Harnessing the Power of Artificial Intelligence for Innovation and Progress",
+  //   content: [
+  //     "Artificial intelligence (AI) has emerged as a powerful tool for driving innovation and progress across a wide range of fields and industries. By leveraging advanced algorithms and machine learning techniques, researchers and developers are able to analyze vast amounts of data and gain insights that were previously impossible to attain. ",
 
-      "From healthcare to finance to transportation, AI is transforming the way we live and work, making our lives easier, more efficient, and more productive. As we continue to harness the power of AI, we can look forward to even more exciting innovations that will shape the course of human history for generations to come.",
-    ],
-  },
+  //     "From healthcare to finance to transportation, AI is transforming the way we live and work, making our lives easier, more efficient, and more productive. As we continue to harness the power of AI, we can look forward to even more exciting innovations that will shape the course of human history for generations to come.",
+  //   ],
+  // },
   {
-    id: "news-7",
+    id: "news-5",
     icon: [{ img: tsssu23 }],
     title:
       "TSSSU@HKU 2023-2024: Technology Startup Support Scheme for Universities at HKU ",
@@ -615,7 +692,7 @@ export const news = [
     ],
   },
   {
-    id: "news-8",
+    id: "news-6",
     icon: [{ img: tsssu22 }],
     title:
       "TSSSU@HKU 2022-2023: Technology Startup Support Scheme for Universities at HKU ",
@@ -624,16 +701,12 @@ export const news = [
     ],
   },
   {
-    id: "news-9",
-    icon: [{ img: scientist }, { img: industry }],
+    id: "news-7",
+    icon: [{ img: merit5 }],
     title:
-      "Driving Innovation and Digital Transformation Across Diverse Industries and Sectors Worldwide with the Power of Coding",
+      "The Merit Prize in the 9th Hong Kong University Student Innovation and Entrepreneurship Competition 2023",
     content: [
-      "Microscope technology has advanced significantly in recent years, unlocking new frontiers in the fields of science and medicine. From electron microscopes that can capture images of individual atoms to high-resolution light microscopes that can visualize structures deep within living organisms, these tools are transforming our understanding of the natural world and enabling breakthroughs in medical research.",
-
-      "With advanced imaging and analysis techniques, researchers are now able to study cellular processes in unprecedented detail, leading to new insights into the mechanisms of disease and the development of more effective treatments. Additionally, advances in microscopy are driving innovation across a wide range of fields, from materials science to environmental monitoring.",
-
-      "As we continue to unveil the unseen with these amazing advancements in microscope technology, we can look forward to even more exciting discoveries and breakthroughs that will shape the future of science and medicine.",
+      "We are thrilled to share that EleMotion Technology Limited has once again demonstrated its innovative prowess by securing the Merit Prize in the 9th Hong Kong University Student Innovation and Entrepreneurship Competition.",
     ],
   },
 ];
@@ -827,7 +900,7 @@ export const faq = [
   {
     id: "elemotion_sensor_setup",
     icon: download,
-    title: "Elemotion Sensor Setup ",
+    title: "EleMotion Sensor Setup ",
   },
   {
     id: "ordering",
@@ -902,60 +975,108 @@ export const coreteam = [
     name: "Sun Chuying",
     img: stella,
     position: "CEO",
-    bullet1: "Ph.D. in Mechanical Engineering, HKU",
-    bullet2: "5+ years in nanofabrication & nanoelectronics",
-    bullet3: "Professional Ping Pong player",
-    bullet4: "HK PhD fellowship Scheme receiver",
+    bullet1: "Ph.D. in Mechanical Engineering, HKU ",
+    bullet2: "6+ Years in Nanofabrication and Nanoelectronics",
+    bullet3: "Recipient of the HK PhD Fellowship Schemer",
+    bullet4: "National Second-Level Athlete",
     content1:
       "Dr. Sun obtained her Ph.D. degree in Mechanical Engineering from the University of Hong Kong in 2023, having worked alongside Prof. Wendi Li in the field of nanofabrication and nanoelectronics for more than 5 years. Their collaborative efforts aimed to enhance electronics performance through cutting-edge nanofabrication techniques.",
     content2:
       "With her entrepreneurial spirit, Dr. Sun has received several awards in the innovation and entrepreneurship competitions in China, demonstrating her commitment to translating research into commercial products.  Beyond academia, Dr. Sun is a professional table tennis athlete, with titles including First Runner-up in the DHS-Luneng Cup National Table Tennis Competition. Today, Dr. Sun employs her diverse skill set to lead EleMotion Technology Limited, guiding the company in its mission to revolutionize muscle activity detection through the development of advanced EMG sensors.",
+    linked_in: "https://www.linkedin.com/in/chuying-sun-516167160/",
   },
   {
     id: "2",
     year: "2021",
-    name: "Xiaojun Wang",
-    img: xiaojun,
+    name: "Wang Xiaojun",
+    img: wang,
     position: "CTO",
     bullet1: "Ph.D. in Orthopaedics and Traumatology, HKU",
-    bullet2: "7+ years in clinical electrophysiology & neural engineering",
-    bullet3: "Enthusiast in mechanical keyboard and hiking",
-    bullet4: "Well-recognized cook for chinese food",
+    bullet2: "7+ years in Clinical Electrophysiology & Neural Engineering",
+    bullet3: "Enthusiast in Mechanical Keyboard and Hiking",
+    bullet4: "Well-recognized Cook for Chinese Food",
     content1:
       "Dr. Wang obtained his Ph.D. degree from Dept. of Orthopaedics and Traumatology, LKS Faculty of Medicine, University of Hong Kong in 2023, and he has worked alongside Prof. Yong Hu in the field of clinical electrophysiology and neural engineering for more than 5 years. During Xiaojun’s Ph.D. study, he worked with Prof. Hu to develop functional prosthesis hand powered by artificial intelligent aims to help upper limb amputee for rehabilitation and daily applications.",
     content2:
-      "Worked with Stella, they have received several awards in the innovation and entrepreneurship competitions in China, demonstrating his ability in pitching and road show. Beyond academic, Dr. Wang is a well-recognized cook in Chinse food and he established the cooking club in the Chi Sun College, one of favorite residual colleges in HKU. Today, Xiaojun applies his discipline knowledge and experience to drive EleMotion Technology Limited, providing convenient and accurate muscle activity tracking and training suggestion for rehabilitation centers, the care centers and sport teams.",
+      "Worked with CEO, Chuying, they have received several awards in the innovation and entrepreneurship competitions in China, demonstrating his ability in pitching and road show. Beyond academic, Dr. Wang is a well-recognized cook in Chinse food and he established the cooking club in the Chi Sun College, one of favorite residual colleges in HKU. Today, Xiaojun applies his discipline knowledge and experience to drive EleMotion Technology Limited, providing convenient and accurate muscle activity tracking and training suggestion for rehabilitation centers, the care centers and sport teams.",
+    linked_in: "https://www.linkedin.com/in/xiaojun-wang-5b2016289/",
   },
   {
     id: "3",
     year: "2021",
-    name: "Liang Huahui",
-    img: huahui,
-    position: "R&D Engineer",
-    bullet1: "Masters in Mechanical Engineering, HKU",
-    bullet2: "Independent multiple engineering projects",
-    bullet3: "Gained valuable experience from diverse internships",
-    bullet4: "Wearable electrode R&D of EleMotion",
-    content1:
-      "Hello, my name is Liang Huahui. I received my bachelor's degree in Materials Science and Engineering from Northwestern Polytechnical University and my master's degree from the Department of Mechanical Engineering at the University of Hong Kong. I currently serve as an R&D engineer at EleMotion, with my main work area focusing on the design, fabrication, and manufacturing of micro-structured electrodes. During my academic years, I managed to independently complete multiple engineering projects, such as a “Reverse 3D Scanning Printer” “Drone Crash-Proof Device”, and a “High-Altitude Curtain Cleaning Robot.” ",
-    content2:
-      "Given my technical capabilities, coupled with the systemic work experience I gained during my internships, I am committed to contributing to the wearable electrode R&D of EleMotion. My goal is to build wireless, wearable, and intelligent EMG monitoring devices. I look forward to working actively with my team to contribute to the company and realize my own value.",
+    name: "Yu Zhige",
+    img: yu,
+    position: "CFO",
+    bullet1: "Ph.D. in Accounting, HKU",
+    bullet2: "            Extensive Experience in Primary Market Incubation",
+    bullet3:
+      "Expertise in Investment Decision-Making and Financial Planning Management",
+    bullet4: "Skilled in Commercial Negotiations",
+    content1: "",
+    content2: "",
+    linked_in: "https://www.linkedin.com/in/harry-yu-8626b2261/",
   },
   {
     id: "4",
     year: "2021",
+    name: "Liang Huahui",
+    img: liang,
+    position: "R&D Engineer",
+    bullet1: "              Master in Mechanical Engineering, HKU",
+    bullet2:
+      "              Expertise in Wearable Electrodes Development and Advanced Materials",
+    bullet3: "Extensive Experience in Project Management",
+    bullet4: "Contributed to the Wearable Electrode R&D at EleMotion",
+    content1:
+      "Huahui serves as an R&D engineer at EleMotion, with his main work area focusing on the design, fabrication, and manufacturing of micro-structured electrodes. During his academic years, he managed to independently complete multiple engineering projects, such as a “Reverse 3D Scanning Printer” “Drone Crash-Proof Device”, and a “High-Altitude Curtain Cleaning Robot.” ",
+    content2:
+      "Given his technical capabilities, coupled with the systemic work experience he gained during his internships, his goal is to build wireless, wearable, and intelligent EMG monitoring devices.",
+    linked_in: "https://www.linkedin.com/in/lianghuahui/?originalSubdomain=cn",
+  },
+  {
+    id: "5",
+    year: "2021",
     name: "Qu Zhan",
     img: qu,
-    position: "Innovation Wearable & Smart Textile Designer",
-    bullet1: "Masters at the Royal College of Art",
-    bullet2: "2023 Recipient of PolyU PhD scholarship in HK.",
-    bullet3: "2022 Recipient of Royal College of Art Innovation Fund in the UK",
+    position: "Innovative Wearable & Smart Textile Designer",
+    bullet1: "Master at the Royal College of Art",
+    bullet2: "2023 Recipient of PolyU Ph.D. Scholarship in HK.",
+    bullet3: "2022 Recipient of Royal College of Art Innovation Fund in UK",
     bullet4:
       "2021 Bronze Award of 'Yinger International Fashion Design Prize' in China.",
     content1:
       "Zhan is an interdisciplinary designer who focuses on combining the aesthetic, materials and programmable properties (interactive algorithm) of smart textiles for wearables that support inclusivity. She seeks to expand the dimensions of movement and explore the effect on body sensations and develop user-friendly wearable electronic textiles for performance, well-being and healthcare applications. ",
     content2:
       "Zhan aims to expand access to wearable prototypes, through her work on embedded actuation whilst adopting new technologies to broaden people’s sensations. ",
+    linked_in: "",
+  },
+];
+export const advisors = [
+  {
+    id: "1",
+    year: "2021",
+    name: "Prof. Li Wen-Di",
+    img: wendy,
+    position: "Senior Advisor",
+    bullet1:
+      "Associate Director, Institute of Nanotechnology, Zhejiang Institutes of Science and Technology, HKU  ",
+    bullet2:
+      "Tenured Associate Professor,Department of Mechanical Engineering, HKU",
+    content1:
+      "The team is dedicated to realizing new device structures and improving device performance through innovations in micro- and nanofabrication technologies.",
+  },
+  {
+    id: "1",
+    year: "2021",
+    name: "Prof. Hu Yong",
+    img: yong,
+    position: "Senior Advisor",
+    bullet1:
+      "Director, Laboratory of Neuroengineering and Clinical Electrophysiology, HKU  ",
+    bullet2:
+      "Tenured Associate Professor, Department of Mechanical Engineering, HKU",
+    content1:
+      "The team is dedicated to the application of physiological electrical signals for intraoperative detection and postoperative rehabilitation.",
   },
 ];
 export const interns = [
@@ -994,19 +1115,35 @@ export const devices1 = [
   {
     id: "1",
     year: "2020",
-    name: "EleMotion Portable EMG Sensor",
-    img: img8,
-    content: "Compact EMG sensor with personalized app for accurate detection.",
+    name: "eMyoFlex Prime",
+    img: img9,
+    content: "Portable EMG sensor for muscle activity detection.",
+  },
+  {
+    id: "2",
+    year: "2020",
+    name: "eMyoFlex IMU Plus",
+    img: comingsoon,
+    content:
+      "Portable EMG sensor integrated with IMU, offering enhanced motion tracking alongside EMG analysis",
   },
 ];
 export const devices2 = [
   {
-    id: "2",
+    id: "3",
     year: "2020",
-    name: "32-Channel EMG Detection System ",
-    img: arduino,
+    name: "MuscleMatrix 32X ",
+    img: channel32,
     content:
-      "Array for extracting sensor data Array for extracting sensor data data",
+      "A comprehensive 32-channel EMG detection system that is able to detect high-density EMG signal for clinical neuromuscular condition assessment.",
+  },
+  {
+    id: "4",
+    year: "2020",
+    name: "MuscleMatrix 32X StimFusion ",
+    img: comingsoon,
+    content:
+      "An advanced 32-channel EMG detection system by integrating electrical stimulation to alleviate muscle fatigue alongside its EMG detection",
   },
 ];
 export const aspects = [
@@ -1022,7 +1159,7 @@ export const aspects = [
     icon: detection,
     title: "High Detection Accuracy",
     content:
-      "It boasts high detection accuracy with a signal-to-noise ratio reaching over 160 dB. The signal readings are smooth and robust under intense body movement.",
+      "It boasts high detection accuracy with a signal-to-noise ratio reaching over 100 dB. The signal readings are smooth and robust under intense body movement.",
   },
   {
     id: "aspect-3",
@@ -1035,7 +1172,7 @@ export const aspects = [
   {
     id: "aspect-4",
     icon: innovate,
-    title: "Innovation",
+    title: "Point-of-Care",
     content:
       " The sensor replaces conventional wet electrodes with dry, micro-structured ones, which showcases outstanding flexibility, biocompatibility, and high detection accuracy.",
   },
@@ -1052,6 +1189,51 @@ export const aspects = [
     title: "Versatility",
     content:
       " Potential applications extend to sports, healthcare, VR, gaming, and robotics.",
+  },
+];
+export const aspects2 = [
+  {
+    id: "aspect-1",
+    icon: safety,
+    title: "Safety Measures",
+    content:
+      " Built-in safety features, with low voltage operation and proper insulation, to ensure user safety.",
+  },
+  {
+    id: "aspect-2",
+    icon: wireless,
+    title: "Wireless Connectivity",
+    content:
+      "High-speed Wi-Fi connection to a computer for real-time muscle activation visualization and data recording",
+  },
+  {
+    id: "aspect-3",
+    icon: highsignal,
+    title: "High Signal Quality",
+    content:
+      "High-accuracy and high SNR acquisition of sEMG signals for accurate and reliable detection.",
+  },
+
+  {
+    id: "aspect-4",
+    icon: portable,
+    title: "Portability",
+    content:
+      "Compact, lightweight design for easy transportation and use in different application scenarios",
+  },
+  {
+    id: "aspect-5",
+    icon: userfriendly,
+    title: "User-Friendly Interface",
+    content:
+      " Easy-to-use interface, with clear instructions and options for exporting recorded sEMG data to various formats and professional analysis for clinical reference.",
+  },
+  {
+    id: "aspect-6",
+    icon: channel,
+    title: "Multi-Channel System",
+    content:
+      " 32 independent channels for simultaneous monitoring of multiple muscles",
   },
 ];
 export const healthcare = [

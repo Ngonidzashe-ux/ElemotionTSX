@@ -3,13 +3,12 @@ import React from "react";
 
 const ButtonExplore = ({ styles }: { styles: any }) => {
   return (
-    <button
-      type="button"
-      className={`py-4 px-6 bg-blue-gradient font-poppins font-medium text-[18px] text-primary outline-non ${styles} 
-    rounded-[10px] transition ease-in-out delay-30 hover:-translate-y-1 hover:scale-110 duration-100`}
+    <div
+      className={`py-2 flex w-full justify-center items-center xl:px-24 md:px-6 px-6 text-center bg-gray-800 font-poppins font-medium text-[18px] text-dimWhite outline-non ${styles} 
+    rounded-[10px]`}
     >
-      EXPLORE INSIGHTS
-    </button>
+      COMING SOON!!!
+    </div>
   );
 };
 

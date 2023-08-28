@@ -16,7 +16,7 @@ const AspectCard = ({ icon, title }: { icon: string; title: string }) => {
       Child elements are aligned along the left of the container's horizontal axis and along the center of the cross axis. The flex direction of the 
       elements is from top to bottom, making the flex container stack its elements vertically and the div container has a minimum w of 30% of its parent 
       container and h of 100px. Medium devices will have a margin right of 10 and small devices of 5 otherwise no mr. Div has a margin bottom of 10. */
-    <div className="flex flex-1 justify-start  items-center flex-col min-w-[30%] min-h-[100px] md:mr-10 sm:mr-5 mr-0 mb-10 ">
+    <div className="flex flex-1 justify-start  items-center flex-col min-w-[30%] min-h-[100px] md:mr-10 md:mr-5 mx-4 mb-10 ">
       {/* A flex container with child elements aligned centrally along the main axis and the cross axis. Margin top of 2 */}
       <div className="flex justify-center items-center mt-2 ">
         {/* Image element with specified width and height dimensions. Brightness-0 applies 0 brightness to the image which means its dark while invert will invert

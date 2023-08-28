@@ -33,7 +33,7 @@ const NewsPage = () => {
         {/* Second div in this section. It is a flex container which allows for flexible positioning of child elements. Child elements are arranged horizontally
     on md or above devices, otherwise they are vertically stacked together. Elements are wraped onto multiple lines if there is shortage of space on one line, 
     div spans full width and has margin top. Start of the horizontal axis is the position of this div on sm and center on md */}
-        <div className="flex md:flex-row flex-col flex-wrap sm:justify-start md:justify-center w-full  mt-8">
+        <div className="flex md:flex-row flex-col flex-wrap sm:justify-start  w-full  mt-8">
           {/* news.map() Call the map function on the news array and since mapping is a JS function, you put curly brackets. Map iterates over all the objects in an array
           and for every iteration, a callback function is executed.
 

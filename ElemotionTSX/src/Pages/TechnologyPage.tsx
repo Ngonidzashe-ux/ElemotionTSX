@@ -1,8 +1,16 @@
-import { Navbar, Footer, ButtonDiscover } from "../Components";
+import { Navbar, Footer } from "../Components";
 import styles from "../style";
 import { layout } from "../style";
-import { robot1, gears, vr, img2 } from "../resources";
-import { Link } from "react-router-dom";
+import {
+  // robot1,
+  // vr,
+  img2,
+  microneedle,
+  img9,
+  // physiological,
+  // bigdata,
+  big,
+} from "../resources";
 import React from "react";
 
 const TechnologyPage = () => {
@@ -23,7 +31,7 @@ const TechnologyPage = () => {
           src={img2}
           loading="lazy"
           alt="industry"
-          className="w-full h-[680px] object-cover"
+          className="w-full md:h-[680px] h-[300px] object-cover"
           style={{ objectPosition: "center 45%" }}
         />
 
@@ -49,13 +57,13 @@ is going to be on top of the video start from the top left corner and spanning t
         className={`${styles.paddingX} ${styles.paddingY} ${styles.flexCenter} text-center flex-col flex-1 `}
       >
         {/* Heading */}
-        <h4 className="font-poppins font-semibold xs:text-[40px] text-[30px] text-white xs:leading-[50px] leading-[36.8px] w-[70%]">
+        <h4 className="font-poppins font-semibold xs:text-[40px] text-[30px] text-white xs:leading-[50px] leading-[36.8px] md:w-[70%]">
           Our cutting-edge EMG technology redefines precision physiological
           electrical modeling.
         </h4>
 
         {/* Paragraph */}
-        <p className="font-poppins font-normal text-dimWhite text-[18px] leading-[30.8px] w-[70%] my-4">
+        <p className="font-poppins font-normal text-dimWhite text-[18px] md:mt-0 mt-10 leading-[30.8px] md:w-[70%] my-4">
           EleMotion technology, with its personalized comfortable fit,
           revolutionizes the user experience, proving to be an invaluable tool
           in exercise physiology research and a wide range of applications. From
@@ -79,10 +87,10 @@ md:flex-row flex-col - children are horizontally arranged in a row
         <div className={`${layout.sectionImg}`}>
           {/* Image spanning the full width and height of parent. REsizes to fully cover the parent */}
           <img
-            src={gears}
+            src={microneedle}
             loading="lazy"
             alt="industry"
-            className="object-cover w-full h-full"
+            className="object-contain md:w-[620px] w-full md:h-[620px] h-[400px] "
           />
         </div>
 
@@ -93,19 +101,21 @@ md:flex-row flex-col - children are horizontally arranged in a row
        has some padding*/}
         <div className={`${layout.sectionInfo} ${styles.paddingX}`}>
           {/* Heading */}
-          <h4 className={`${styles.heading2} mb-5`}>
+          <h4
+            className={`${styles.heading2} md:text-left text-center mb-5 mt-5`}
+          >
             Microstructured <span className="text-secondary"> Electrode</span>
           </h4>
 
           {/* Paragraph */}
-          <p className=" font-semibold xs:text-[23px] text-[40px] text-dimWhite xs:leading-[36.8px] leading-[46.8px] w-full mb-5">
+          <p className=" font-semibold md:text-[30px] text-[25px] md:text-left text-center text-dimWhite md:leading-[36.8px] leading-[30.8px] w-full mb-5">
             <li> Non-invasive, ultra-thin and flexible</li>
-            <li> Utilizes advanced micro/nano fabrication techniques</li>
+            <li> Equipped with micro/nano fabrication techniques</li>
             <li> Suitable for accurate & long-term physiological detection</li>
           </p>
 
           {/* Paragraph */}
-          <p className={styles.paragraph}>
+          <p className={`${styles.paragraph} md:text-left text-center`}>
             To ensure long-term biopotential monitoring with high-quality
             signals and minimal motion disruptions, the ideal solution lies in
             dry electrodes, that could adhere exceptionally well to the skin
@@ -114,7 +124,7 @@ md:flex-row flex-col - children are horizontally arranged in a row
           </p>
 
           {/*Paragraph  */}
-          <p className={`${styles.paragraph} mt-3`}>
+          <p className={`${styles.paragraph} md:text-left text-center mt-3`}>
             EleMotion presents a novel, cost-effective, and scalable solution to
             surface biopotential monitoring by introducing highly conductive,
             flexible, and ultra-thin micro-needle electrodes (MNEs), fabricated
@@ -133,44 +143,54 @@ md:flex-row flex-col - children are horizontally arranged in a row
       </div>
 
       {/* See above */}
-      <div className={`${layout.section}`}>
+      <div
+        className={`flex md:flex-row flex-col-reverse ${styles.paddingY} ${styles.paddingX}`}
+      >
         <div className={`${layout.sectionInfo}  relative md:ml-10 ml-0  `}>
-          <h4 className={`${styles.heading2} mb-5`}>
-            Flexible <span className="text-secondary"> Electronics</span>{" "}
+          <h4
+            className={`${styles.heading2} md:text-left text-center mt-5 mb-5`}
+          >
+            Modularized Wireless{" "}
+            <span className="text-secondary"> Sensing Node</span>{" "}
           </h4>
 
-          <p className=" font-semibold xs:text-[30px] text-[40px] text-dimWhite xs:leading-[36.8px] leading-[46.8px] w-full mb-5">
-            <li> Electromyography</li>
-            <li> Analytical Technique</li>
+          <p className=" font-semibold md:text-[30px] text-[25px] md:text-left text-center text-dimWhite md:leading-[36.8px] leading-[30.8px] w-full mb-5">
+            <li> Light-weight, wireless</li>
+            <li> Customizable layout for various scenarios</li>
+            <li> Easy to implement with other motion tracking system</li>
           </p>
-          <p className={styles.paragraph}>
-            Flexible electronics have found valuable applications in the field
-            of Electromyography (EMG), offering innovative solutions for
-            monitoring muscle activity.
+          <p className={`${styles.paragraph} md:text-left text-center`}>
+            To achieve the comfortable and long-term biopotential monitoring for
+            various scenarios and applications, the convenient solution is the
+            modularized wireless node design to build a customized biopotential
+            motoring network without affecting subjects’ normal movement and
+            extra burden.
           </p>
-          <p className={`${styles.paragraph} mt-5`}>
-            These bendable and stretchable electronic circuits can be seamlessly
-            integrated into wearable devices, enabling non-invasive and
-            comfortable muscle signal recording. With the incorporation of
-            flexible electronics, EMG devices can now be attached directly to
-            the skin, conforming to the body's contours during movement. This
-            advancement allows for enhanced accuracy and reliability in
-            detecting and analyzing electrical signals generated by muscles.
+          <p className={`${styles.paragraph} md:text-left text-center mt-3`}>
+            EleMotion provides a lightweight, wireless, and customizable
+            solution to surface biopotential monitoring by introducing a highly
+            integrated, modularized, wireless sensing node to build the
+            customized personal sensing network. Compared to traditional bulky
+            surface biopotential sensing systems with tedious wiring and noisy
+            signals, our highly integrated sensing nodes are embedded with the
+            wireless transmission while only weighing 15g, which could be easily
+            attached to the target muscle without affecting their movement or
+            adding extra burden. With the independent sensing node design, users
+            could design their unique sensing protocol with customized node
+            numbers and layouts. By adopting a universal wireless transmission
+            protocol, this system could be easily embedded with other
+            motion-tracking systems for complex neuromuscular model development.
+            This novel design provides excellent convenience in long-term
+            biopotential monitoring and enables clinical staff and researchers
+            in more flexible and various application scenarios.
           </p>
-          <Link
-            to={`/technology/tech-2`}
-            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            className="link-style"
-          >
-            <ButtonDiscover styles="mt-2" />
-          </Link>
         </div>
-        <div className={`${layout.sectionImg} sm:pr-16 pr-6`}>
+        <div className={`${layout.sectionImg}`}>
           <img
-            src={robot1}
+            src={img9}
             loading="lazy"
             alt="industry"
-            className="object-cover  w-[620px] h-[620px]"
+            className="object-contain md:w-[620px] w-full md:h-[620px] h-[300px] "
           />
         </div>
       </div>
@@ -179,55 +199,67 @@ md:flex-row flex-col - children are horizontally arranged in a row
       <div className={`${layout.section}`}>
         <div className={`${layout.sectionImg}`}>
           <img
-            src={vr}
+            src={big}
             loading="lazy"
             alt="industry"
-            className="object-cover w-full h-full"
+            className="object-contain md:w-[620px] w-full md:h-[620px] h-[400px] transform rotate-90"
           />
         </div>
         <div className={`${layout.sectionInfo} ${styles.paddingX}`}>
-          <h4 className={`${styles.heading2} mb-5`}>
-            Physiological <span className="text-secondary"> Signal</span>
-          </h4>
-          <p className=" font-semibold xs:text-[30px] text-[40px] text-dimWhite xs:leading-[36.8px] leading-[46.8px] w-full mb-5">
-            <li> Large Scale Model</li>
-            <li> Analytical Technique</li>
-          </p>
-          <p className={styles.paragraph}>
-            Physiological signals play a crucial role as an analytical technique
-            in the Elemotion EMG Portable Sensor.{" "}
-          </p>
-          <p className={`${styles.paragraph} mt-5`}>
-            EMG focuses on recording and analyzing electrical activity in
-            muscles, and it often relies on the integration of other
-            physiological signals to gain deeper insights into muscle function
-            and overall body performance. One common approach is to combine EMG
-            with electrocardiography (ECG) and respiratory signals. By
-            synchronizing these signals, researchers and healthcare
-            professionals can study how muscle activity correlates with heart
-            rate and breathing patterns.{" "}
-          </p>
-          <Link
-            to={`/technology/tech-3`}
-            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            className="link-style"
+          <h4
+            className={`${styles.heading2} md:text-left text-center mb-5 mt-5`}
           >
-            <ButtonDiscover styles="mt-2" />
-          </Link>
+            Big Data Driven{" "}
+            <span className="text-secondary"> Physiological Model</span>
+          </h4>
+          <p className=" font-semibold md:text-[30px] text-[25px] md:text-left text-center text-dimWhite md:leading-[36.8px] leading-[30.8px] w-full mb-5">
+            <li> Multi-sensor data fusion</li>
+            <li> Big data model for accurate estimation</li>
+          </p>
+          <p className={`${styles.paragraph} md:text-left text-center`}>
+            To provide an accurate estimation of the physiological state of our
+            body, single biopotential signal piece or separated recorded signals
+            are not sufficient, the prime solution lies in the big-data model
+            assessment, that the fusion of various physiological signal with
+            longitudinal and transverse reference from the big-data model.{" "}
+          </p>
+
+          <p className={`${styles.paragraph} md:mt-3 md:text-left text-center`}>
+            EleMotion offers an accurate, comprehensive, and adaptive solution
+            to estimation of the physiological state of our body by introducing
+            data-fusion and utilizing the big-data models to further enhances
+            the capabilities and robustness of the assessment. By collecting and
+            analyzing several physiological electrical signals simultaneously,
+            including surface EMG, electrocardiography (ECG), hear rate, blood
+            oxygen, the system could provide a more comprehensive description of
+            muscle function and its interplay with other physiological
+            processes. The big-data model leverages our existing clinical
+            datasets to make accurate estimations of muscle activity, fatigue,
+            motor intent, and other physiological parameters. Combined with the
+            fused features from multi-physiological signals, the data-fusion and
+            our big-data models can provide more accurate and insightful
+            assessments of human physiology and biomechanics.{" "}
+          </p>
         </div>
       </div>
 
       {/* see above */}
-      <div className={`${layout.section}`}>
+      {/* <div
+        className={`flex md:flex-row flex-col-reverse ${styles.paddingY} ${styles.paddingX}`}
+      >
+        {" "}
         <div className={`${layout.sectionInfo}  relative md:ml-10 ml-0  `}>
-          <h4 className={`${styles.heading2} mb-5`}>
+          <h4
+            className={`${styles.heading2} md:text-left text-center mt-5 mb-5`}
+          >
+            {" "}
             Elemotion <span className="text-secondary"> App</span>
           </h4>
-          <p className=" font-semibold xs:text-[30px] text-[40px] text-dimWhite xs:leading-[36.8px] leading-[46.8px] w-full mb-5">
+          <p className=" font-semibold md:text-[30px] text-[25px] md:text-left text-center text-dimWhite md:leading-[36.8px] leading-[30.8px] w-full mb-5">
             <li> Electromyography</li>
             <li> Analytical Technique</li>
           </p>
-          <p className={styles.paragraph}>
+          <p className={`${styles.paragraph} md:text-left text-center`}>
             The Elemotion Personalized App serves as a powerful data
             visualization and feedback system in Electromyography (EMG)
             applications. Designed to complement our hardware products, it
@@ -238,7 +270,7 @@ md:flex-row flex-col - children are horizontally arranged in a row
             for easy interpretation of EMG data during various activities and
             exercises.
           </p>
-          <p className={`${styles.paragraph} mt-5`}>
+          <p className={`${styles.paragraph} md:text-left text-center mt-3`}>
             The key strength of the Elemotion App lies in its personalized
             approach. It analyzes individual EMG data to provide tailored
             recommendations based on the user's specific needs and goals. These
@@ -247,24 +279,16 @@ md:flex-row flex-col - children are horizontally arranged in a row
             tool for athletes, fitness enthusiasts, and rehabilitation patients
             alike.
           </p>
-
-          <Link
-            to={`/technology/tech-4`}
-            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            className="link-style"
-          >
-            <ButtonDiscover styles="mt-2" />
-          </Link>
         </div>
-        <div className={`${layout.sectionImg} sm:pr-16 pr-6`}>
+        <div className={`${layout.sectionImg}`}>
           <img
             src={robot1}
             loading="lazy"
             alt="industry"
-            className="object-cover w-[620px] h-[620px]"
+            className="object-contain md:w-[620px] w-full md:h-[620px] h-[400px] "
           />
         </div>
-      </div>
+      </div> */}
 
       {/* see footer */}
       <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>

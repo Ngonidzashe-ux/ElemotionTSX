@@ -28,6 +28,7 @@ import ButtonPurchase from "./ButtonPurchase";
 import ButtonQuote from "./ButtonQuote";
 import QuoteForm from "./QuoteForm";
 import PurchaseForm from "./PurchaseForm";
+import AdvisorCard from "./AdvisorCard";
 
 export {
   Navbar,
@@ -60,4 +61,5 @@ export {
   ButtonQuote,
   QuoteForm,
   PurchaseForm,
+  AdvisorCard,
 };
